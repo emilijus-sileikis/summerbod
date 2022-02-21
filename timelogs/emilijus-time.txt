@@ -1,0 +1,2 @@
+2022-02-21:
+  4h - Added Initial design and grouping ideas with examples.
