@@ -246,7 +246,10 @@ li.dropdown {
 /* CSS for workout menu */
 
 .workout-menu{
-    background-color: #ececec;
+    background-image: url(../images/dumbells.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     padding: 4% 0;
 }
 
