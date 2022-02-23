@@ -293,8 +293,22 @@ li.dropdown{
         margin: 1% auto;
     }
 
+    .menu{
+        line-height: 40px;
+        font-size: 17px;
+    }
+    
+    .menu ul{
+        list-style-type: none;
+    }
+    
+    .menu ul li{
+        display: inline;
+        padding: 1%;
+        font-weight: bold;
+    }
     .search input[type="search"]{
-        width: 35%;
+        width: 51%;
         padding: 1%;
         margin: 0 3%;
         margin-bottom: 3%;
@@ -302,7 +316,7 @@ li.dropdown{
     }
 
     .btn{
-        width: 10%;
+        width: 15%;
         float: left;
     }
 
@@ -323,7 +337,7 @@ li.dropdown{
         top: 40%;
         width: 100%;
         text-align: center;
-        font-size: 50px;
+        font-size: 40px;
       }
 
       .center-doubleline{
@@ -331,7 +345,7 @@ li.dropdown{
         top: 30%;
         width: 100%;
         text-align: center;
-        font-size: 50px;
+        font-size: 40px;
       }
       
       .thumbnail{
