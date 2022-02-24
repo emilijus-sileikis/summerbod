@@ -108,6 +108,9 @@ h3{
 
 .menu ul{
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 .menu ul li{
@@ -116,15 +119,9 @@ h3{
     font-weight: bold;
 }
 
-/* test */
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
+/* dropdown menu */
 
-li{
+.menu li{
     float: right;
 }
 
@@ -140,12 +137,12 @@ li a, .dropbtn{
     -webkit-transition-timing-function: ease;
 }
 
-li a:hover, .dropdown:hover .dropbtn{
+.menu li a:hover, .dropdown:hover .dropbtn{
     background-color: gray;
     transform: scale(1);
 }
 
-li.dropdown{
+.menu li.dropdown{
     display: inline-block;
 }
 
@@ -188,7 +185,7 @@ li.dropdown{
 }
 
 .search{
-    padding: 2% 0;
+    padding: 1% 0;
 }
 
 .search input[type="search"]{
