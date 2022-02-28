@@ -287,6 +287,10 @@ li a, .dropbtn{
     padding: 1%;
 }
 
+.social ul li a:hover{
+    background-color: gray;
+}
+
 /* CSS for mobile size */
 @media only screen and (max-width:768px){
     .logo{
