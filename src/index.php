@@ -7,7 +7,3 @@
 <?php include('explore.php'); ?>
 
 <?php include('partials/footer.php'); ?>
-
-<style>
-<?php include 'css/style.css'; ?>
-</style>

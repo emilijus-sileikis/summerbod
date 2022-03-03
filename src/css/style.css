@@ -7,7 +7,7 @@
 /* CSS for all */
 
 @font-face {font-family: "Carlito";
-  src: url("resources/Carlito-Bold.ttf")
+  src: url("../resources/carlito/Carlito-Bold.ttf")
 }
 
 *{
