@@ -4,11 +4,18 @@
     Version: 0.1;
 */
 
+@import url("dumbellstop.css");
+@import url("dumbells.css");
+
 /* CSS for all */
 
-@font-face {font-family: "Carlito";
-  src: url("../resources/carlito/Carlito-Bold.ttf")
-}
+@font-face {
+    font-family: Carlito;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Carlito'), url('/resources/carlito/Carlito-Bold.woff') format('woff');
+    }
+    
 
 *{
     margin: 0 0;
