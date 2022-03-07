@@ -1,0 +1,23 @@
+Meeting time:
+- 3hours.
+
+Decisions: 
+- Decided on milestones for the whole semester (Git Milestones).
+- Decided on what should be done this and upcoming week (Git issues).
+
+Milestones:
+- V0.1 - Local website with the home page.
+- V0.2 - Add all missing views design.
+- V0.3 - Add all functionality to views.
+- V0.4 - API addition to Health Page.
+- V0.5 - Local website with connected and functioning database.
+- V0.6 - User system added + GOOGLE LOGIN.
+- V0.7 - Upvotes/downvotes/comments from users.
+- V0.8 - Add professional lithuanian translation.
+- V0.9 - Logging implementation + security.
+- V1.0 - Major optimization (paging).
+
+Tasks:
+- Start working on missing views (design, functionality);
+- Fix the current bugs (css and pictures);
+- Start with the report writing;
