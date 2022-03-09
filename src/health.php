@@ -43,7 +43,7 @@
             <a href="#">
             <div class="thumbnail box-3 float-container">
             <?php include('images/random.php'); ?>
-                <h3 class="center text-white">Complication Treatments</h3>
+                <h3 class="center-doubleline text-white">Complication <br> Treatments</h3>
             </div>
             </a>
 
