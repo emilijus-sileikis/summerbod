@@ -1,0 +1,13 @@
+/* CSS for social */
+.social{
+    list-style-type: none;
+}
+
+.social ul li{
+    display: inline;
+    padding: 1%;
+}
+
+.social ul li a:hover{
+    background-color: gray;
+}

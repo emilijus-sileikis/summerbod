@@ -1,4 +1,5 @@
 <!-- Categories section start -->
+<link rel="stylesheet" href="css/cat.css">
 <section class="category">
         <div class="container">
             <h2 class="text-center">Muscle Groups</h2>

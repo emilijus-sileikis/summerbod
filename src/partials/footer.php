@@ -1,4 +1,5 @@
 <!-- Social section start -->
+<link rel="stylesheet" href="css/footer.css">
 <section class="social">
         <div class="container text-center">
             <ul>

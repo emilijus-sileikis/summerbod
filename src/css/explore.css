@@ -1,0 +1,28 @@
+/* CSS for workout menu */
+@import url("dumbells.css");
+
+.workout-menu-box{
+    width: 43%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.workout-menu-img{
+    width: 20%;
+    float: left;
+}
+
+.workout-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.workout-detail{
+    font-size: 15px;
+    margin: 2% 0;
+    color: gray;
+}

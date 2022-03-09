@@ -1,0 +1,39 @@
+/* CSS for categories */
+.category{
+    padding: 4% 0;
+}
+
+.box-3{
+    width: 10%;
+    float: left;
+    margin: 2%;
+}
+
+.center{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.center-doubleline{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.thumbnail{
+    width: 150px;
+    display:block;
+    z-index:998;
+    cursor: pointer;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.1s;
+    -webkit-transition-timing-function: ease;
+}
+.thumbnail:hover{
+    transform: scale(1.3);
+}
