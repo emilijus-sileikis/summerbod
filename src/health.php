@@ -7,42 +7,42 @@
 
             <a href="bodymass.php">
             <div class="thumbnail box-3 float-container">
-            <?php include('images/random.php'); ?>
+            <?php include('partials/base64/random.php'); ?>
                 <h3 class="center text-white">Body Mass Index</h3>
             </div>
             </a>
 
             <a href="#">
             <div class="thumbnail box-3 float-container">
-            <?php include('images/random.php'); ?>
+            <?php include('partials/base64/random.php'); ?>
                 <h3 class="center text-white">Calories</h3>
             </div>
             </a>
 
             <a href="#">
             <div class="thumbnail box-3 float-container">
-            <?php include('images/random.php'); ?>
+            <?php include('partials/base64/random.php'); ?>
                 <h3 class="center text-white">Injury Treatment</h3>
             </div>
             </a>
 
             <a href="#">
             <div class="thumbnail box-3 float-container">
-            <?php include('images/random.php'); ?>
+            <?php include('partials/base64/random.php'); ?>
                 <h3 class="center text-white">Injury Prevention</h3>
             </div>
             </a>
 
             <a href="#">
             <div class="thumbnail box-3 float-container">
-            <?php include('images/random.php'); ?>
+            <?php include('partials/base64/random.php'); ?>
                 <h3 class="center text-white">Posture Advices</h3>
             </div>
             </a>
 
             <a href="#">
             <div class="thumbnail box-3 float-container">
-            <?php include('images/random.php'); ?>
+            <?php include('partials/base64/random.php'); ?>
                 <h3 class="center-doubleline text-white">Complication <br> Treatments</h3>
             </div>
             </a>

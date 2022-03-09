@@ -19,7 +19,7 @@
     <!-- Nav bar -->
     <section class="nav text-center">
         <div class="menu-container">
-        <?php include('images/logo.php'); ?>
+        <?php include('base64/logo.php'); ?>
 			<div class="menu text-right">
                 <ul>
                     <li><a href="sign-in.php">ACCOUNT</a></li>

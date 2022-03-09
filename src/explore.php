@@ -7,7 +7,7 @@
 		<a style="color:black;" href="#">
             <div class="workout-menu-box">
                 <div class="workout-menu-img">
-                <?php include('images/random-menu.php'); ?>
+                <?php include('partials/base64/random-menu.php'); ?>
                 </div>
 
                 <div class="workout-menu-desc">
@@ -26,7 +26,7 @@
 		<a style="color:black;" href="#">
             <div class="workout-menu-box">
                 <div class="workout-menu-img">
-                <?php include('images/random-menu.php'); ?>
+                <?php include('partials/base64/random-menu.php'); ?>
                 </div>
 
                 <div class="workout-menu-desc">
@@ -44,7 +44,7 @@
 		<a style="color:black;" href="#">
             <div class="workout-menu-box">
                 <div class="workout-menu-img">
-                <?php include('images/random-menu.php'); ?>
+                <?php include('partials/base64/random-menu.php'); ?>
                 </div>
 
                 <div class="workout-menu-desc">
@@ -62,7 +62,7 @@
 		<a style="color:black;" href="#">
             <div class="workout-menu-box">
                 <div class="workout-menu-img">
-                <?php include('images/random-menu.php'); ?>
+                <?php include('partials/base64/random-menu.php'); ?>
                 </div>
 
                 <div class="workout-menu-desc">
