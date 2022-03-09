@@ -1,5 +1,5 @@
 <!-- Explore section start -->
-<link rel="stylesheet" href="css/explore.css">
+<link rel="stylesheet" href="app/Views/css/explore.css">
 <section class="workout-menu">
         <div class="container">
             <h2 style="color: white" class="text-center">Explore Exercises</h2>
@@ -7,7 +7,7 @@
 		<a style="color:black;" href="#">
             <div class="workout-menu-box">
                 <div class="workout-menu-img">
-                <?php include('partials/base64/random-menu.php'); ?>
+                <?php include('images/base64/random-menu.php'); ?>
                 </div>
 
                 <div class="workout-menu-desc">
@@ -26,7 +26,7 @@
 		<a style="color:black;" href="#">
             <div class="workout-menu-box">
                 <div class="workout-menu-img">
-                <?php include('partials/base64/random-menu.php'); ?>
+                <?php include('images/base64/random-menu.php'); ?>
                 </div>
 
                 <div class="workout-menu-desc">
@@ -44,7 +44,7 @@
 		<a style="color:black;" href="#">
             <div class="workout-menu-box">
                 <div class="workout-menu-img">
-                <?php include('partials/base64/random-menu.php'); ?>
+                <?php include('images/base64/random-menu.php'); ?>
                 </div>
 
                 <div class="workout-menu-desc">
@@ -62,7 +62,7 @@
 		<a style="color:black;" href="#">
             <div class="workout-menu-box">
                 <div class="workout-menu-img">
-                <?php include('partials/base64/random-menu.php'); ?>
+                <?php include('images/base64/random-menu.php'); ?>
                 </div>
 
                 <div class="workout-menu-desc">

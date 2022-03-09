@@ -1,1 +1,0 @@
-wiket readme page
