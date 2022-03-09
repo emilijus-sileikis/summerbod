@@ -1,8 +1,7 @@
 @import url("bmi-container.css");
 .main-wrapper{
-    max-width: 1080px;
-    width: 480px;
-    height: 700px;
+    width: auto;
+    height: auto;
 }
 .bmi-heads{
     background: #A9A9A9;
