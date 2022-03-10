@@ -1,11 +1,11 @@
 <?php include('partials/menu.php'); ?>
 <!-- Health section start -->
-<link rel="stylesheet" href="css/cat.css">
+<link rel="stylesheet" href="/codeigniter4/assets/css/cat.css">
 <section class="category">
         <div class="container">
             <h2 class="text-center text-black">Health Section</h2>
 
-            <a href="bodymass.php">
+            <a href="../Views/bodymass.php">
             <div class="thumbnail box-3 float-container">
             <?php include('partials/base64/random.php'); ?>
                 <h3 class="center text-white">Body Mass Index</h3>

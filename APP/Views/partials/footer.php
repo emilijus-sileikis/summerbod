@@ -1,5 +1,5 @@
 <!-- Social section start -->
-<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="/codeigniter4/assets/css/footer.css">
 <section class="social">
         <div class="container text-center">
             <ul>

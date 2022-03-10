@@ -1,7 +1,7 @@
 <?php include('partials/menu.php'); ?>
 <!-- Health section start -->
-<link rel="stylesheet" href="css/cat.css">
-<link rel = "stylesheet" href = "css/bmi.css">
+<link rel="stylesheet" href="/codeigniter4/assets/css/cat.css">
+<link rel = "stylesheet" href = "/codeigniter4/assets/css/bmi.css">
 <section class="category">
         <div class="bmicontainer">
             <h2 style="color: #F5F5F5" class="text-center text-white">Body Mass Index (BMI)</h2>
@@ -101,7 +101,7 @@
 
             <div class="clearfix"></div>
         </div>
-        <script src = "js/bmi.js"></script>
+        <script src = "/codeigniter4/assets/js/bmi.js"></script>
     </section>
     <!-- Health section end -->
     <?php include('partials/footer.php'); ?>

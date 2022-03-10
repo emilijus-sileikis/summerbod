@@ -1,5 +1,5 @@
 <!-- Explore section start -->
-<link rel="stylesheet" href="css/explore.css">
+<link rel="stylesheet" href="/codeigniter4/assets/css/explore.css">
 <section class="workout-menu">
         <div class="container">
             <h2 style="color: white" class="text-center">Explore Exercises</h2>
