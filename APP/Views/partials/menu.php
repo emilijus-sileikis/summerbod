@@ -37,15 +37,15 @@
             </div>
 		
             <div class="clearfix"></div>
-        </div>
+        </div> 
+    </section>
 
-        <div class="search">
+    <div class="searchbar search">
             <form action="">
                 <input type="search" name="search" placeholder="Search For Something..">
                 <input type="submit" name="submit" value="Search" class="btn btn-primary">
             </form>
             
             <div class="clearfix"></div>    
-        </div> 
-    </section>
+        </div>
     <!-- Nav bar -->

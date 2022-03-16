@@ -8,6 +8,7 @@
   left: 0;
   background-color: #262626;
   padding-top: 20px;
+  margin-top: -1px;
 }
 
 /* The navigation menu links */
@@ -27,7 +28,7 @@
 /* Workouts */
 .workout-menu-box{
     width: 95%;
-	height: 25%;
+	  height: 25%;
     margin-left: 10%;
     padding: 2%;
     background-color: #e6e6e6;
