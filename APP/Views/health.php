@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="/codeigniter4/assets/css/cat.css">
 <section class="category">
         <div class="container">
-            <h2 class="text-center text-black">Health Section</h2>
+            <h2 class="text-center text-black"; style="margin-top:5%">Health Section</h2>
 
             <a href="../Views/bodymass.php">
             <div class="thumbnail box-3 float-container">

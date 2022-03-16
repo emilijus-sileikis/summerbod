@@ -1,5 +1,6 @@
 <!-- Categories section start -->
 <link rel="stylesheet" href="/codeigniter4/assets/css/cat.css">
+
 <section class="category">
         <div class="container">
             <h2 class="text-center">Muscle Groups</h2>

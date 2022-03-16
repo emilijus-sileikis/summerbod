@@ -8,7 +8,7 @@
 
     <!-- Link CSS file -->
     <link rel="stylesheet" href="/codeigniter4/assets/css/style.css">
-    <link rel="stylesheet" href="/codeigniter4/assets/css/nav.css">
+    <link rel="stylesheet" href="/codeigniter4/assets/css/homenav.css">
     <meta name="google-signin-scope" content="profile email">
     <meta name="google-signin-client_id" content="259966255279-dc9bdnhj2f5jis8sinj1ub895oh3n9vs.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -40,14 +40,12 @@
         </div> 
     </section>
 
-<!--
-    <div class="searchbar search"> 
+    <div class="searchbar search">
             <form action="">
                 <input type="search" name="search" placeholder="Search For Something..">
                 <input type="submit" name="submit" value="Search" class="btn btn-primary">
             </form>
             
             <div class="clearfix"></div>    
-        </div> 
-		-->
+        </div>
     <!-- Nav bar -->

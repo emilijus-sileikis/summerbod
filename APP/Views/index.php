@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<?php include('partials/menu.php'); ?>
+<?php include('partials/homemenu.php'); ?>
 
 <?php include('category.php'); ?>
 

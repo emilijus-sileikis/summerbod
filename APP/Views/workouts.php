@@ -24,13 +24,13 @@
         <li> <a href="#">Lats</a> </li>
         <li> <a href="#">Lower-back</a> </li>
         <li> <a href="#">Glutes</a> </li>
-        <li> <a href="#">Traps</a> </li>
+        <li> <a href="#">Hamstrings</a> </li>
     </ul>
 	</li>
 </ul>
 </div>
 <div class="container">
-    <h2 style="color: black; margin-left: 20%" class="text-center">Abdominals Exercises</h2>  <!-- Input muscle group -->
+    <h2 style="color: black; margin-left: 20%; margin-top:10%" class="text-center">Abdominals Exercises</h2>  <!-- Input muscle group -->
     <div class="workout-menu-box">
 	<div class="workout-menu-img">
         <?php include('partials/base64/random-menu.php'); ?>                                  <!-- Input photo by id -->
