@@ -1,12 +1,12 @@
 <div id="mySidenav" class="sidenav">
 <ul>
-    <li> <a href="#">Warmups</a> </li>
-	<li> <a href="#">Exercise Techniques</a>
+    <li> <a href="../Views/warmups.php">Warm-ups</a> </li>
+	<li> <a href="../Views/t_all_techniques.php">Exercise Techniques</a>
     <ul>
-	    <li> <a href="#">Calisthenics</a> </li>
-        <li> <a href="#">Powerlifting</a> </li>
+	    <li> <a href="../Views/t_calisthenics.php">Calisthenics</a> </li>
+        <li> <a href="../Views/t_powerlifting.php">Powerlifting</a> </li>
 	</ul>
-	<li> <a href="#">Muscle Groups</a>
+	<li> <a href="../Views/w_all_exercises.php">Muscle Groups</a>
     <ul>
         <li> <a href="../Views/w_traps.php">Traps</a> </li>
         <li> <a href="../Views/w_traps_midback.php">Traps mid-back</a> </li>

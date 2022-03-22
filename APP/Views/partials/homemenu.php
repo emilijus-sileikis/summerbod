@@ -26,11 +26,11 @@
                     <li><a href="index.php">HOME</a></li>
                     <li><a href="../Views/health.php">HEALTH</a></li>
                     <li class="dropdown">
-                    <a href="../Views/w_traps.php" class="dropbtn">WORKOUTS</a>
+                    <a href="../Views/w_all_exercises.php" class="dropbtn">WORKOUTS</a>
                         <div class="dropdown-content">
-                            <a href="#">Warm-up</a>
-                            <a href="#">Powerlifting</a>
-                            <a href="#">Calisthenics</a>
+                            <a href="../Views/warmups.php">Warm-ups</a>
+                            <a href="../Views/t_all_techniques.php">Exercise Techniques</a>
+                            <a href="../Views/w_all_exercises.php">Muscle Groups</a>
                         </div>
                     </li>
                 </ul>
