@@ -26,7 +26,7 @@
                     <li><a href="index.php">HOME</a></li>
                     <li><a href="../Views/health.php">HEALTH</a></li>
                     <li class="dropdown">
-                    <a href="../Views/workouts.php" class="dropbtn">WORKOUTS</a>
+                    <a href="../Views/w_traps.php" class="dropbtn">WORKOUTS</a>
                         <div class="dropdown-content">
                             <a href="#">Warm-up</a>
                             <a href="#">Powerlifting</a>
