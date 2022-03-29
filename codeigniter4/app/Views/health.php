@@ -1,6 +1,6 @@
 <?php include('partials/menu.php'); ?>
 <!-- Health section start -->
-<link rel="stylesheet" href="/codeigniter4/assets/css/cat.css">
+<link rel="stylesheet" href="<?php echo base_url('assets/css/cat.css'); ?>">
 <section class="category">
         <div class="container">
             <h2 class="text-center text-black"; style="margin-top:5%">Health Section</h2>

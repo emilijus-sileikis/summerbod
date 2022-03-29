@@ -1,9 +1,10 @@
 <?php include('partials/menu.php'); ?>
-<?php include('partials/sidenavmenu.php'); ?>
 <!-- Health section start -->
 <link rel="stylesheet" href="<?php echo base_url('assets/css/workouts.css'); ?>">
 <link rel="stylesheet" href="<?php echo base_url('assets/css/explore.css'); ?>">
 <div class="container">
+
+<?php include('partials/sidenavmenu.php'); ?>
 
     <h2 style="color: black; margin-left: 20%; margin-top:10%" class="text-center">Exercise Techniques</h2>  <!-- Input muscle group -->
 
@@ -34,7 +35,7 @@ These exercises are perfomed by lifting a barbell loaded with weight plates, whi
  and increased muscle fibre recruitment.
 </p>
 
-<a href="<?php echo base_url('public/t_calisthenics'); ?>" style="color:black;">
+<a href="<?php echo base_url('public/Techniques/t_calisthenics'); ?>" style="color:black;">
 <div class="workout-menu-box" style="margin-left: 25%; width: 20%; height: 5%; background-color: #f2f2f2;">
         <div class="workout-menu-desc">
             <h3>Calisthenics</h3>                                                           
@@ -46,7 +47,7 @@ These exercises are perfomed by lifting a barbell loaded with weight plates, whi
 </div>
 </a>
 
-<a href="<?php echo base_url('public/t_powerlifting'); ?>" style="color:black;">
+<a href="<?php echo base_url('public/Techniques/t_powerlifting'); ?>" style="color:black;">
 <div class="workout-menu-box" style="margin-left: 13%; width: 20%; height: 5%; background-color: #f2f2f2;">
         <div class="workout-menu-desc">
             <h3>Powerlifting</h3>                                                           
@@ -59,5 +60,5 @@ These exercises are perfomed by lifting a barbell loaded with weight plates, whi
 </a>
 
 <?php include('partials/footer.php'); ?>
-
+</div>
 <!-- Workouts section end -->

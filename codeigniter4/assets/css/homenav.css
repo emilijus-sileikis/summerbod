@@ -91,3 +91,20 @@ li a, .dropbtn{
     border-radius: 5px;
 	float: center;
 }
+
+.results-container{
+    width: 30%;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    background-color: black;
+    font-size: 1rem;
+}
+
+.result-item{
+    margin: 2% 2%;
+}
+
+.error-message{
+    margin: 2% 2%;
+}

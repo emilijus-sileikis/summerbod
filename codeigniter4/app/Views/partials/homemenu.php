@@ -26,11 +26,11 @@
                     <li><a href="<?php echo base_url('public/home'); ?>">HOME</a></li>
                     <li><a href="<?php echo base_url('public/health'); ?>">HEALTH</a></li>
                     <li class="dropdown">
-                    <a href="<?php echo base_url('public/w_all_exercises'); ?>" class="dropbtn">WORKOUTS</a>
+                    <a href="<?php echo base_url('public/Workouts/w_all_exercises'); ?>" class="dropbtn">WORKOUTS</a>
                         <div class="dropdown-content">
                             <a href="<?php echo base_url('public/warmups'); ?>">Warm-ups</a>
-                            <a href="<?php echo base_url('public/t_all_techniques'); ?>">Exercise Techniques</a>
-                            <a href="<?php echo base_url('public/w_all_exercises'); ?>">Muscle Groups</a>
+                            <a href="<?php echo base_url('public/Techniques/t_all_techniques'); ?>">Exercise Techniques</a>
+                            <a href="<?php echo base_url('public/Workouts/w_all_exercises'); ?>">Muscle Groups</a>
                         </div>
                     </li>
                 </ul>
@@ -42,10 +42,16 @@
 
     <div class="searchbar search">
             <form action="">
-                <input type="search" name="search" placeholder="Search For Something..">
+                <input type="search" name="search" class="input" placeholder="Search For Something..">
                 <input type="submit" name="submit" value="Search" class="btn btn-primary">
             </form>
+
+            <script src="<?php echo base_url('assets/js/search.js'); ?>"></script>
             
             <div class="clearfix"></div>    
         </div>
+
+        <div class="results-container">
+                <ul class="results-list" id="list"></ul>
+            </div>
     <!-- Nav bar -->
