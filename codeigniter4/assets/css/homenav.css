@@ -83,28 +83,39 @@ li a, .dropbtn{
     padding: 1% 0;
 }
 
-.search input[type="search"]{
-    width: 30%;
+.list{
+    position:absolute;
+    max-height: 204px;
+    overflow: hidden;
+    width: 33%;
+    left: 2px;
+}
+
+#searchInput {
+    width: 31.5%;
     padding: 1%;
     font-size: 1rem;
     border: none;
     border-radius: 5px;
 	float: center;
-}
+  }
+  
+  #searchUL li{
+    display:none;
+  }
 
-.results-container{
-    width: 30%;
-    position: absolute;
+  #searchUL li a {
+    border: 1px solid #ddd;
+    left: 2px;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: black;
+    font-size: 18px;
+    width: 100%;
+    position: relative;
     z-index: 1;
     color: white;
-    background-color: black;
-    font-size: 1rem;
-}
-
-.result-item{
-    margin: 2% 2%;
-}
-
-.error-message{
-    margin: 2% 2%;
-}
+  }
+  
+  #searchUL li a:hover:not(.header) {
+    background-color: gray;
+  }

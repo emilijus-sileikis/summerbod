@@ -1,6 +1,7 @@
 /* CSS for categories */
 .category{
     padding: 4% 0;
+    position: relative;
 }
 
 .box-3{

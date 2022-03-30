@@ -21,7 +21,7 @@
     <section class="footer">
         <div class="container text-center">
             <p>
-                All rights reserved. Designed by Veliau Industries
+                &#169; 2022 Veliau Industries All rights reserved.
             </p>
         </div>
     </section>

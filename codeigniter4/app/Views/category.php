@@ -1,4 +1,4 @@
-<!-- Categories section start -->
+<!-- Muscle Groups start -->
 <link rel="stylesheet" href="<?php echo base_url('assets/css/cat.css'); ?>">
 
 <section class="category">
@@ -107,4 +107,4 @@
             <div class="clearfix"></div>
         </div>
     </section>
-    <!-- Categories section end -->
+    <!-- Muscle Groups section end -->

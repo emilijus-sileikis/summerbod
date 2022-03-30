@@ -1,4 +1,4 @@
-<html lang="lt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
 
@@ -6,12 +6,9 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <title> SummerBod</title>
 
-    <!-- Link CSS file -->
+    <!-- Link CSS files -->
     <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/nav.css'); ?>">
-    <meta name="google-signin-scope" content="profile email">
-    <meta name="google-signin-client_id" content="259966255279-dc9bdnhj2f5jis8sinj1ub895oh3n9vs.apps.googleusercontent.com">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 
 <body>
@@ -39,15 +36,3 @@
             <div class="clearfix"></div>
         </div> 
     </section>
-
-<!--
-    <div class="searchbar search"> 
-            <form action="">
-                <input type="search" name="search" placeholder="Search For Something..">
-                <input type="submit" name="submit" value="Search" class="btn btn-primary">
-            </form>
-            
-            <div class="clearfix"></div>    
-        </div> 
-		-->
-    <!-- Nav bar -->

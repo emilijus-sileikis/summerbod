@@ -1,4 +1,4 @@
-<html lang="lt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
 
@@ -6,12 +6,9 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <title> SummerBod</title>
 
-    <!-- Link CSS file -->
+    <!-- Link CSS files -->
     <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/homenav.css'); ?>">
-    <meta name="google-signin-scope" content="profile email">
-    <meta name="google-signin-client_id" content="259966255279-dc9bdnhj2f5jis8sinj1ub895oh3n9vs.apps.googleusercontent.com">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 
 <body>
@@ -41,17 +38,39 @@
     </section>
 
     <div class="searchbar search">
-            <form action="">
-                <input type="search" name="search" class="input" placeholder="Search For Something..">
-                <input type="submit" name="submit" value="Search" class="btn btn-primary">
-            </form>
 
-            <script src="<?php echo base_url('assets/js/search.js'); ?>"></script>
-            
-            <div class="clearfix"></div>    
-        </div>
+    <input type="text" id="searchInput" onkeydown="return /[a-z]/i.test(event.key)" maxlength="20" onkeyup="filter()" placeholder="Search For Something..">
+    <input type="submit" id="clearBtn" value="Clear" class="btn btn-primary">
+      
+    <div class="list">
+        <ul id="searchUL">
+            <li><a href="<?php echo base_url('public/Workouts/w_traps'); ?>">Traps</a></li>
+            <li><a href="<?php echo base_url('public/Workouts/w_traps_midback'); ?>">Traps mid-back</a></li>
+            <li><a href="<?php echo base_url('public/Workouts/w_shoulders'); ?>">Shoulders</a></li>
+            <li><a href="<?php echo base_url('public/Workouts/w_chest'); ?>">Chest</a></li>
+            <li><a href="<?php echo base_url('public/Workouts/w_biceps'); ?>">Biceps</a></li>
+            <li><a href="<?php echo base_url('public/Workouts/w_forearms'); ?>">Forearms</a></li>
+            <li><a href="<?php echo base_url('public/Workouts/w_abdominals'); ?>">Abdominals</a></li>
+            <li><a href="<?php echo base_url('public/Workouts/w_quads'); ?>">Quads</a></li>
+            <li><a href="<?php echo base_url('public/Workouts/w_calves'); ?>">Calves</a></li>
+            <li><a href="<?php echo base_url('public/Workouts/w_triceps'); ?>">Triceps</a></li>
+            <li><a href="<?php echo base_url('public/Workouts/w_lats'); ?>">Lats</a></li>
+            <li><a href="<?php echo base_url('public/Workouts/w_lowerback'); ?>">Lower-back</a></li>
+            <li><a href="<?php echo base_url('public/Workouts/w_glutes'); ?>">Glutes</a></li>
+            <li><a href="<?php echo base_url('public/Workouts/w_hamstrings'); ?>">Hamstrings</a></li>
+            <li><a href="<?php echo base_url('public/Techniques/t_calisthenics'); ?>">Calisthenics</a></li>
+            <li><a href="<?php echo base_url('public/Techniques/t_powerlifting'); ?>">Powerlifting</a></li>
+            <li><a href="#">Posture</a></li>
+            <li><a href="#">BMI</a></li>
+            <li><a href="#">Injury treatment</a></li>
+            <li><a href="#">Injury prevention</a></li>
+            <li><a href="<?php echo base_url('public/warmups'); ?>">Warm-up</a></li>
+            <li><a href="<?php echo base_url('public/Techniques/t_all_techniques'); ?>">Techniques</a></li>
+        </ul>
+    </div>
 
-        <div class="results-container">
-                <ul class="results-list" id="list"></ul>
-            </div>
+        <div class="clearfix"></div>    
+    </div>
+
+    <script src="<?php echo base_url('assets/js/search.js'); ?>"></script>
     <!-- Nav bar -->
