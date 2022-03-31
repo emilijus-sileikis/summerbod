@@ -5,14 +5,12 @@
 }
 
 .menu{
-    line-height: 40px;
+    line-height: 180%;
 	font-size: 22px;
 }
 
 .menu ul{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
 }
 
@@ -34,9 +32,9 @@ li a, .dropbtn{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    -webkit-transition-property: all;
-    -webkit-transition-duration: 0.5s;
-    -webkit-transition-timing-function: ease;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
 }
 
 .menu li a:hover, .dropdown:hover .dropbtn{
@@ -53,7 +51,7 @@ li a, .dropbtn{
     position: absolute;
     background-color: black;
     opacity: 0.8;
-    min-width: 250px;
+    width: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -64,9 +62,9 @@ li a, .dropbtn{
     text-decoration: none;
     display: block;
     text-align: left;
-    -webkit-transition-property: all;
-    -webkit-transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease;
+    transition-property: all;
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
 }
 
 .dropdown-content a:hover{
@@ -80,12 +78,13 @@ li a, .dropbtn{
 /* CSS for navigation */
 
 .search{
+    position: relative;
     padding: 1% 0;
 }
 
 .list{
     position:absolute;
-    max-height: 204px;
+    max-height: 203px;
     overflow: hidden;
     width: 33%;
     left: 2px;
@@ -114,8 +113,131 @@ li a, .dropbtn{
     position: relative;
     z-index: 1;
     color: white;
+    text-align: justify;
   }
   
   #searchUL li a:hover:not(.header) {
     background-color: gray;
   }
+
+  @media only screen and (max-width: 1024px) {
+
+    .search{
+        margin-top: 11%;
+    }
+
+    .nav {
+        background-position: 85% 15%;
+    }  
+  }
+
+  @media only screen and (max-width: 768px) {
+    .search{
+        margin-top: 11.3%;
+    }
+
+    .list{
+        left: 115px;
+    }
+
+    .nav {
+        background-position: top;
+    }
+
+    #searchInput {
+        position: relative;
+        z-index: 100;
+        height: 21px;
+        font-size: 15px;
+        width: 180px;
+    }
+
+    #clearBtn {
+        position: relative;
+        z-index: 100;
+    }
+  }
+
+  @media only screen and (max-width:425px){
+
+    .logo{
+        width: 20%;
+        float: left;
+    }
+
+    .menu{
+        line-height: 10px;
+        font-size: 11px;
+    }
+
+    .search{
+        margin-top: 10%;
+    }
+
+    #searchUL li a {
+        left: 0px;
+        font-size: 10px;
+      }
+
+      .list{
+        width: 23%;
+        left: 0px;
+    }
+
+    #searchInput{
+        height: 5px;
+        font-size: 9px;
+        width: 85px;
+    }
+
+    .btn{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:375px){
+
+    .menu{
+        font-size: 9px;
+    }
+
+    .search{
+        padding-top: 2%;
+    }
+
+    #searchUL li a {
+        font-size: 9px;
+      }
+
+      .list{
+        width: 25%;
+        max-height: 197px;
+    }
+
+    #searchInput{
+        height: 5px;
+        font-size: 7px;
+        width: 75px;
+    }
+}
+
+@media only screen and (max-width:320px){
+
+    .menu{
+        font-size: 6px;
+    }
+
+    .search{
+        padding-top: 6%;
+        font-size: 8px;
+    }
+
+    #searchUL li a {
+        font-size: 8px;
+      }
+
+      .list{
+        width: 28%;
+        max-height: 194px;
+    }
+}

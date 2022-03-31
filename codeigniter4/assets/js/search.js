@@ -31,3 +31,15 @@ function filter() {
 function clear() {
   document.getElementById('searchUL').style.display= "none";
 }
+
+    window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.body.scrollTop > 2 || document.documentElement.scrollTop > 2) {
+    document.getElementById('searchInput').style = "z-index: 0;";
+    document.getElementById('clearBtn').style = "z-index: 0;";
+  } else {
+    document.getElementById('searchInput').style = "z-index: 100;";
+    document.getElementById('clearBtn').style = "z-index: 100;";
+  }
+}
