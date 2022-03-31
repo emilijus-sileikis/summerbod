@@ -1,7 +1,7 @@
 /* CSS for workout menu */
 @import url("dumbells.css");
 
-.workout-menu-box{
+.workout-menu-box {
     width: 43%;
     margin: 1%;
     padding: 2%;
@@ -10,30 +10,30 @@
     border-radius: 15px;
 }
 
-.workout-menu-img{
+.workout-menu-img {
     width: 20%;
     float: left;
 }
 
-.workout-menu-desc{
+.workout-menu-desc {
     width: 70%;
     float: left;
     margin-left: 8%;
 }
 
-.workout-detail{
+.workout-detail {
     font-size: 15px;
     margin: 2% 0;
     color: gray;
 }
 
-@media only screen and (max-width:425px){
+@media only screen and (max-width:425px) {
 
-    .workout-menu{
+    .workout-menu {
         padding: 20% auto;
     }
 
-    .workout-menu-box{
+    .workout-menu-box {
         width: 90%;
         padding: 5%;
         margin-bottom: 5%;
