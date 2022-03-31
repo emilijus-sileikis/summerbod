@@ -1,31 +1,31 @@
 /* CSS for navbar */
-.logo{
+.logo {
     width: 20%;
     float: left;
 }
 
-.menu{
+.menu {
     line-height: 180%;
 	font-size: 22px;
 }
 
-.menu ul{
+.menu ul {
     list-style-type: none;
     overflow: hidden;
 }
 
-.menu ul li{
+.menu ul li {
     display: inline;
     padding: 1%;
     font-weight: bold;
 }
 
 /* dropdown menu */
-.menu li{
+.menu  {
     float: right;
 }
 
-li a, .dropbtn{
+li a, .dropbtn {
     display: inline-block;
     color: white;
     opacity: 1;
@@ -37,16 +37,16 @@ li a, .dropbtn{
     transition-timing-function: ease;
 }
 
-.menu li a:hover, .dropdown:hover .dropbtn{
+.menu li a:hover, .dropdown:hover .dropbtn {
     background-color: gray;
     transform: scale(1);
 }
 
-.menu li.dropdown{
+.menu li.dropdown {
     display: inline-block;
 }
 
-.dropdown-content{
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: black;
@@ -56,7 +56,7 @@ li a, .dropbtn{
     z-index: 1;
 }
 
-.dropdown-content a{
+.dropdown-content a {
     color: white;
     padding: 12px 16px;
     text-decoration: none;
@@ -67,22 +67,21 @@ li a, .dropbtn{
     transition-timing-function: ease;
 }
 
-.dropdown-content a:hover{
+.dropdown-content a:hover {
     background-color: gray;
 }
 
-.dropdown:hover .dropdown-content{
+.dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* CSS for navigation */
-
-.search{
+/* CSS for filterbar */
+.search {
     position: relative;
     padding: 1% 0;
 }
 
-.list{
+.list {
     position:absolute;
     max-height: 203px;
     overflow: hidden;
@@ -97,11 +96,11 @@ li a, .dropbtn{
     border: none;
     border-radius: 5px;
 	float: center;
-  }
+}
   
-  #searchUL li{
+  #searchUL li {
     display:none;
-  }
+}
 
   #searchUL li a {
     border: 1px solid #ddd;
@@ -114,12 +113,13 @@ li a, .dropbtn{
     z-index: 1;
     color: white;
     text-align: justify;
-  }
+}
   
   #searchUL li a:hover:not(.header) {
     background-color: gray;
-  }
+}
 
+  /* CSS for different screens */
   @media only screen and (max-width: 1024px) {
 
     .search{
@@ -132,12 +132,9 @@ li a, .dropbtn{
   }
 
   @media only screen and (max-width: 768px) {
-    .search{
-        margin-top: 11.3%;
-    }
 
-    .list{
-        left: 115px;
+    .search {
+        margin-top: 11.3%;
     }
 
     .nav {
@@ -152,82 +149,87 @@ li a, .dropbtn{
         width: 180px;
     }
 
+    .list {
+        width: 25%;
+        left: 0px;
+    }
+
     #clearBtn {
         position: relative;
         z-index: 100;
     }
   }
 
-  @media only screen and (max-width:425px){
+  @media only screen and (max-width:425px) {
 
-    .logo{
+    .logo {
         width: 20%;
         float: left;
     }
 
-    .menu{
+    .menu {
         line-height: 10px;
         font-size: 11px;
     }
 
-    .search{
+    .search {
         margin-top: 10%;
     }
 
     #searchUL li a {
         left: 0px;
         font-size: 10px;
-      }
+    }
 
-      .list{
+      .list {
         width: 23%;
         left: 0px;
     }
 
-    #searchInput{
+    #searchInput {
         height: 5px;
         font-size: 9px;
         width: 85px;
     }
 
-    .btn{
+    .btn {
         display: none;
     }
 }
 
-@media only screen and (max-width:375px){
+@media only screen and (max-width:375px) {
 
-    .menu{
+    .menu {
         font-size: 9px;
     }
 
-    .search{
+    .search {
         padding-top: 2%;
     }
 
     #searchUL li a {
         font-size: 9px;
-      }
+    }
 
-      .list{
+      .list {
         width: 25%;
         max-height: 197px;
     }
 
-    #searchInput{
+    #searchInput {
         height: 5px;
         font-size: 7px;
         width: 75px;
     }
 }
 
-@media only screen and (max-width:320px){
+@media only screen and (max-width:320px) {
 
-    .menu{
+    .menu {
         font-size: 6px;
     }
 
-    .search{
+    .search {
         padding-top: 6%;
         font-size: 8px;
     }
@@ -236,7 +238,7 @@ li a, .dropbtn{
         font-size: 8px;
       }
 
-      .list{
+      .list {
         width: 28%;
         max-height: 194px;
     }
