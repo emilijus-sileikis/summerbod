@@ -1,16 +1,16 @@
 /* CSS for categories */
-.category {
+.category{
     padding: 4% 0;
     position: relative;
 }
 
-.box-3 {
+.box-3{
     width: 10%;
     float: left;
     margin: 2%;
 }
 
-.center {
+.center{
     position: absolute;
     top: 40%;
     width: 100%;
@@ -18,7 +18,7 @@
     font-size: 18px;
 }
 
-.center-doubleline {
+.center-doubleline{
     position: absolute;
     top: 30%;
     width: 100%;
@@ -26,7 +26,7 @@
     font-size: 18px;
 }
 
-.thumbnail {
+.thumbnail{
     width: 150px;
     display:block;
     cursor: pointer;
@@ -34,7 +34,7 @@
     transition-duration: 0.1s;
     transition-timing-function: ease;
 }
-.thumbnail:hover {
+.thumbnail:hover{
     transform: scale(1.3);
 }
 
