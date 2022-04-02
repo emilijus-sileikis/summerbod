@@ -9,7 +9,8 @@ NAZAR MAMEDOV
 22/03/2022 | 7 hours | Scientific material research, all Workout section pages created.
 
 Total: 39 hours.
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
 EMILIJUS SILEIKIS
 18/02/2022 | 2 hours | Setting up Git repo. HTML Basics tutorial.
 21/02/2022 | 6 hours | Initial design and ideas for section grouping.
@@ -35,10 +36,18 @@ EMILIJUS SILEIKIS
 18/03/2022 | 6 hours | BMI calculator input restrictions and warning messages.
 21/03/2022 | 5 hours | Further CI4 confifuration, cobtrollers and base url are now working.
 22/03/2022 | 3 hours | Started working on automated vm creation script.
+28/03/2022 | 6 hours | Implementing CI4 on Apache server.
+29/03/2022 | 4 hours | Fixed and added controllers to workout section.
+29/03/2022 | 2 hours | Moved out workout and technique controllers to seperate folders.
+30/03/2022 | 3 hours | Creating a filter search bar function.
+31/03/2022 | 6 hours | Functional filter function + input restrictions + clear button + design.
+01/04/2022 | 4 hours | Home page responsive design.
+04/04/2022 |         |.
 
-Total: 84 hours.
-This week: 17 hours.
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Total: 109 hours.
+This week: 25 hours.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
 PATRIK VORONOVIC
 22/02/2022 | 2 hours | Preparing presentation
 23/03/2022 | 2 hours | Preparing presentation
@@ -48,7 +57,8 @@ PATRIK VORONOVIC
 13/03/2022 | 2 hours | Writing documentation
 16/03/2022 | 2 hours | Fixing codeigniter4
 17/03/2022 | 3 hours | Fixing codeigniter4
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
 IZA BLAZINA
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------
