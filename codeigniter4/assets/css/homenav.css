@@ -120,7 +120,9 @@ li a, .dropbtn{
     background-color: gray;
   }
 
-  @media only screen and (max-width: 1024px) {
+  /* CSS for all screen sizes */
+  @media only screen and (min-width: 935px)
+  and (max-width: 1024px) {
 
     .search{
         margin-top: 11%;
@@ -131,9 +133,63 @@ li a, .dropbtn{
     }  
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (min-width: 900px)
+  and (max-width: 934px) {
+
+    .search{
+        margin-top: 11.5%;
+    }
+
+    .nav {
+        background-position: 98% 2%;
+    }  
+  }
+
+  @media only screen and (min-width: 740px)
+  and (max-width: 899px) {
+
     .search{
         margin-top: 11.3%;
+    }
+
+    .list{
+        width: 22%;
+        left: 0px;
+    }
+
+    .nav {
+        background-position: top;
+    }
+
+    #searchInput {
+        position: relative;
+        z-index: 100;
+        height: 21px;
+        font-size: 15px;
+        width: 150px;
+    }
+
+    #clearBtn {
+        position: relative;
+        z-index: 100;
+    }
+  }
+
+  @media only screen and (min-width: 700px)
+  and (max-width: 739px) {
+
+    .logo{
+        width: 20%;
+        float: left;
+    }
+
+    .menu{
+        line-height: 10px;
+        font-size: 15px;
+    }
+
+    .search{
+        margin-top: 11%;
     }
 
     .list{
@@ -150,7 +206,7 @@ li a, .dropbtn{
         z-index: 100;
         height: 21px;
         font-size: 15px;
-        width: 180px;
+        width: 150px;
     }
 
     #clearBtn {
@@ -159,7 +215,8 @@ li a, .dropbtn{
     }
   }
 
-  @media only screen and (max-width:425px){
+  @media only screen and (min-width: 650px)
+  and (max-width: 699px) {
 
     .logo{
         width: 20%;
@@ -168,24 +225,114 @@ li a, .dropbtn{
 
     .menu{
         line-height: 10px;
-        font-size: 11px;
+        font-size: 15px;
     }
 
     .search{
+        margin-top: 10.7%;
+    }
+
+    .list{
+        width: 25%;
+        left: 0px;
+    }
+
+    .nav {
+        background-position: top;
+    }
+
+    #searchInput {
+        position: relative;
+        z-index: 100;
+        height: 21px;
+        font-size: 15px;
+        width: 150px;
+    }
+
+    #clearBtn {
+        position: relative;
+        z-index: 100;
+    }
+  }
+
+  @media only screen and (min-width: 560px)
+  and (max-width: 649px) {
+
+    .menu{
+        line-height: 10px;
+        font-size: 14px;
+    }
+
+    .menu ul li{
+        padding: 0;
+    }
+
+    .search{
+        margin-top: 10.5%;
+    }
+
+    .list{
+        width: 25%;
+        left: 0px;
+    }
+
+    .nav {
+        background-position: top;
+    }
+
+    #searchInput {
+        position: relative;
+        z-index: 100;
+        height: 21px;
+        font-size: 15px;
+        width: 150px;
+    }
+
+    #clearBtn {
+        position: relative;
+        z-index: 100;
+    }
+  }
+
+  @media only screen and (min-width: 480px)
+  and (max-width: 559px) {
+
+    .logo{
+        width: 20%;
+        float: left;
+    }
+
+    .nav {
+        background-position: top;
+    }
+
+    .menu{
+        line-height: 10px;
+        font-size: 15px;
+    }
+
+    .menu ul li{
+        padding: 0;
+    }
+
+    .search{
+        padding-top: 3%;
         margin-top: 10%;
     }
 
     #searchUL li a {
         left: 0px;
         font-size: 10px;
-      }
+    }
 
-      .list{
+    .list{
         width: 23%;
         left: 0px;
     }
 
-    #searchInput{
+    #searchInput {
+        position: relative;
+        z-index: 100;
         height: 5px;
         font-size: 9px;
         width: 85px;
@@ -194,51 +341,86 @@ li a, .dropbtn{
     .btn{
         display: none;
     }
-}
+  }
 
-@media only screen and (max-width:375px){
+  @media only screen and (min-width: 320px)
+  and (max-width: 479px) {
+
+    .nav {
+        background-position: top;
+    }
 
     .menu{
-        font-size: 9px;
+        line-height: 10px;
+        font-size: 12px;
+    }
+
+    .menu ul li{
+        padding: 0;
+    }
+
+    li a, .dropbtn{
+        padding: 14px 6px;
     }
 
     .search{
-        padding-top: 2%;
+        padding-top: 3%;
+        margin-top: 10%;
     }
 
     #searchUL li a {
-        font-size: 9px;
-      }
-
-      .list{
-        width: 25%;
-        max-height: 197px;
+        left: 0px;
+        font-size: 10px;
     }
 
-    #searchInput{
-        height: 5px;
-        font-size: 7px;
-        width: 75px;
-    }
-}
-
-@media only screen and (max-width:320px){
-
-    .menu{
-        font-size: 6px;
-    }
-
-    .search{
-        padding-top: 6%;
-        font-size: 8px;
-    }
-
-    #searchUL li a {
-        font-size: 8px;
-      }
-
-      .list{
+    .list{
         width: 28%;
-        max-height: 194px;
+        left: 0px;
+    }
+
+    #searchInput {
+        position: relative;
+        z-index: 100;
+        height: 5px;
+        font-size: 9px;
+        width: 85px;
+    }
+
+    .btn{
+        display: none;
+    }
+  }
+
+  @media only screen and (max-width:319px){
+
+    .menu{
+        line-height: 10px;
+        font-size: 8px;
+    }
+
+    .menu ul li{
+        padding: 0;
+    }
+
+    li a, .dropbtn{
+        padding: 14px 6px;
+    }
+
+    .search{
+        padding-top: 3%;
+        margin-top: 10%;
+    }
+
+    #searchUL li a {
+        left: 0px;
+        font-size: 10px;
+    }
+
+    #searchInput {
+        position: relative;
+        z-index: 100;
+        height: 5px;
+        font-size: 9px;
+        width: 85px;
     }
 }
