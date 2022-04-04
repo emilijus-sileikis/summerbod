@@ -4,8 +4,6 @@
 <link rel="stylesheet" href="<?php echo base_url('assets/css/explore.css'); ?>">
 <div class="container">
 
-<?php include('partials/sidenavmenu.php'); ?>
-
     <h2 style="color: black; margin-left: 20%; margin-top:10%" class="text-center">Exercise Techniques</h2>  <!-- Input muscle group -->
 
 <h3 class="workout-text"> There are techniques? </h3>

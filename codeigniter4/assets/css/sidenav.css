@@ -4,7 +4,7 @@
   position: fixed;
   width: 300px;
   z-index: 1000;
-  top: 14.1%;
+  top: 135px;
   left: 0;
   overflow-y: scroll;
   background-color: #262626;
@@ -30,7 +30,7 @@
 .workout-menu-box{
     width: 95%;
 	  height: 25%;
-    margin-left: 10%;
+    margin-left: 0%;
     padding: 2%;
     background-color: #e6e6e6;
     border-radius: 15px;
@@ -73,17 +73,159 @@
   background: #555;
 }
 
-@media only screen and (max-width:1440px){
-  .workout-text{
-      margin-left: 25%;
+/* CSS for all screen sizes */
+@media only screen and (min-width: 2470px)
+and (max-width: 2560px) {
+  .sidenav {
+    width: auto;
+    top: 170px;
   }
 }
 
-@media only screen and (max-width:1024px){
-  .workout-text{
-      margin-left: 35%;
-  }
-  .box-container{
-      margin-top: 15%;
+@media only screen and (min-width: 2300px)
+and (max-width: 2469px) {
+  .sidenav {
+    width: auto;
+    top: 160px;
   }
 }
+
+@media only screen and (min-width: 2150px)
+and (max-width: 2299px) {
+  .sidenav {
+    width: auto;
+    top: 150px;
+  }
+}
+
+@media only screen and (min-width: 2000px)
+and (max-width: 2150px) {
+  .sidenav {
+    width: auto;
+    top: 140px;
+  }
+}
+
+@media only screen and (min-width: 1950px)
+and (max-width: 2149px) {
+  .sidenav {
+    width: auto;
+    top: 140px;
+  }
+}
+
+@media only screen and (min-width: 1800px)
+and (max-width: 1949px) {
+  .sidenav {
+    width: auto;
+    top: 130px;
+  }
+}
+
+@media only screen and (min-width: 1300px)
+and (max-width: 1799px) {
+  .sidenav {
+    width: auto;
+    top: 120px;
+  }
+}
+
+@media only screen and (min-width: 900px)
+and (max-width: 1299px) {
+  .sidenav {
+    width: auto;
+    top: 110px;
+  }
+
+  .sidenav ul {
+    padding: 0px 0px 0px 17px;
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    transition: 0.3s;
+  }
+}
+
+@media only screen and (min-width: 740px)
+and (max-width: 899px) {
+  .sidenav {
+    width: auto;
+    top: 110px;
+  }
+
+  .sidenav ul {
+    padding: 0px 0px 0px 14px;
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    transition: 0.3s;
+  }
+}
+
+@media only screen and (min-width: 650px)
+and (max-width: 739px) {
+  .sidenav {
+    width: auto;
+    top: 80px;
+  }
+
+  .sidenav ul {
+    padding: 0px 0px 0px 14px;
+    text-decoration: none;
+    font-size: 8px;
+    color: white;
+    transition: 0.3s;
+  }
+}
+
+@media only screen and (min-width: 480px)
+and (max-width: 649px) {
+  .sidenav {
+    width: auto;
+    top: 65px;
+  }
+
+   .sidenav ul {
+    padding: 0px 0px 0px 14px;
+    text-decoration: none;
+    font-size: 8px;
+    color: white;
+    transition: 0.3s;
+  }
+}
+
+@media only screen and (min-width: 320px)
+and (max-width: 479px) {
+  .sidenav {
+    width: auto;
+    top: 65px;
+  }
+
+   /* Add hide sidebar option */
+
+  .sidenav ul {
+    padding: 0px 0px 0px 14px;
+    text-decoration: none;
+    font-size: 8px;
+    color: white;
+    transition: 0.3s;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .sidenav {
+    width: auto;
+    top: 65px;
+  }
+
+  /* Add hide sidebar option */
+
+  .sidenav ul {
+    padding: 0px 0px 0px 14px;
+    text-decoration: none;
+    font-size: 8px;
+    color: white;
+    transition: 0.3s;
+  }
+}
+
