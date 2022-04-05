@@ -1,4 +1,349 @@
-.workout-text{
-    margin-left: 18%;
-	padding-bottom: 2%;
+.tech-text {
+    margin-left: 100px;
+    padding-bottom: 20px;
+}
+
+.header {
+    color: black; 
+    margin-left: 100px;
+    margin-top: 150px;
+}
+
+.tech-box {
+    list-style: none;
+    width: 25%;
+    text-align: justify;
+    height: 100px;
+    margin: 2% 10%;
+    padding: 1%;
+    float: right;
+    background-color: lightgray;
+    border-radius: 15px;
+}
+
+.tech-box a {
+    color: black;
+    width: 100%;
+}
+
+.tech-img {
+    width: 0%;
+    float: left;
+}
+
+.tech-desc {
+    font-size: 25px;
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.tech-detail {
+    font-size: 15px;
+    margin: 2% 0;
+    color: gray;
+}
+
+/* CSS for all screen sizes */
+@media only screen and (min-width: 2470px)
+and (max-width: 2560px) {
+    .tech-text {
+        text-align: justify;
+        text-justify: distribute;
+        text-align-last: left;
+        margin-left: 200px;
+        width: auto;
+        padding-bottom: 20px;
+    }
+
+    .tech-box {
+        width: 39%;
+        margin: 1%;
+        padding: 2%;
+        float: right;
+        background-color: lightgray;
+        border-radius: 15px;
+    }
+
+    .tech-img{
+        width: 20%;
+        float: left;
+    }
+    
+    .tech-desc{
+        width: 70%;
+        float: left;
+        margin-left: 8%;
+    }
+    
+    .tech-detail{
+        font-size: 15px;
+        margin: 2% 0;
+        color: gray;
+    }
+}
+
+@media only screen and (min-width: 1540px)
+and (max-width: 2469px) {
+    .tech-text {
+        text-align: justify;
+        text-justify: distribute;
+        text-align-last: left;
+        margin-left: 150px;
+        width: auto;
+        padding-bottom: 20px;
+    }
+
+    .tech-box {
+        width: 39%;
+        margin: 1%;
+        padding: 2%;
+        float: right;
+        background-color: lightgray;
+        border-radius: 15px;
+    }
+
+    .tech-img{
+        width: 20%;
+        float: left;
+    }
+    
+    .tech-desc{
+        width: 70%;
+        float: left;
+        margin-left: 8%;
+    }
+    
+    .tech-detail{
+        font-size: 15px;
+        margin: 2% 0;
+        color: gray;
+    }
+}
+
+@media only screen and (min-width: 1120px)
+and (max-width: 1539px) {
+    .tech-text {
+        text-align: justify;
+        text-justify: distribute;
+        text-align-last: left;
+        margin-left: 150px;
+        width: auto;
+        padding-bottom: 20px;
+    }
+
+    .tech-box {
+        width: 39%;
+        margin: 1%;
+        padding: 2%;
+        float: right;
+        background-color: lightgray;
+        border-radius: 15px;
+    }
+
+    .tech-img{
+        width: 20%;
+        float: left;
+    }
+    
+    .tech-desc{
+        width: 70%;
+        float: left;
+        margin-left: 8%;
+    }
+    
+    .tech-detail{
+        font-size: 15px;
+        margin: 2% 0;
+        color: gray;
+    }
+}
+
+@media only screen and (min-width: 900px)
+and (max-width: 1119px) {
+    .tech-text {
+        text-align: justify;
+        text-justify: distribute;
+        text-align-last: left;
+        margin-left: 150px;
+        width: auto;
+        padding-bottom: 20px;
+    }
+
+    .tech-menu{
+        padding: 20% auto;
+    }
+
+    .tech-box {
+        width: 71%;
+        margin: 1%;
+        padding: 5%;
+        margin-bottom: 5%;
+        float: right;
+        background-color: lightgray;
+        border-radius: 15px;
+    }
+
+    .tech-img{
+        width: 20%;
+        float: left;
+    }
+    
+    .tech-desc{
+        width: 70%;
+        float: left;
+        margin-left: 8%;
+    }
+    
+    .tech-detail{
+        font-size: 15px;
+        margin: 2% 0;
+        color: gray;
+    }
+}
+
+@media only screen and (min-width: 450px)
+and (max-width: 899px) {
+    .header {
+        margin-top: 90px;
+        margin-bottom: 50px;
+    }
+
+    .tech-text {
+        text-align: justify;
+        text-justify: distribute;
+        text-align-last: left;
+        width: 80%;
+        padding-bottom: 20px;
+    }
+
+    .tech-menu{
+        padding: 20% auto;
+    }
+
+    .tech-box {
+        width: 70%;
+        margin: 1%;
+        padding: 5%;
+        margin-bottom: 5%;
+        float: right;
+        background-color: lightgray;
+        border-radius: 15px;
+    }
+
+    .tech-img{
+        width: 20%;
+        float: left;
+    }
+    
+    .tech-desc{
+        width: 70%;
+        float: left;
+        margin-left: 8%;
+    }
+    
+    .tech-detail{
+        font-size: 15px;
+        margin: 2% 0;
+        color: gray;
+    }
+}
+
+@media only screen and (min-width: 410px)
+and (max-width: 449px) {
+    .header {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .tech-text {
+        text-align: justify;
+        text-justify: distribute;
+        text-align-last: left;
+        width: 80%;
+        padding-bottom: 20px;
+        font-size: 12px;
+    }
+
+    .tech-menu{
+        padding: 20% auto;
+    }
+
+    .tech-box {
+        width: 60%;
+        margin: 10%;
+        padding: 5%;
+        margin-bottom: 5%;
+        float: right;
+        background-color: lightgray;
+        border-radius: 15px;
+    }
+
+    .tech-img{
+        width: 20%;
+        float: left;
+    }
+    
+    .tech-desc{
+        width: 70%;
+        float: left;
+        margin-left: 8%;
+    }
+    
+    .tech-detail{
+        font-size: 12px;
+        margin: 2% 0;
+        color: gray;
+    }
+}
+
+@media only screen and (min-width: 280px)
+and (max-width: 409px) {
+    .header {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .tech-text {
+        text-align: justify;
+        text-justify: distribute;
+        text-align-last: left;
+        width: auto;
+        padding-bottom: 20px;
+        font-size: 9px;
+    }
+
+    .tech-menu{
+        padding: 20% auto;
+    }
+
+    .tech-box {
+        width: 49%;
+        margin: 15%;
+        padding: 1%;
+        margin-bottom: 5%;
+        float: right;
+        background-color: lightgray;
+        border-radius: 15px;
+    }
+
+    .tech-img{
+        width: 20%;
+        float: left;
+    }
+    
+    .tech-desc{
+        font-size: 15px;
+        width: 70%;
+        float: left;
+        margin-left: 8%;
+    }
+    
+    .tech-detail{
+        font-size: 12px;
+        margin: 2% 0;
+        color: gray;
+    }
 }

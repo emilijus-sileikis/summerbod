@@ -18,14 +18,11 @@
     <!-- Social section end -->
 
     <!-- Footer section start -->
-    <section class="footer">
         <div class="container text-center">
             <p>
                 &#169; 2022 Veliau Industries All rights reserved.
             </p>
         </div>
-    </section>
     <!-- Footer section end -->
-    
 </body>
 </html>

@@ -2,7 +2,7 @@
 .sidenav {
   height: 86%;
   position: fixed;
-  width: 300px;
+  width: auto;
   z-index: 1000;
   top: 135px;
   left: 0;
@@ -24,33 +24,6 @@
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #f1f1f1;
-}
-
-/* Workouts */
-.workout-menu-box{
-    width: 95%;
-	  height: 25%;
-    margin-left: 0%;
-    padding: 2%;
-    background-color: #e6e6e6;
-    border-radius: 15px;
-}
-
-.workout-menu-img{
-    width: 16.5%;
-    float: left;
-}
-
-.workout-menu-desc{
-    width: 70%;
-    float: center;
-    margin-left: 20%;
-}
-
-.workout-detail{
-    font-size: 15px;
-    margin: 2% 0;
-    color: gray;
 }
 
 /* width */
@@ -183,6 +156,7 @@ and (max-width: 649px) {
   .sidenav {
     width: auto;
     top: 65px;
+    height: 70%;
   }
 
    .sidenav ul {
@@ -199,9 +173,8 @@ and (max-width: 479px) {
   .sidenav {
     width: auto;
     top: 65px;
+    height: 70%;
   }
-
-   /* Add hide sidebar option */
 
   .sidenav ul {
     padding: 0px 0px 0px 14px;
@@ -216,9 +189,8 @@ and (max-width: 479px) {
   .sidenav {
     width: auto;
     top: 65px;
+    height: 65%;
   }
-
-  /* Add hide sidebar option */
 
   .sidenav ul {
     padding: 0px 0px 0px 14px;
