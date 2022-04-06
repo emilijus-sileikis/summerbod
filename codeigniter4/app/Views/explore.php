@@ -1,4 +1,5 @@
 <!-- Explore section start -->
+
 <link rel="stylesheet" href="<?php echo base_url('assets/css/explore.css'); ?>">
 <section class="workout-menu">
         <div class="container">
@@ -81,3 +82,52 @@
         </div>
     </section>
     <!-- Explore section end -->
+<?php
+	include 'db_connnection.php';
+	$conn = OpenCon();
+	$result = mysqli_query($conn,"SELECT * FROM user_workouts");
+	?>
+<!DOCTYPE html>
+<html>
+<body>
+<?php
+	if (mysqli_num_rows($result) > 0) {
+?>
+	<table>
+  
+	<tr>
+		<td>user_workoutid</td>
+		<td>user_id</td>
+		<td>user_category</td>
+		<td>user_name</td>
+		<td>user_difficulty</td>
+		<td>user_descr</td>
+	</tr>
+<?php
+	$i=0;
+		while($row = mysqli_fetch_array($result)) {
+?>
+		<tr>
+			<td><?php echo $row["user_workoutid"]; ?></td>
+			<td><?php echo $row["user_id"]; ?></td>
+			<td><?php echo $row["user_category"]; ?></td>
+			<td><?php echo $row["user_name"]; ?></td>
+			<td><?php echo $row["user_difficulty"]; ?></td>
+			<td><?php echo $row["user_descr"]; ?></td>
+		</tr>
+<?php
+	$i++;
+	}
+?>
+	</table>
+<?php
+	}
+	else{
+		echo "No result found";
+	}
+?>
+ </body>
+</html>
+<?php
+	CloseCon($conn);
+?>

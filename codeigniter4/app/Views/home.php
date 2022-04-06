@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <?php echo view('partials/homemenu'); ?>
 
 <?php echo view('category.php'); ?>
