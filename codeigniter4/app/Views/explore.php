@@ -13,7 +13,9 @@ $conn = OpenCon();
 		<a style="color:black;" href="#">
             <div class="workout-menu-box">
                 <div class="workout-menu-img">
-                <?php include('partials/base64/random-menu.php'); ?>
+					<?php $result = mysqli_query($conn,"SELECT user_image FROM user_workouts WHERE user_id=1"); ?>
+					<?php $row = mysqli_fetch_array($result) ?>
+					<img src=data:image/gif;base64,<?php echo $row["user_image"]?> alt="Random1" class="img-responsive img-curve img-explore-stretch">
                 </div>
 
                 <div class="workout-menu-desc">
@@ -32,7 +34,9 @@ $conn = OpenCon();
 		<a style="color:black;" href="#">
             <div class="workout-menu-box">
                 <div class="workout-menu-img">
-                <?php include('partials/base64/random-menu.php'); ?>
+					<?php $result = mysqli_query($conn,"SELECT user_image FROM user_workouts WHERE user_id=1"); ?>
+					<?php $row = mysqli_fetch_array($result) ?>
+					<img src=data:image/gif;base64,<?php echo $row["user_image"]?> alt="Random1" class="img-responsive img-curve img-explore-stretch">
                 </div>
 
                 <div class="workout-menu-desc">
@@ -50,7 +54,9 @@ $conn = OpenCon();
 		<a style="color:black;" href="#">
             <div class="workout-menu-box">
                 <div class="workout-menu-img">
-                <?php include('partials/base64/random-menu.php'); ?>
+					<?php $result = mysqli_query($conn,"SELECT user_image FROM user_workouts WHERE user_id=1"); ?>
+					<?php $row = mysqli_fetch_array($result) ?>
+					<img src=data:image/gif;base64,<?php echo $row["user_image"]?> alt="Random1" class="img-responsive img-curve img-explore-stretch">
                 </div>
 
                 <div class="workout-menu-desc">
@@ -69,9 +75,9 @@ $conn = OpenCon();
             <div class="workout-menu-box">
                 <div class="workout-menu-img">
 				
-				         <?php $result = mysqli_query($conn,"SELECT user_image FROM user_workouts WHERE user_id=1"); ?>
-						 <?php $row = mysqli_fetch_array($result) ?>
-						 <img src=<?php echo $row["user_image"]?> alt="Random1" class="img-responsive img-curve">
+				    <?php $result = mysqli_query($conn,"SELECT user_image FROM user_workouts WHERE user_id=1"); ?>
+					<?php $row = mysqli_fetch_array($result) ?>
+					<img src=data:image/gif;base64,<?php echo $row["user_image"]?> alt="Random1" class="img-responsive img-curve img-explore-stretch">
                 </div>
                 <div class="workout-menu-desc">
 				

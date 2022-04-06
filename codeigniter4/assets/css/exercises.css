@@ -11,6 +11,8 @@
 .workout-menu-img{
     width: 16.5%;
     float: left;
+	max-width: 19%;
+	max-height: 19%;
 }
 
 .workout-menu-desc{

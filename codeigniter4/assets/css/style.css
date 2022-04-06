@@ -41,6 +41,12 @@
     border-radius: 15px;
 }
 
+.img-explore-stretch{
+    object-fit: cover;
+	width: 150px;
+    height: 150px;
+}
+
 .text-right{
     text-align: right;
 }
