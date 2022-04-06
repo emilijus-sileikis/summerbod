@@ -1,6 +1,9 @@
 <?php include('partials/menu.php'); ?>
 <?php include('partials/sidenavmenu.php'); ?>
-
+<?php
+include 'db_connnection.php';
+$conn = OpenCon();
+?>
 <div class="container">
     <h2 style="color: black; margin-left: 20%; margin-top:10%" class="text-center">Calves Exercises</h2>  <!-- Input muscle group -->
     <div class="workout-menu-box">
@@ -55,3 +58,6 @@
 
 <!-- Workouts section end -->
     <?php include('partials/footer.php'); ?>
+<?php
+	CloseCon($conn);
+?>
