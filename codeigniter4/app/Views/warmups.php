@@ -5,7 +5,7 @@
 <div class="container">
     <h2 style="color: black; margin-left: 20%; margin-top:10%" class="text-center">Warm-ups</h2>  <!-- Input muscle group -->
 
-<h3 class="workout-text"> Why are they important? </h3>
+<h3 class="workout-text"> Why are they important? </h3> <p>.</p>
 <p class="workout-text">It is very important to perform a proper warm-up before any type of physical activity. 
 The purpose of warming-up is to prevent injury by increasing the body’s core and muscle temperature. 
 Warm muscles increase the rate of energy production which increases reflexes and lowers the time it takes to contract a muscle. 
@@ -16,7 +16,7 @@ only plan to workout a few muscle groups. </p>
 Summerbod provides a neat list of exercises below, so to start your workout right, pick a few warmups, which directly correlate to the muscles
 you are going to use, but dont forget to include at least one of each group regardless.
 </p>
-<h3 class="workout-text"> Explore warm-ups: </h3>
+<p>.</p><h3 class="workout-text"> Explore warm-ups: </h3><p>.</p>
 
 <div class="workout-menu-box">
 	<div class="workout-menu-img">

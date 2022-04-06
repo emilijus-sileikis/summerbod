@@ -1,5 +1,4 @@
 <?php include('partials/menu.php'); ?>
-<!-- Health section start -->
 <?php include('partials/sidenavmenu.php'); ?>
 
 <div class="container">

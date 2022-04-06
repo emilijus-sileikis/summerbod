@@ -1,8 +1,8 @@
 /* Workouts */
 .workout-menu-box{
     width: 95%;
-	  height: 25%;
-    margin-left: 0%;
+	height: 25%;
+    margin-left: 8%;
     padding: 2%;
     background-color: #e6e6e6;
     border-radius: 15px;
@@ -23,4 +23,8 @@
     font-size: 15px;
     margin: 2% 0;
     color: gray;
+}
+
+.workout-text{
+    margin-left: 8%;
 }
