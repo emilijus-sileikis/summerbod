@@ -16,10 +16,11 @@
     <!-- Nav bar -->
     <section class="nav text-center">
         <div class="menu-container">
+            <a href="<?php echo base_url('public/home'); ?>">
         <?php include('base64/logo.php'); ?>
+        </a>
 			<div class="menu text-right">
                 <ul>
-                        
                     <li><a href="<?php echo base_url('public/sign_in'); ?>">ACCOUNT</a></li>
                     <li><a href="<?php echo base_url('public/home'); ?>">HOME</a></li>
                     <li><a href="<?php echo base_url('public/health'); ?>">HEALTH</a></li>
@@ -75,6 +76,3 @@
 
     <script src="<?php echo base_url('assets/js/search.js'); ?>"></script>
     <!-- Nav bar -->
-
-
-
