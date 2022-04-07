@@ -45,10 +45,14 @@ EMILIJUS SILEIKIS
 30/03/2022 | 3 hours | Creating a filter search bar function.
 31/03/2022 | 6 hours | Functional filter function + input restrictions + clear button + design.
 01/04/2022 | 4 hours | Home page responsive design.
-04/04/2022 |         |.
+02/04/2022 | 4 hours | Trying to do responsive design for all screen sizes (home page).
+03/04/2022 | 3 hours | Sidebar responsive design.
+04/04/2022 | 5 hours | Techniques responsive design.
+05/04/2022 | 4 hours | Finished with setup script, started working on deployment.
+06/04/2022 | 5 hours | Ansible playbook installs apache, git, php.
 
-Total: 109 hours.
-This week: 25 hours.
+Total: 130 hours.
+This week: 21 hours.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 PATRIK VORONOVIC
