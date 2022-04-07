@@ -1,32 +1,139 @@
-/* Workouts */
-.workout-menu-box{
-    width: 95%;
-	height: 25%;
-    margin-left: 8%;
+.workout-header {
+    color: black; 
+    margin-left: 100px;
+    margin-top: 150px;
+}
+
+.workout-menu-box {
+    width: 80%;
+    margin: 2%;
     padding: 2%;
+    margin-left: 280px;
+    float: none;
     background-color: #e6e6e6;
     border-radius: 15px;
 }
 
-.workout-menu-img{
-    width: 16.5%;
+.workout-menu-box a {
+    color: black;
+    width: 100%;
+}
+
+.diff-menu-container {
+    position: relative;
+    width: 80%;
+    margin-left: 200px;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.diff-menu-box {
     float: left;
-	max-width: 19%;
-	max-height: 19%;
+    margin-left: 5%;
+    width: 100px; 
+    height: 50px; 
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 45px;
+    background-color: #f2f2f2;
 }
 
-.workout-menu-desc{
+.workout-menu-img {
+    width: 20%;
+    float: left;
+	max-width: 250px;
+	max-height: 500px;
+}
+
+.workout-menu-desc {
     width: 70%;
-    float: center;
-    margin-left: 20%;
+    float: left;
+    margin-left: 8%;
 }
 
-.workout-detail{
+.workout-detail {
     font-size: 15px;
     margin: 2% 0;
     color: gray;
 }
 
-.workout-text{
+.workout-text {
     margin-left: 8%;
 }
+
+@media only screen and (max-width: 899px) {
+    .workout-header {
+      color: black; 
+      margin-left: 100px;
+      margin-top: 110px;
+      margin-bottom: 50px;
+      }
+  
+      .workout-menu-box {
+          margin-left: 150px;
+      }
+
+      .diff-menu-container {
+        margin-left: 100px;
+        margin-bottom: 30px;
+    }
+  }
+  
+  @media only screen and (min-width: 386px)
+  and (max-width: 624px) {
+      .workout-header {
+          font-size: 30px;
+        }
+  
+      .workout-menu-box {
+          margin-left: 115px;
+      }
+
+      .diff-menu-box {
+        margin-left: 1%;
+        width: 70px; 
+        height: 40px; 
+    }
+
+    .diff-menu-box-image1 {
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAAmUlEQVRoge3XQQ6AIAxE0WK8/5V1iwsNDRYmk//WLvipCSUCWtruA3y4Br9rERFH4UGWOncfYMDbX/OYmM1ECFFDiBpC1NiErLwQUytHFhOZMLRyZNlMhBA1hKghRI1NyMyFWLpyZDGRTsnKkWUzEULUEKKGEDU2If2FKLVyZNlMhBA1hKghRA0hamxC/nizZ9/mJd/bTARqbtcoCme71mfLAAAAAElFTkSuQmCC');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .diff-menu-box h4 {
+        display: none;
+    }
+  }
+  
+  @media only screen and (min-width: 280px)
+  and (max-width: 385px) {
+      .workout-header {
+          font-size: 23px;
+          margin-left: 80px;
+          width: 100%;
+        }
+
+      .workout-menu-box {
+          margin-left: 95px;
+      }
+
+      .diff-menu-box {
+        margin-left: 1%;
+        width: 50px; 
+        height: 40px; 
+    }
+
+    .diff-menu-box-image1 {
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAAmUlEQVRoge3XQQ6AIAxE0WK8/5V1iwsNDRYmk//WLvipCSUCWtruA3y4Br9rERFH4UGWOncfYMDbX/OYmM1ECFFDiBpC1NiErLwQUytHFhOZMLRyZNlMhBA1hKghRI1NyMyFWLpyZDGRTsnKkWUzEULUEKKGEDU2If2FKLVyZNlMhBA1hKghRA0hamxC/nizZ9/mJd/bTARqbtcoCme71mfLAAAAAElFTkSuQmCC');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .diff-menu-box h4 {
+        display: none;
+    }
+  }

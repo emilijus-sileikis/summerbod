@@ -1,19 +1,19 @@
 <?php include('partials/menu.php'); ?>
-<?php include('partials/sidenavmenu.php'); ?>
 <?php
 include 'db_connnection.php';
 $conn = OpenCon();
 ?>
 <link rel="stylesheet" href="<?php echo base_url('assets/css/exercises.css'); ?>">
-<div class="container">
-    <h2 style="color: black; margin-left: 20%; margin-top:10%" class="text-center">Calves Exercises</h2>  <!-- Input muscle group -->
-    <div class="workout-menu-box">
-	<div class="workout-menu-img">
-        <?php $result = mysqli_query($conn,"SELECT user_image FROM user_workouts WHERE user_id=1"); ?>
-		<?php $row = mysqli_fetch_array($result) ?>
-		<img src=data:image/gif;base64,<?php echo $row["user_image"]?> alt="random-menu1" class="img-responsive img-curve">                                <!-- Input photo by id -->
-    </div>
-        <div class="workout-menu-desc">
+<h2 class="text-center workout-header">All Exercises</h2>
+
+<div class="workout-menu-box">
+    <a href="#">
+        <div class="workout-menu-img">
+            <?php $result = mysqli_query($conn,"SELECT user_image FROM user_workouts WHERE user_id=1"); ?>
+		    <?php $row = mysqli_fetch_array($result) ?>
+		    <img src=data:image/gif;base64,<?php echo $row["user_image"]?> alt="random-menu1" class="img-responsive img-curve">
+        </div>
+    <div class="workout-menu-desc">
             <?php $result = mysqli_query($conn,"SELECT user_name FROM user_workouts WHERE user_id=1"); ?>
 			<?php $row = mysqli_fetch_array($result) ?>
             <h3><?php echo $row["user_name"]; ?></h3>                                                                <!-- Input title by id -->
@@ -28,43 +28,43 @@ $conn = OpenCon();
 			<?php $row = mysqli_fetch_array($result) ?>
 			Description: <?php echo $row["user_descr"]; ?></br> </br>
             </p>
-        </div>
-	    <div class="clearfix"></div>
     </div>
+        <div class="clearfix"></div>
+    </a>
 </div>
 
-<div class="container">
-    <div class="workout-menu-box">
-	<div class="workout-menu-img">
-        <?php include('partials/base64/random-menu.php'); ?>                                  <!-- Input photo by id -->
-    </div>
-        <div class="workout-menu-desc">
-            <h3>Yuh</h3>                                                                 <!-- Input title by id -->
-            <p class="workout-detail">
-            Muscle group: Calves </br> </br>                                              <!-- Input details by id -->
-		    Category: Home workout </br> </br>
-		    Difficulty: Begginer 
-            </p>
+<div class="workout-menu-box">
+    <a href="#">
+        <div class="workout-menu-img">
+            <?php include('partials/base64/random-menu.php'); ?>
         </div>
-	    <div class="clearfix"></div>
+    <div class="workout-menu-desc">
+        <h3>Whatever</h3>
+            <p class="workout-detail">
+                Muscle group: Biceps </br> </br>
+				Category: Home workout </br> </br>
+				Difficulty: Begginer 
+            </p>
     </div>
+        <div class="clearfix"></div>
+    </a>
 </div>
 
-<div class="container">
-    <div class="workout-menu-box">
-	<div class="workout-menu-img">
-        <?php include('partials/base64/random-menu.php'); ?>                                  <!-- Input photo by id -->
-    </div>
-        <div class="workout-menu-desc">
-            <h3>Bruh</h3>                                                                 <!-- Input title by id -->
-            <p class="workout-detail">
-            Muscle group: Calves </br> </br>                                              <!-- Input details by id -->
-		    Category: Home workout </br> </br>
-		    Difficulty: Begginer 
-            </p>
+<div class="workout-menu-box">
+    <a href="#">
+        <div class="workout-menu-img">
+            <?php include('partials/base64/random-menu.php'); ?>
         </div>
-	    <div class="clearfix"></div>
+    <div class="workout-menu-desc">
+        <h3>Whatever</h3>
+            <p class="workout-detail">
+                Muscle group: Quads </br> </br>
+				Category: Home workout </br> </br>
+				Difficulty: Begginer 
+            </p>
     </div>
+        <div class="clearfix"></div>
+    </a>
 </div>
 
 <!-- Workouts section end -->

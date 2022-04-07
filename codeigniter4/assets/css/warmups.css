@@ -12,7 +12,7 @@
     text-align-last: left;
 }
 
-.warmup-menu-box{
+.warmup-menu-box {
     width: 70%;
     margin: 2%;
     padding: 2%;
@@ -27,20 +27,20 @@
     width: 100%;
 }
 
-.warmup-menu-img{
+.warmup-menu-img {
     width: 20%;
     float: left;
 	max-width: 250px;
 	max-height: 500px;
 }
 
-.warmup-menu-desc{
+.warmup-menu-desc {
     width: 70%;
     float: left;
     margin-left: 8%;
 }
 
-.warmup-detail{
+.warmup-detail {
     font-size: 15px;
     margin: 2% 0;
     color: gray;

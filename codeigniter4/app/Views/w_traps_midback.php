@@ -1,57 +1,56 @@
 <?php include('partials/menu.php'); ?>
 <!-- Health section start -->
-<?php include('partials/sidenavmenu.php'); ?>
-
-<div class="container">
-    <h2 style="color: black; margin-left: 20%; margin-top:10%" class="text-center">Traps mid-back Exercises</h2>  <!-- Input muscle group -->
-    <div class="workout-menu-box">
-	<div class="workout-menu-img">
-        <?php include('partials/base64/random-menu.php'); ?>                                  <!-- Input photo by id -->
-    </div>
-        <div class="workout-menu-desc">
-            <h3>Traps mid-back</h3>                                                                 <!-- Input title by id -->
-            <p class="workout-detail">
-            Muscle group: Traps mid-back </br> </br>                                              <!-- Input details by id -->
-		    Category: Home workout </br> </br>
-		    Difficulty: Begginer 
-            </p>
+<link rel="stylesheet" href="<?php echo base_url('assets/css/exercises.css'); ?>">
+<h2 class="text-center workout-header">Traps mid-back Exercises</h2>
+<div class="workout-menu-box">
+    <a href="#">
+        <div class="workout-menu-img">
+            <?php include('partials/base64/random-menu.php'); ?>
         </div>
-	    <div class="clearfix"></div>
+    <div class="workout-menu-desc">
+        <h3>Whatever</h3>
+            <p class="workout-detail">
+                Muscle group: Abdominals </br> </br>
+				Category: Home workout </br> </br>
+				Difficulty: Begginer 
+            </p>
     </div>
+        <div class="clearfix"></div>
+    </a>
 </div>
 
-<div class="container">
-    <div class="workout-menu-box">
-	<div class="workout-menu-img">
-        <?php include('partials/base64/random-menu.php'); ?>                                  <!-- Input photo by id -->
-    </div>
-        <div class="workout-menu-desc">
-            <h3>Yuh</h3>                                                                 <!-- Input title by id -->
-            <p class="workout-detail">
-            Muscle group: Traps mid-back </br> </br>                                              <!-- Input details by id -->
-		    Category: Home workout </br> </br>
-		    Difficulty: Begginer 
-            </p>
+<div class="workout-menu-box">
+    <a href="#">
+        <div class="workout-menu-img">
+            <?php include('partials/base64/random-menu.php'); ?>
         </div>
-	    <div class="clearfix"></div>
+    <div class="workout-menu-desc">
+        <h3>Whatever</h3>
+            <p class="workout-detail">
+                Muscle group: Biceps </br> </br>
+				Category: Home workout </br> </br>
+				Difficulty: Begginer 
+            </p>
     </div>
+        <div class="clearfix"></div>
+    </a>
 </div>
 
-<div class="container">
-    <div class="workout-menu-box">
-	<div class="workout-menu-img">
-        <?php include('partials/base64/random-menu.php'); ?>                                  <!-- Input photo by id -->
-    </div>
-        <div class="workout-menu-desc">
-            <h3>Bruh</h3>                                                                 <!-- Input title by id -->
-            <p class="workout-detail">
-            Muscle group: Traps mid-back </br> </br>                                              <!-- Input details by id -->
-		    Category: Home workout </br> </br>
-		    Difficulty: Begginer 
-            </p>
+<div class="workout-menu-box">
+    <a href="#">
+        <div class="workout-menu-img">
+            <?php include('partials/base64/random-menu.php'); ?>
         </div>
-	    <div class="clearfix"></div>
+    <div class="workout-menu-desc">
+        <h3>Whatever</h3>
+            <p class="workout-detail">
+                Muscle group: Quads </br> </br>
+				Category: Home workout </br> </br>
+				Difficulty: Begginer 
+            </p>
     </div>
+        <div class="clearfix"></div>
+    </a>
 </div>
 
 <!-- Workouts section end -->
