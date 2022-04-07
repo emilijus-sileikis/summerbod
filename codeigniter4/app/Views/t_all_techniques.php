@@ -1,7 +1,6 @@
 <?php include('partials/menu.php'); ?>
 <!-- Health section start -->
-<link rel="stylesheet" href="<?php echo base_url('assets/css/workouts.css'); ?>">
-<link rel="stylesheet" href="<?php echo base_url('assets/css/explore.css'); ?>">
+<link rel="stylesheet" href="<?php echo base_url('assets/css/techniques.css'); ?>">
 <div class="container">
 
     <h2 class="text-center header">Exercise Techniques</h2>  <!-- Input muscle group -->
