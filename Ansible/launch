@@ -8,14 +8,6 @@ sudo mkdir -p /etc/ansible
 echo '[sudo_become_plugin]' | sudo tee -a /etc/ansible/ansible.conf > /dev/null
 echo 'flags = -H -S' | sudo tee -a /etc/ansible/ansible.conf > /dev/null
 
-##########################
-## Pull the project repo##
-##########################
-
-cd
-sudo rm -rf /var/www/summerbod
-sudo git clone -b dev https://git.mif.vu.lt/emsi7726/wiket.git
-
 ######################
 ## Launch Create VM ##
 ######################

@@ -34,7 +34,7 @@ echo "IP: $CSSH_PRIP"
 echo "Port: $CSSH_PORT"
 
 echo "[webserver]" > hosts
-echo "$CUSER@$CSSH_PRIP ansible_port=$CSSH_PORT" >> hosts
+echo "root@$CSSH_PRIP ansible_port=$CSSH_PORT" >> hosts
 
 sudo cp hosts /etc/ansible/hosts
 
@@ -42,7 +42,4 @@ sudo cp hosts /etc/ansible/hosts
 ## Launch Conn Check ##
 #######################
 
-echo "Checking if the server is available..."
-ansible -m ping webserver > /dev/null
-sleep 5
-ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook Ansible/Ansible_main
+ansible-playbook Ansible/Ansible_main
