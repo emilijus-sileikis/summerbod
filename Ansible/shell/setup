@@ -1,7 +1,8 @@
 #!/bin/sh
 cd
 cd wiket/
-sudo mv codeigniter4 /var/www/summerbod
+sudo mv codeigniter4 summerbod
+sudo mv summerbod /var/www/summerbod
 sudo chmod 777 -R /var/www/summerbod/writable
 cd
 sudo rm -r wiket
