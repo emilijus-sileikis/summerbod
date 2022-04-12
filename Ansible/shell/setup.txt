@@ -1,0 +1,11 @@
+#!/bin/sh
+cd
+cd wiket/
+sudo mv codeigniter4 /var/www/summerbod
+sudo chmod 777 -R /var/www/summerbod/writable
+cd
+sudo rm -r wiket
+sudo a2enmod rewrite
+sudo systemctl restart apache2
+sleep 5s
+echo "Try and refresh the page!"
