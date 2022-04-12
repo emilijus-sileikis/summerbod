@@ -1,0 +1,7 @@
+---
+mysql_root_password: "$pblsummerbod"
+app_user: "admin"
+http_host: "summerbod"
+http_conf: "summerbod.conf"
+http_port: "80"
+disable_default: true
