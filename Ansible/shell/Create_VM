@@ -34,9 +34,15 @@ echo "IP: $CSSH_PRIP"
 echo "Port: $CSSH_PORT"
 
 echo "[webserver]" > hosts
-echo "root@$CSSH_PRIP ansible_port=$CSSH_PORT" >> hosts
+echo "$CUSER@$CSSH_PRIP ansible_port=$CSSH_PORT" >> hosts
 
 sudo cp hosts /etc/ansible/hosts
+
+###################################
+## Copy Dir to the remote server ##
+###################################
+cd
+scp -r -P $CSSH_PORT wiket/ $CUSER@193.219.91.103:~/wiket
 
 #######################
 ## Launch Conn Check ##

@@ -7,11 +7,6 @@
   tasks:
     - name: Server setup
       script: shell/Server_setup
-	  
-	- name: Copy Git Repo to the server
-      copy:
-        src: ~/wiket/
-        dest: ~/wiket
 
     - name: Install prerequisites
       apt: name={{ item }} update_cache=yes state=latest force_apt_get=yes
