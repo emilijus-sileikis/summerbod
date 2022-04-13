@@ -23,7 +23,14 @@
                 <ul>
                     <li><a href="<?php echo base_url('public/sign_in'); ?>">ACCOUNT</a></li>
                     <li><a href="<?php echo base_url('public/home'); ?>">HOME</a></li>
-                    <li><a href="<?php echo base_url('public/health'); ?>">HEALTH</a></li>
+					<li class="dropdown">
+                    <a href="<?php echo base_url('public/health'); ?>" class="dropbtn">HEALTH</a>
+                        <div class="dropdown-content">
+                            <a href="<?php echo base_url('public/bmi_calc'); ?>">BMI calculator</a>
+                            <a href="<?php echo base_url('public/injury_prevention'); ?>">Injury Prevention</a>
+                            <a href="<?php echo base_url('public/injury_treatment'); ?>">Injury Treatment</a>
+                        </div>
+                    </li>
                     <li class="dropdown">
                     <a href="<?php echo base_url('public/Workouts/w_all_exercises'); ?>" class="dropbtn">WORKOUTS</a>
                         <div class="dropdown-content">
