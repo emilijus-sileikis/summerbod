@@ -73,7 +73,7 @@
       command: mv /var/www/html/phpmyadmin/ /usr/share/phpmyadmin
 
     - name: Move project files to Apache
-	  shell: (shopt -s dotglob; mv wiket/codeigniter4/* /var/www/summerbod)
+      shell: (shopt -s dotglob; mv wiket/codeigniter4/* /var/www/summerbod)
 
     - name: Change permissions for writable folder
       command: chmod 777 -R /var/www/summerbod/writable
