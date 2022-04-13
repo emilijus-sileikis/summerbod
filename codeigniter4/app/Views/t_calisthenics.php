@@ -9,23 +9,58 @@ $conn = OpenCon();
 
 <div class="diff-menu-container">
  <!-- sorting and stuff, need like 3 more of these to the right -->
-	<a style="color:black;">
-		<div class="diff-menu-box diff-menu-box-image1">
-			<h4>Sort Difficulty</h4>
-			<div class="clearfix"></div>
-		</div>
-	</a>
-
-	<a style="color:black;">
-		<div class="diff-menu-box">
-			<h4>Filter Difficulty</h4>
-			<div class="clearfix"></div>
-		</div>
-	</a>
+	<form method="post">
+		<a class="dropdown"> 
+			<button class="dropbtn diff-menu-box diff-menu-box-image1" style="color=black;">Sort by</button>
+				<div class="dropdown-content">
+                    <button type="submit" name="but_sort_1" class="dropbtn diff-menu-box diff-menu-box-image1" >Difficulty ↑</button>
+                    <button type="submit" name="but_sort_2" class="dropbtn diff-menu-box diff-menu-box-image1" >Difficulty ↓</button>
+                    <button type="submit" name="but_sort_3" class="dropbtn diff-menu-box diff-menu-box-image1" >Name ↑</button>
+					<button type="submit" name="but_sort_4" class="dropbtn diff-menu-box diff-menu-box-image1" >Name ↓</button>
+                </div>
+		</a>
+          
+        <a class="dropdown"> 
+			<button class="dropbtn diff-menu-box diff-menu-box-image1" style="color=black;">Filter by Difficulty</button>
+				<div class="dropdown-content">
+                    <button type="submit" name="but_filter_1" class="dropbtn diff-menu-box diff-menu-box-image1" >Beginner</button>
+                    <button type="submit" name="but_filter_2" class="dropbtn diff-menu-box diff-menu-box-image1" >Intermediate</button>
+                    <button type="submit" name="but_filter_3" class="dropbtn diff-menu-box diff-menu-box-image1" >Hard</button>
+                </div>
+		</a>
+				
+		<button type="submit" name="but_clear" class="button diff-menu-box diff-menu-box-image1" value="Clear filters">Clear Filters</button>
+    </form>
 </div>
 
 <?php 
-	$query = "SELECT * FROM user_workouts";
+	if(isset($_POST['but_sort_1'])) {
+        $query = "SELECT * FROM user_workouts ORDER BY user_difficulty ASC";
+    }
+	else if(isset($_POST['but_sort_2'])) {
+        $query = "SELECT * FROM user_workouts ORDER BY user_difficulty DESC";
+    }
+	else if(isset($_POST['but_sort_3'])) {
+        $query = "SELECT * FROM user_workouts ORDER BY user_name ASC";
+    }
+	else if(isset($_POST['but_sort_4'])) {
+        $query = "SELECT * FROM user_workouts ORDER BY user_name DESC";
+    }
+    else if(isset($_POST['but_filter_1'])) {
+        $query = "SELECT * FROM user_workouts WHERE user_difficulty='Beginner'";
+    }
+	else if(isset($_POST['but_filter_2'])) {
+        $query = "SELECT * FROM user_workouts WHERE user_difficulty='Intermediate'";
+    }
+	else if(isset($_POST['but_filter_3'])) {
+        $query = "SELECT * FROM user_workouts WHERE user_difficulty='Hard'";
+    }
+	else if(isset($_POST['but_clear'])) {
+        $query = "SELECT * FROM user_workouts";
+    }
+	else{
+		$query = "SELECT * FROM user_workouts";
+	}
     $result = $conn->query($query);
 	if ($result->num_rows > 0) {
 		/* fetch associative array */
