@@ -22,8 +22,8 @@ CVMREZ=$(onetemplate instantiate $TID --name SummerBod --cpu $CPU  --vcpu $VCPU 
 CVMID=$(echo $CVMREZ |cut -d ' ' -f 3)
 echo $CVMID
 
-echo "Waiting for VMs to RUN: 30 sec."
-sleep 30
+echo "Waiting for VMs to RUN: 40 sec."
+sleep 40
 
 onevm show $CVMID --user $CUSER --password $CPASS --endpoint $CENDPOINT >$CVMID.txt
 CSSH_CON=$(cat $CVMID.txt | grep 'CONNECT_INFO1' | cut -d '=' -f 2 | tr -d '"')
@@ -47,5 +47,5 @@ scp -r -P $CSSH_PORT wiket/ $CUSER@193.219.91.103:~/wiket
 #######################
 ## Launch Conn Check ##
 #######################
-
-ansible-playbook Ansible/Ansible_main
+cd
+ansible-playbook wiket/Ansible/Ansible_main

@@ -1,5 +1,7 @@
 ---
-mysql_root_password: "$pblsummerbod"
+phpmyadmin_user: "admin"
+phpmyadmin_password: "admin"
+mysql_root_password: "test"
 app_user: "admin"
 http_host: "summerbod"
 http_conf: "summerbod.conf"

@@ -1,3 +1,0 @@
-#!/bin/sh
-cd
-sudo git clone -b dev https://git.mif.vu.lt/emsi7726/wiket.git

@@ -4,18 +4,17 @@
   vars_files:
     - vars/default.yml
 
+  roles:
+    - { role: robertdebock.phpmyadmin }
+
   tasks:
     - name: Server setup
       script: shell/Server_setup
 
-    - name: Install prerequisites
-      apt: name={{ item }} update_cache=yes state=latest force_apt_get=yes
-      loop: [ 'aptitude', 'git' ]
-
   #Apache Configuration
     - name: Install LAMP Packages
       apt: name={{ item }} update_cache=yes state=latest
-      loop: [ 'apache2', 'default-mysql-server', 'python3-pymysql', 'php', 'php-mysql', 'libapache2-mod-php', 'php-intl', 'php-xml', 'php-curl', 'php-mbstring', 'php-zip', 'php-gd' ]
+      loop: [ 'apache2', 'default-mysql-server', 'python3-pymysql', 'php', 'php-mysql', 'libapache2-mod-php', 'php-intl', 'php-xml', 'php-curl', 'php-mbstring' ]
 
     - name: Create document root
       file:
@@ -61,16 +60,38 @@
         login_user: root
         login_password: "{{ mysql_root_password }}"
 
-    - name: Setup phpMyAdmin
-      shell: shell/PMA_setup
+    - name: Creates an admin DB user
+      mysql_user:
+        login_user: root
+        login_password: "{{ mysql_root_password }}"
+        name: "{{ phpmyadmin_user }}"
+        password: "{{ phpmyadmin_password }}"
+        priv: '*.*:ALL'
+        state: present
+
+    - name: Move PMA to share dir
+      command: mv /var/www/html/phpmyadmin/ /usr/share/phpmyadmin
+
+    - name: Move project files to Apache
+      shell: mv wiket/codeigniter4/* /var/www/summerbod
+
+    - name: Change permissions for writable folder
+      command: chmod 777 -R /var/www/summerbod/writable
+
+    - name: Put htaccess file for PMA
+      shell: mv wiket/Ansible/files/.htaccess /usr/share/phpmyadmin
+
+    - name: Put PMA config files
+      shell: mv wiket/Ansible/files/phpmyadmin.conf /etc/apache2/conf-available
+
+    - name: Enable PMA conf
+      command: a2enconf phpmyadmin.conf
+
+    - name: Enable rewrite
+      command: a2enmod rewrite
 
   handlers:
     - name: Reload Apache
       service:
         name: apache2
         state: reloaded
-
-    - name: Restart Apache
-      service:
-        name: apache2
-        state: restarted
