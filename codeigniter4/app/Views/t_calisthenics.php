@@ -10,26 +10,26 @@ $conn = OpenCon();
 <div class="diff-menu-container">
  <!-- sorting and stuff, need like 3 more of these to the right -->
 	<form method="post">
-		<a class="dropdown"> 
-			<button class="dropbtn diff-menu-box diff-menu-box-image1" style="color=black;">Sort by</button>
-				<div class="dropdown-content">
-                    <button type="submit" name="but_sort_1" class="dropbtn diff-menu-box diff-menu-box-image1" >Difficulty ↑</button>
-                    <button type="submit" name="but_sort_2" class="dropbtn diff-menu-box diff-menu-box-image1" >Difficulty ↓</button>
-                    <button type="submit" name="but_sort_3" class="dropbtn diff-menu-box diff-menu-box-image1" >Name ↑</button>
-					<button type="submit" name="but_sort_4" class="dropbtn diff-menu-box diff-menu-box-image1" >Name ↓</button>
+		<a class="dropdownex"> 
+			<button class="dropbtnex diff-menu-box" style="color=black;">Sort by</button>
+				<div class="dropdownex-content">
+                    <li> <button type="submit" name="but_sort_1" class="diff-menu-box" >Difficulty ↑</button> </li>
+                    <li> <button type="submit" name="but_sort_2" class="diff-menu-box" >Difficulty ↓</button> </li>
+                    <li> <button type="submit" name="but_sort_3" class="diff-menu-box" >Name ↑</button> </li>
+					<li> <button type="submit" name="but_sort_4" class="diff-menu-box" >Name ↓</button> </li>
                 </div>
 		</a>
           
-        <a class="dropdown"> 
-			<button class="dropbtn diff-menu-box diff-menu-box-image1" style="color=black;">Filter by Difficulty</button>
-				<div class="dropdown-content">
-                    <button type="submit" name="but_filter_1" class="dropbtn diff-menu-box diff-menu-box-image1" >Beginner</button>
-                    <button type="submit" name="but_filter_2" class="dropbtn diff-menu-box diff-menu-box-image1" >Intermediate</button>
-                    <button type="submit" name="but_filter_3" class="dropbtn diff-menu-box diff-menu-box-image1" >Hard</button>
+        <a class="dropdownex"> 
+			<button class="dropbtnex diff-menu-box" style="color=black;">Filter by Difficulty</button>
+				<div class="dropdownex-content">
+                    <li> <button type="submit" name="but_filter_1" class="diff-menu-box" >Beginner</button> </li>
+                    <li> <button type="submit" name="but_filter_2" class="diff-menu-box" >Intermediate</button> </li>
+                    <li> <button type="submit" name="but_filter_3" class="diff-menu-box" >Hard</button> </li>
                 </div>
 		</a>
 				
-		<button type="submit" name="but_clear" class="button diff-menu-box diff-menu-box-image1" value="Clear filters">Clear Filters</button>
+		<button type="submit" name="but_clear" class="button diff-menu-box" value="Clear filters">Clear Filters</button>
     </form>
 </div>
 
