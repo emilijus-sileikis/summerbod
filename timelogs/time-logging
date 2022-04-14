@@ -52,9 +52,16 @@ EMILIJUS SILEIKIS
 04/04/2022 | 5 hours | Techniques responsive design.
 05/04/2022 | 4 hours | Finished with setup script, started working on deployment.
 06/04/2022 | 5 hours | Ansible playbook installs apache, git, php.
+07/04/2022 | 4 hours | Warmups responsive design.
+08/04/2022 | 3 hours | Trying to connect to database on apache.
+11/04/2022 | 6 hours | Ansible script to install LAMP packages.
+12/04/2022 | 3 hours | Trying to automatically install mysql.
+13/04/2022 | 5 hours | Trying to connect to database with our data.
+13/04/2022 | 2 hours | Testing initial ansible script with Nazar.
+14/04/2022 | 6 hours | Optimizing and refactoring auto deployment script. Fixing health page cdd issue told by Nazar.
 
-Total: 130 hours.
-This week: 21 hours.
+Total: 159 hours.
+This week: 29 hours.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 PATRIK VORONOVIC
