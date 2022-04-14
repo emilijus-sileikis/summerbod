@@ -44,6 +44,27 @@
     color: gray;
 }
 
+.diffe-menu-container {
+    position: relative;
+    width: 80%;
+    margin-left: 200px;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.health-menu-box{
+    width: 25%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.solid {
+	border-style: solid;
+}
+
 /* CSS for all screen sizes */
 @media only screen and (min-width: 2470px)
 and (max-width: 2560px) {
