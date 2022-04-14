@@ -29,13 +29,16 @@ onevm show $CVMID --user $CUSER --password $CPASS --endpoint $CENDPOINT >$CVMID.
 CSSH_CON=$(cat $CVMID.txt | grep 'CONNECT_INFO1' | cut -d '=' -f 2 | tr -d '"')
 CSSH_PRIP=$(cat $CVMID.txt | grep 'PUBLIC_IP' | cut -d '=' -f 2 | tr -d '"')
 CSSH_PORT=$(cat $CVMID.txt | grep 'TCP_PORT_FORWARDING' | cut -d '=' -f 2 | tr -d '"' | cut -d ':' -f1)
+PORT=$(cat $CVMID.txt | grep 'TCP_PORT_FORWARDING' | cut -d '=' -f 2 | tr -d '"' | cut -d ':' -f 2 | cut -d ' ' -f 2 )
+
 echo "Connection string: $CSSH_CON"
 echo "IP: $CSSH_PRIP"
 echo "Port: $CSSH_PORT"
 
 echo "[webserver]" > hosts
 echo "$CUSER@$CSSH_PRIP ansible_port=$CSSH_PORT" >> hosts
-echo "url: $CSSH_PRIP:$CSSH_PORT" >> wiket/Ansible/vars/default.yml
+echo "url: $CSSH_PRIP:$PORT" | sudo tee -a wiket/Ansible/vars/default.yml
+sleep 1
 
 sudo cp hosts /etc/ansible/hosts
 
@@ -43,7 +46,9 @@ sudo cp hosts /etc/ansible/hosts
 ## Copy Dir to the remote server ##
 ###################################
 cd
-scp -rp $CSSH_PORT wiket/. $CUSER@193.219.91.103:~/wiket
+ssh -f -p $CSSH_PORT $CUSER@193.219.91.103 "mkdir -p ~/wiket"
+
+scp -rp -P $CSSH_PORT wiket/* $CUSER@193.219.91.103:~/wiket/
 
 #######################
 ## Launch Conn Check ##

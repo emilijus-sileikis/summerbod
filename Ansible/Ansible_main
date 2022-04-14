@@ -81,6 +81,9 @@
     - name: Put htaccess file for PMA
       shell: mv wiket/Ansible/files/.htaccess /usr/share/phpmyadmin
 
+    - name: Put htaccess file for summerbod
+      shell: mv wiket/codeigniter4/.htaccess /var/www/summerbod
+
     - name: Change the password for the user
       command: htpasswd -cb /usr/share/phpmyadmin/.htpasswd admin admin
 
@@ -88,7 +91,7 @@
       shell: mv wiket/Ansible/files/phpmyadmin.conf /etc/apache2/conf-available
 
     - name: Change the URL in App.php
-      shell: awk '{ if (NR == 27) printf "    public $baseURL = \x27http://{{ url }}\x27;"; else print $0 }' /var/www/summerbod/app/Config/App.php > App.php; mv -f App.php /var/www/summerbod/app/Config/App.php
+      shell: awk '{ if (NR == 26) printf "    public $baseURL = \x27http://{{ url }}\x27;"; else print $0 }' /var/www/summerbod/app/Config/App.php > App.php; mv -f App.php /var/www/summerbod/app/Config/App.php
 
     - name: Enable PMA conf
       command: a2enconf phpmyadmin.conf
