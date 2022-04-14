@@ -11,8 +11,9 @@ NAZAR MAMEDOV
 02/04/2022 | 3 hours | Integrating and using phpmyadmin MySQL database to the website.
 06/04/2022 | 8 hours | Improving database, adding entries, simplifying data flow and converting from image base 64 to gif base64 for workouts.
 07/04/2022 | 8 hours | Recreating health branch into dev with new design choices, merging login and signup systems.
+14/04/2022 | 8 hours | Automatization of exercise displaying from database, added sorting and filtering functionalities, additional fixes to health section.
 
-Total: 65 hours.
+Total: 73 hours.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 EMILIJUS SILEIKIS
