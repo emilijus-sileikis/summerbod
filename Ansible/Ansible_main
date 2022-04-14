@@ -73,7 +73,7 @@
       command: mv /var/www/html/phpmyadmin/ /usr/share/phpmyadmin
 
     - name: Move project files to Apache
-      shell: (shopt -s dotglob; mv wiket/codeigniter4/* /var/www/summerbod)
+      shell: mv wiket/codeigniter4/* /var/www/summerbod
 
     - name: Change permissions for writable folder
       command: chmod 777 -R /var/www/summerbod/writable
@@ -81,14 +81,21 @@
     - name: Put htaccess file for PMA
       shell: mv wiket/Ansible/files/.htaccess /usr/share/phpmyadmin
 
+    - name: Change the password for the user
+      command: htpasswd -cb /usr/share/phpmyadmin/.htpasswd admin admin
+
     - name: Put PMA config files
       shell: mv wiket/Ansible/files/phpmyadmin.conf /etc/apache2/conf-available
+
+    - name: Change the URL in App.php
+      shell: awk '{ if (NR == 27) printf "    public $baseURL = \x27http://{{ url }}\x27;"; else print $0 }' /var/www/summerbod/app/Config/App.php > App.php; mv -f App.php /var/www/summerbod/app/Config/App.php
 
     - name: Enable PMA conf
       command: a2enconf phpmyadmin.conf
 
     - name: Enable rewrite
       command: a2enmod rewrite
+      notify: Reload Apache
 
   handlers:
     - name: Reload Apache
