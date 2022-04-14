@@ -34,7 +34,7 @@ These exercises are perfomed by lifting a barbell loaded with weight plates, whi
 
 <div class="tech-menu">
 <ul>
-        <li class="tech-box">
+        <li class="tech-box solid">
 
         <a href="<?php echo base_url('public/Techniques/t_calisthenics'); ?>">
                 <div class="tech-desc">
@@ -51,7 +51,7 @@ These exercises are perfomed by lifting a barbell loaded with weight plates, whi
     </ul>
 
 <ul>
-        <li class="tech-box">
+        <li class="tech-box solid">
 
         <a href="<?php echo base_url('public/Techniques/t_powerlifting'); ?>">
                 <div class="tech-desc">

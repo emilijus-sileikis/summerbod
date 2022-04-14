@@ -22,12 +22,12 @@ can have significant health effects, so while BMI is an imperfect measure of hea
 </p>
 <div class="tech-menu">
 <ul>
-    <li class="tech-box" style="float: left; margin-left: 31%;">
+    <li class="tech-box solid" style="float: left; margin-left: 31%;">
         <a href="<?php echo base_url('public/bmi_calc'); ?>">
             <div class="tech-desc">
-                <p>BMI calculator</p>
+                <p>⠀⠀⠀BMI calculator</p>
                 <p class="tech-detail">
-                    Calculate body mass index.
+                    ⠀⠀⠀⠀⠀Calculate body mass index.
                 </p>
             </div>
 			<div class="clearfix"></div>
@@ -47,7 +47,7 @@ for most common areas of injury for quicker healing. However remember to always 
 </p>
 <div class="tech-menu">
 <ul>
-    <li class="tech-box">
+    <li class="tech-box solid">
         <a href="<?php echo base_url('public/injury_prevention'); ?>">
             <div class="tech-desc">
                 <p>Learn to treat</p>
@@ -62,7 +62,7 @@ for most common areas of injury for quicker healing. However remember to always 
 </div>
 <div class="tech-menu">
 <ul>
-    <li class="tech-box">
+    <li class="tech-box solid">
         <a href="<?php echo base_url('public/injury_treatment'); ?>">
             <div class="tech-desc">
                 <p>Learn to prevent</p>
