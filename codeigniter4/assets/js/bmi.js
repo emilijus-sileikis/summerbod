@@ -26,6 +26,14 @@ function clearBMIInfo(){
     document.getElementById('bmi-gender').innerHTML = "";
 }
 
+// check input chars
+function isNumberKey(evt){
+    var charCode = (evt.which) ? evt.which : evt.keyCode
+    if (charCode > 31 && (charCode != 46 &&(charCode < 48 || charCode > 57)))
+        return false;
+    return true;
+}
+
 // bmi calculation form toggle
 BMI_HEADS.forEach(bmiHead => {
     bmiHead.addEventListener('click', () => {
@@ -70,6 +78,28 @@ function getUserInput(){
         gender = document.querySelector('#bmi-si input[name = "gender"]:checked').value,
         heightCm = document.getElementById('cm').value,
         weightKg = document.getElementById('kg').value;
+
+        if(age > 120 || age < 1){
+            document.querySelector('.alert-error-age').style.display = "block";
+            setTimeout(() => {
+            document.querySelector('.alert-error-age').style.display = "none";
+            }, 1000);
+            return;
+        }
+        if(heightCm > 250 || heightCm < 40){
+            document.querySelector('.alert-error-height').style.display = "block";
+            setTimeout(() => {
+            document.querySelector('.alert-error-height').style.display = "none";
+            }, 1000);
+            return;
+        }
+        if(weightKg > 600 || weightKg < 5){
+            document.querySelector('.alert-error-weight').style.display = "block";
+            setTimeout(() => {
+            document.querySelector('.alert-error-weight').style.display = "none";
+            }, 1000);
+            return;
+        }
         
         status = checkInputStatus([age, heightCm, weightKg]);
 
@@ -90,6 +120,28 @@ function getUserInput(){
         heightFeet = document.getElementById('feet').value,
         heightInches = document.getElementById('inches').value,
         weightPounds = document.getElementById('pounds').value;
+
+        if(age > 120 || age < 1){
+            document.querySelector('.alert-error-age').style.display = "block";
+            setTimeout(() => {
+            document.querySelector('.alert-error-age').style.display = "none";
+            }, 1000);
+            return;
+        }
+        if(heightFeet > 8 || heightFeet < 0 || heightInches > 11 || heightInches < 1){
+            document.querySelector('.alert-error-height').style.display = "block";
+            setTimeout(() => {
+            document.querySelector('.alert-error-height').style.display = "none";
+            }, 1000);
+            return;
+        }
+        if(weightPounds > 1322 || weightPounds < 11){
+            document.querySelector('.alert-error-weight').style.display = "block";
+            setTimeout(() => {
+            document.querySelector('.alert-error-weight').style.display = "none";
+            }, 1000);
+            return;
+        }
         
         status = checkInputStatus([age, heightFeet, heightInches, weightPounds]);
 
@@ -130,9 +182,10 @@ function calculateBMI(values){
 
 // print BMI result information
 function printBMIResult(BMIInfo){
+    
     document.getElementById('bmi-value').innerHTML = `${BMIInfo.BMI} kg/m<sup>2</sup>`;
 	
-	if(BMIInfo.age <= 20 && BMIInfo.gender == 'male'){
+	if((BMIInfo.age >= 1 && BMIInfo.age <= 20) && BMIInfo.gender == 'male'){
 		if(BMIInfo.BMI < 19.1){
         bmiCategory = "Underweight";
     } else if(BMIInfo.BMI >= 19.1 && BMIInfo.BMI <= 27.1){

@@ -1,80 +1,59 @@
-@import url("health-banner.css");
-html {
-    scroll-behavior: smooth;
-  }
-.textbox{
-    border: solid gray;
-    padding: auto;
-    margin: auto;
-    background-color: black;
-    color: white;
-    padding-right: 250px;
+.header {
+    color: black; 
+    margin-left: 100px;
+    margin-top: 150px;
 }
-.sidebar{
-    border: solid gray;
-    border-top: 0cm;
-    border-bottom: 0cm;
-	float: left;
-	width: 150px;
-	height: 900%;
-    background-color: black;
+
+.health-text-header {
+    width: fit-content;
+    padding-bottom: 1%;
+    margin-left: 150px;
 }
-.banner-right{
-    border: solid gray;
-    border-top: 0cm;
-    border-bottom: 0cm;
-	float: right;
-	width: 400px;
-	height: 900%;
+
+.health-text {
+    width: fit-content;
+    margin-left: 150px;
+    padding-bottom: 15px;
 }
-.sidebar ul li a{
-	display: block;
-	padding: 15px 15px;
-	border-bottom: 1px solid #03374e;
-	color: #0e94d4;
+
+.health-text-container {
+    width: fit-content;
 }
-.sidebar ul li a .text{
-	color: #fff;
-    font-size: 20px;
-	letter-spacing: 2px;
+
+.health-menu-container {
+    position: relative;
+    width: 95%;
+    margin-left: 110px;
+	margin-top: -30px;
+    margin-bottom: 30px;
+    padding: 30px;
 }
-.sidebar ul li a:hover{
-	background: #A9A9A9;
-	color: #fff;
+
+.health-menu-box{
+    width: 25%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
 }
-.health p{
-    text-align: justify;
-    font-size: 17px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    padding-left: 250px;
-    padding-right: 500px;
+
+.solid {
+	border-style: solid;
 }
-.bmi-table, th, td{
+
+.bmi-table, th, td {
     margin: 1%;
     border: 1px solid black;
     border-collapse: collapse;
     text-align: center;
     font-size: 20px;
 }
-.center{
-    margin-left: auto;
-    margin-right: auto;
-}
-.table-name{
+
+.table-name {
     background-color: #A9A9A9;
 }
-.table-name-girls{
-    background-color: #A9A9A9;
-}
-.table-name-boys{
-    background-color: #A9A9A9;
-}
-.list{
-    margin: 1%;
-    text-align:  left;
-    padding-left: 250px;
-}
+
 #topBtn {
     display: none; /* Hidden by default */
     position: fixed;

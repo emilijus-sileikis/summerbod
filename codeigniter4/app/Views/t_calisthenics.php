@@ -11,21 +11,21 @@ $conn = OpenCon();
  <!-- sorting and stuff, need like 3 more of these to the right -->
 	<form method="post">
 		<a class="dropdownex"> 
-			<button class="dropbtnex diff-menu-box" style="color=black;">Sort by</button>
-				<div class="dropdownex-content">
-                    <li> <button type="submit" name="but_sort_1" class="diff-menu-box" >Difficulty ↑</button> </li>
-                    <li> <button type="submit" name="but_sort_2" class="diff-menu-box" >Difficulty ↓</button> </li>
-                    <li> <button type="submit" name="but_sort_3" class="diff-menu-box" >Name ↑</button> </li>
-					<li> <button type="submit" name="but_sort_4" class="diff-menu-box" >Name ↓</button> </li>
+			<button class="dropbtnex diff-menu-box">Sort by</button>
+				<div class="dropdownex-content sort-content">
+                    <li> <button type="submit" name="but_sort_1" class="diff-menu-sort-box" >Difficulty ↑</button> </li>
+                    <li> <button type="submit" name="but_sort_2" class="diff-menu-sort-box" >Difficulty ↓</button> </li>
+                    <li> <button type="submit" name="but_sort_3" class="diff-menu-sort-box" >Name ↑</button> </li>
+					<li> <button type="submit" name="but_sort_4" class="diff-menu-sort-box" >Name ↓</button> </li>
                 </div>
 		</a>
           
         <a class="dropdownex"> 
-			<button class="dropbtnex diff-menu-box" style="color=black;">Filter by Difficulty</button>
-				<div class="dropdownex-content">
-                    <li> <button type="submit" name="but_filter_1" class="diff-menu-box" >Beginner</button> </li>
-                    <li> <button type="submit" name="but_filter_2" class="diff-menu-box" >Intermediate</button> </li>
-                    <li> <button type="submit" name="but_filter_3" class="diff-menu-box" >Hard</button> </li>
+			<button class="dropbtnex diff-menu-box">Difficulty</button>
+				<div class="dropdownex-content filter-content">
+                    <li> <button type="submit" name="but_filter_1" class="diff-menu-sort-box" >Beginner</button> </li>
+                    <li> <button type="submit" name="but_filter_2" class="diff-menu-sort-box" >Intermediate</button> </li>
+                    <li> <button type="submit" name="but_filter_3" class="diff-menu-sort-box" >Hard</button> </li>
                 </div>
 		</a>
 				
