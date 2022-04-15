@@ -73,25 +73,35 @@
       command: mv /var/www/html/phpmyadmin/ /usr/share/phpmyadmin
 
     - name: Move project files to Apache
-      shell: mv wiket/codeigniter4/* /var/www/summerbod
+      shell: mv wiket/codeigniter4/* "/var/www/{{ http_host }}"
 
     - name: Change permissions for writable folder
-      command: chmod 777 -R /var/www/summerbod/writable
+      command: chmod 777 -R "/var/www/{{ http_host }}/writable"
 
     - name: Put htaccess file for PMA
       shell: mv wiket/Ansible/files/.htaccess /usr/share/phpmyadmin
 
     - name: Put htaccess file for summerbod
-      shell: mv wiket/codeigniter4/.htaccess /var/www/summerbod
+      shell: mv wiket/codeigniter4/.htaccess "/var/www/{{ http_host }}"
 
     - name: Change the password for the user
-      command: htpasswd -cb /usr/share/phpmyadmin/.htpasswd admin admin
+      command: htpasswd -cb /usr/share/phpmyadmin/.htpasswd "{{ phpmyadmin_user }}" "{{ phpmyadmin_password }}"
 
     - name: Put PMA config files
       shell: mv wiket/Ansible/files/phpmyadmin.conf /etc/apache2/conf-available
 
     - name: Increase php upload size
       shell: mv wiket/Ansible/files/php.ini /etc/php/7.4/apache2
+
+    - name: Create a new database
+      mysql_db:
+        login_user: "{{ phpmyadmin_user }}"
+        login_password: "{{ phpmyadmin_password }}"
+        name: "{{ http_host }}"
+        state: present
+
+    - name: Import database to mysql
+      shell: mysql -u "{{ phpmyadmin_user }}" -p"{{ phpmyadmin_password }}" "{{ http_host }}" < wiket/Database/summerbodDB.sql
 
     - name: Change the URL in App.php
       shell: awk '{ if (NR == 26) printf "    public $baseURL = \x27http://{{ url }}\x27;"; else print $0 }' /var/www/summerbod/app/Config/App.php > App.php; mv -f App.php /var/www/summerbod/app/Config/App.php
