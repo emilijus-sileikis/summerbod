@@ -90,6 +90,9 @@
     - name: Put PMA config files
       shell: mv wiket/Ansible/files/phpmyadmin.conf /etc/apache2/conf-available
 
+    - name: Increase php upload size
+      shell: mv wiket/Ansible/files/php.ini /etc/php/7.4/apache2
+
     - name: Change the URL in App.php
       shell: awk '{ if (NR == 26) printf "    public $baseURL = \x27http://{{ url }}\x27;"; else print $0 }' /var/www/summerbod/app/Config/App.php > App.php; mv -f App.php /var/www/summerbod/app/Config/App.php
 
