@@ -9,6 +9,12 @@
     <!-- Link CSS files -->
     <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/homenav.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/account.css'); ?>">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'>
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/Login_test_style.css'); ?>">
+
+
+
 </head>
 
 <body>
@@ -21,7 +27,7 @@
         </a>
 			<div class="menu text-right">
                 <ul>
-                    <li><a href="<?php echo base_url('public/sign_in'); ?>">ACCOUNT</a></li>
+                    <li><a id="myBtn" class=account-link >ACCOUNT</a</li>
                     <li><a href="<?php echo base_url('public/home'); ?>">HOME</a></li>
 					<li class="dropdown">
                     <a href="<?php echo base_url('public/health'); ?>" class="dropbtn">HEALTH</a>
@@ -78,8 +84,40 @@
         </ul>
     </div>
 
-        <div class="clearfix"></div>    
+        <div class="clearfix"></div>
+
+
     </div>
+    
+<div id="login_modal" class="registration-popup-modal-container">
+
+<div class="login-form">
+  <form>
+    <span id="close_modal" class="close">&times;</span>
+    <br>
+    <h1>Login</h1>
+    <div class="content">
+      <div class="input-field">
+        <input type="email" placeholder="Email" autocomplete="nope">
+      </div>
+      <div class="input-field">
+        <input type="password" placeholder="Password" autocomplete="new-password">
+      </div>
+      <a href="#" class="link">Forgot Your Password?</a>
+    </div>
+    <div class="action">
+      <button>Register</button>
+      <button>Sign in</button>
+    </div>
+  </form>
+</div>
+</div>
+
+
+
+</div>
+<script src="<?php echo base_url('assets/js/search.js'); ?>"></script>
 
     <script src="<?php echo base_url('assets/js/search.js'); ?>"></script>
-    <!-- Nav bar -->
+    <script src="<?php echo base_url('assets/js/login_modal.js'); ?>"></script>
+
