@@ -12,6 +12,7 @@ NAZAR MAMEDOV
 06/04/2022 | 8 hours | Improving database, adding entries, simplifying data flow and converting from image base 64 to gif base64 for workouts.
 07/04/2022 | 8 hours | Recreating health branch into dev with new design choices, merging login and signup systems.
 14/04/2022 | 8 hours | Automatization of exercise displaying from database, added sorting and filtering functionalities, additional fixes to health section.
+19/04/2022 | 5 hours | Hand picking quality information to fill up workout databases for testing + deployment purposes.
 
 Total: 73 hours.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
