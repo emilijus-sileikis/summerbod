@@ -59,9 +59,12 @@ EMILIJUS SILEIKIS
 13/04/2022 | 5 hours | Trying to connect to database with our data.
 13/04/2022 | 2 hours | Testing initial ansible script with Nazar.
 14/04/2022 | 6 hours | Optimizing and refactoring auto deployment script. Fixing health page cdd issue told by Nazar.
+15/04/2022 | 6 hours | Finishing touches on the initial auto deployment script (shell + Ansible).
+19/04/2022 | 7 hours | Script setup script, testing, bug fixes, improvements.
+20/04/2022 | 7 hours | Initial test page plus trying to add database images / gifs to the questions.
 
-Total: 159 hours.
-This week: 29 hours.
+Total: 179 hours.
+This week: 20 hours.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 PATRIK VORONOVIC
