@@ -4,14 +4,12 @@
 
     <!-- Website responsive -->
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-    <title> SummerBod</title>
+    <title>SummerBod</title>
 
     <!-- Link CSS files -->
     <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/homenav.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/account.css'); ?>">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'>
-    <link rel="stylesheet" href="<?php echo base_url('assets/css/Login_test_style.css'); ?>">
 
 
 
@@ -27,7 +25,7 @@
         </a>
 			<div class="menu text-right">
                 <ul>
-                    <li><a id="myBtn" class=account-link >ACCOUNT</a</li>
+                    <li><a id="accBtn" class=account-link style="cursor: pointer;" >ACCOUNT</a</li>
                     <li><a href="<?php echo base_url('public/home'); ?>">HOME</a></li>
 					<li class="dropdown">
                     <a href="<?php echo base_url('public/health'); ?>" class="dropbtn">HEALTH</a>
@@ -76,10 +74,10 @@
             <li><a href="<?php echo base_url('public/Workouts/w_hamstrings'); ?>">Hamstrings</a></li>
             <li><a href="<?php echo base_url('public/Techniques/t_calisthenics'); ?>">Calisthenics</a></li>
             <li><a href="<?php echo base_url('public/Techniques/t_powerlifting'); ?>">Powerlifting</a></li>
-            <li><a href="#">Posture</a></li>
-            <li><a href="#">BMI</a></li>
-            <li><a href="#">Injury treatment</a></li>
-            <li><a href="#">Injury prevention</a></li>
+            <li><a href="<?php echo base_url('public/injury_prevention'); ?>">Posture</a></li>
+            <li><a href="<?php echo base_url('public/bodymass'); ?>">BMI</a></li>
+            <li><a href="<?php echo base_url('public/injury_treatment'); ?>">Injury treatment</a></li>
+            <li><a href="<?php echo base_url('public/injury_prevention'); ?>">Injury prevention</a></li>
             <li><a href="<?php echo base_url('public/warmups'); ?>">Warm-up</a></li>
             <li><a href="<?php echo base_url('public/Techniques/t_all_techniques'); ?>">Techniques</a></li>
         </ul>
@@ -94,15 +92,15 @@
 
 <div class="login-form">
   <form>
-    <span id="close_modal" class="close">&times;</span>
+    <span id="close_modal" class="close">&#10006;</span>
     <br>
     <h1>Login</h1>
     <div class="content">
       <div class="input-field">
-        <input type="email" placeholder="Email" autocomplete="nope">
+        <input type="email" placeholder="Email" autocomplete="off">
       </div>
       <div class="input-field">
-        <input type="password" placeholder="Password" autocomplete="new-password">
+        <input type="password" placeholder="Password" autocomplete="current-password">
       </div>
       <a href="#" class="link">Forgot Your Password?</a>
     </div>
@@ -117,8 +115,6 @@
 
 
 </div>
-<script src="<?php echo base_url('assets/js/search.js'); ?>"></script>
-
     <script src="<?php echo base_url('assets/js/search.js'); ?>"></script>
     <script src="<?php echo base_url('assets/js/login_modal.js'); ?>"></script>
 

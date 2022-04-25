@@ -74,16 +74,7 @@
                     
                     <a href="#slide-1" class="btnNext" id="nextbtn">Next</a>
                     <button type="submit" name="btnSubmit" class="btnSubmit">Submit</button>
-
-                    <script>
-                    document.getElementById('nextbtn').addEventListener('click', function(e) {
-                    var n = e.target.href.split('-')[1] * 1 + 1;
-                    if (n > 4)
-                    n = 1;
-                    e.target.href = e.target.href.split('-')[0] + '-' + n;
-                    }, false);
-                    </script>
-
+                    <script src="<?php echo base_url('assets/js/quizbtn.js'); ?>"></script>
                 </div>
             </form>
         </main>
