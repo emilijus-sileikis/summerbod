@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-top: 110px;
+    overflow: hidden;
+    background: #fff;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    display: block;
+    margin: 0 0 30px;
+    text-align: center;
+    color: #000;
+}
+
+h1 {
+    font-size: 25px;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.slider {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+}
+
+.slides {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slides>div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    margin-right: 50px;
+    background: #eee;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.titleblock {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: #f1f1f1;
+    text-transform: uppercase;
+}
+
+table {
+    border: solid black;
+    width: 60%;
+}
+
+table th {
+    vertical-align: top;
+}
+
+table th div {
+    display: block;
+    text-transform: uppercase;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+}
+
+table td {
+    white-space: nowrap;
+}
+
+.images {
+    text-align: center;
+}
+
+textarea,
+select,
+input {
+    display: block;
+    background: #e1e1e1;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+    resize: none;
+}
+
+input:hover,
+input:focus,
+select:hover,
+select:focus,
+textarea:hover,
+textarea:focus {
+    background: #dbdbdb;
+}
+
+textarea,
+input {
+    margin-bottom: 5px;
+}
+
+.btnWrapper {
+    display: inline-flex;
+}
+
+.btnblock {
+    display: flex;
+}
+
+.txtScore {
+    margin: 80px 0;
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.btnQuiz,
+.btnSubmit,
+button {
+    color: #fff;
+    padding: 15px;
+    opacity: 0.9;
+    outline: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    margin: 2px 0 0;
+}
+
+.btnSubmit {
+    width: 100%;
+}
+
+.btnNext {
+    background: black;
+    color: #fff;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    margin: 2px 0 0;
+    width: 100%;
+}
+
+.btnQuiz,
+.btnSubmit,
+button:hover {
+    opacity: 1;
+}
+
+.titleblock,
+table th div,
+.btnSubmit,
+.btnQuiz,
+button {
+    background: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.btnWrapper {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.btnHalf {
+    border: solid white;
+    width: 50%;
+}
+
+.btnQuiz {
+    background: black;
+}
+
+.wrapper {
+    background: #fff;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    display: block;
+}
+
+.wrapper .option {
+    background: #fff;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid lightgrey;
+    transition: all 0.3s ease;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .option:last-child {
+    margin-bottom: 0;
+}
+
+input[type="radio"] {
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    margin: 0 10px;
+    padding: 0;
+}
+
+.wrapper .option span {
+    display: inline-block;
+    font-size: 18px;
+    color: #808080;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.message {
+    position: fixed;
+    top: 20px;
+    left: calc(50% - 200px);
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+    -webkit-animation: cssAnimation 0s ease-in 4s forwards;
+    animation: cssAnimation 0s ease-in 4s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    color: #fff;
+}
+
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+        padding: 0;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+        padding: 0;
+    }
+}
+
+.message.update {
+    background: #ffc107;
+    color: #000;
+}
+
+.message.save {
+    background: #4caf50;
+}
+
+.message.error {
+    background: #f44336;
+}

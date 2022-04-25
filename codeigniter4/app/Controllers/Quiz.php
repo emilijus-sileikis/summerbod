@@ -2,10 +2,10 @@
 
 namespace App\Controllers;
 
-class Quizzes extends BaseController
+class Quiz extends BaseController
 {
     public function index()
     {
-       return view('quizzes');
+       return view('quiz');
     }
 }

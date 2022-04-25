@@ -43,6 +43,7 @@
                             <a href="<?php echo base_url('public/warmups'); ?>">Warm-ups</a>
                             <a href="<?php echo base_url('public/Techniques/t_all_techniques'); ?>">Exercise Techniques</a>
                             <a href="<?php echo base_url('public/Workouts/w_all_exercises'); ?>">Muscle Groups</a>
+                            <a href="<?php echo base_url('public/quiz'); ?>">Fitness Test</a>
                         </div>
                     </li>
                 </ul>
