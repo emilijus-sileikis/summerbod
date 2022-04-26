@@ -27,6 +27,17 @@
         </a>
 			<div class="menu text-right">
                 <ul>
+					<li>
+						<div id="google_translate_element"></div>
+
+						<script type="text/javascript">
+						function googleTranslateElementInit() {
+							new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+						}
+						</script>
+
+						<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+					</li>
                     <li><a id="accBtn" class=account-link style="cursor: pointer;" >ACCOUNT</a</li>
                     <li><a href="<?php echo base_url('public/home'); ?>">HOME</a></li>
 					<li class="dropdown">
@@ -58,6 +69,7 @@
     <input type="text" id="searchInput" onkeydown="return /[a-z]/i.test(event.key)" maxlength="20" onkeyup="filter()" placeholder="Search For Something..">
     <input type="submit" id="clearBtn" value="Clear" class="btn btn-primary">
       
+	
     <div class="list">
         <ul id="searchUL">
             <li><a href="<?php echo base_url('public/Workouts/w_traps'); ?>">Traps</a></li>
