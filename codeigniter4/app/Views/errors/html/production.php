@@ -12,13 +12,14 @@
 </head>
 <body>
 
-	<div class="container text-center">
-
-		<h1 class="headline">Whoops!</h1>
-
-		<p class="lead">We seem to have hit a snag. Please try again later...</p>
-
-	</div>
+<div class="wrapper">
+<div class="box">
+<h1>500</h1>
+<p>Sorry, it's me, not you.</p>
+<p>&#58;&#40;</p>
+<p><a href="<?php echo base_url('public/home'); ?>">Let me try again!</a></p>
+</div>
+</div>
 
 </body>
 

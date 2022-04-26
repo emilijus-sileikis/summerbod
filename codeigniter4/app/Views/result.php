@@ -4,6 +4,7 @@
     $conn = OpenCon();
     
     $key = [];
+    $answers = array();
     $num = 0;
     if(isset($_POST["btnSubmit"])) {
         for ($i=1; $i < 5; $i++) { 
@@ -15,6 +16,10 @@
                 for ($x=1; $x < 5; $x++) {
                     if ($_POST["answer".$i] == $row["choice_".$x]) {
                         ($row["answer"] == $x)? $num++:"";
+                    }
+
+                    if ($row["answer"] == $x) {
+                        array_push($answers, $row["choice_".$x]);
                     }
                 }
             }
@@ -37,10 +42,17 @@
                 <br>
 
                 <hr>
-                <h3>Result</h3>
+                <h3>Results</h3>
                 <hr>
 
                 <h1 class="txtScore">Score: <?php echo ($num)." correct answers"; ?> Or <?php echo ($num*25)."%"; ?></h1>
+
+                <div>
+                    <p>Correct Answers:</p>
+                    <?php echo json_encode($answers) ?>
+                </div>
+
+                <br>
 
                 <div class="btnWrapper">
                     <a href="<?php echo base_url('public/home'); ?>" class="btnHalf btnSubmit">Back to Homepage</a>
