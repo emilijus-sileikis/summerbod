@@ -1,5 +1,8 @@
 <?php include('partials/menu.php'); ?>
-<!-- Health section start -->
+<?php
+include 'db_connnection.php';
+$conn = OpenCon();
+?>
 <link rel="stylesheet" href="<?php echo base_url('assets/css/warmups.css'); ?>">
 <div class="container">
     <h2 class="text-center header">Warm-ups</h2>  <!-- Input muscle group -->
@@ -17,107 +20,33 @@ you are going to use, but dont forget to include at least one of each group rega
 </p>
 <p>.</p><h3 class="warmup-text header3"> Explore warm-ups: </h3><p>.</p>
 
-<div class="warmup-menu-box">
-    <a href="#">
-        <div class="warmup-menu-img">
-            <?php include('partials/base64/random-menu.php'); ?>
-        </div>
-    <div class="warmup-menu-desc">
-        <h3>Whatever</h3>
-            <p class="warmup-detail">
-                Muscle group: Abdominals </br> </br>
-				Category: Home workout </br> </br>
-				Difficulty: Begginer 
-            </p>
-    </div>
-        <div class="clearfix"></div>
-    </a>
-</div>
-
-<div class="warmup-menu-box">
-    <a href="#">
-        <div class="warmup-menu-img">
-            <?php include('partials/base64/random-menu.php'); ?>
-        </div>
-    <div class="warmup-menu-desc">
-        <h3>Whatever</h3>
-            <p class="warmup-detail">
-                Muscle group: Biceps </br> </br>
-				Category: Home workout </br> </br>
-				Difficulty: Begginer 
-            </p>
-    </div>
-        <div class="clearfix"></div>
-    </a>
-</div>
-
-<div class="warmup-menu-box">
-    <a href="#">
-        <div class="warmup-menu-img">
-            <?php include('partials/base64/random-menu.php'); ?>
-        </div>
-    <div class="warmup-menu-desc">
-        <h3>Whatever</h3>
-            <p class="warmup-detail">
-                Muscle group: Quads </br> </br>
-				Category: Home workout </br> </br>
-				Difficulty: Begginer 
-            </p>
-    </div>
-        <div class="clearfix"></div>
-    </a>
-</div>
-
-<div class="warmup-menu-box">
-    <a href="#">
-        <div class="warmup-menu-img">
-            <?php include('partials/base64/random-menu.php'); ?>
-        </div>
-    <div class="warmup-menu-desc">
-        <h3>Whatever</h3>
-            <p class="warmup-detail">
-                Muscle group: Lats </br> </br>
-				Category: Home workout </br> </br>
-				Difficulty: Begginer 
-            </p>
-    </div>
-        <div class="clearfix"></div>
-    </a>
-</div>
-
-<div class="warmup-menu-box">
-    <a href="#">
-        <div class="warmup-menu-img">
-            <?php include('partials/base64/random-menu.php'); ?>
-        </div>
-    <div class="warmup-menu-desc">
-        <h3>Whatever</h3>
-            <p class="warmup-detail">
-                Muscle group: Biceps </br> </br>
-				Category: Home workout </br> </br>
-				Difficulty: Begginer 
-            </p>
-    </div>
-        <div class="clearfix"></div>
-    </a>
-</div>
-
-<div class="warmup-menu-box">
-    <a href="#">
-        <div class="warmup-menu-img">
-            <?php include('partials/base64/random-menu.php'); ?>
-        </div>
-    <div class="warmup-menu-desc">
-        <h3>Whatever</h3>
-            <p class="warmup-detail">
-                Muscle group: Chest </br> </br>
-				Category: Home workout </br> </br>
-				Difficulty: Begginer 
-            </p>
-    </div>
-        <div class="clearfix"></div>
-    </a>
-</div>
+<?php 
+	$query = "SELECT * FROM user_workouts WHERE `user_difficulty`='Warm-up' ";
+    $result = $conn->query($query);
+	if ($result->num_rows > 0) {
+		/* fetch associative array */
+		while($row = $result->fetch_assoc()) 
+		{
+			echo "<div class='warmup-menu-box'>
+						<div class='warmup-menu-img'>
+						<img src=data:image/gif;base64," .$row["user_image"]. " alt='random-menu1' class='img-responsive img-curve'>                  
+						</div>
+						<div class='warmup-menu-desc'>
+								<h3>" .$row["user_name"]. "</h3>
+							<p class='warmup-detail'>
+								Muscle group: ".$row["user_category"]."</br> </br>
+								Difficulty: ".$row["user_difficulty"]."</br> </br>
+								Description: ".$row["user_descr"]."</br> </br>
+								</p>
+						</div>
+							<div class='clearfix'></div>
+					</div>";
+		}
+	
+		/* free result set */
+		$result->free();
+	}
+?>
 
 <!-- Workouts section end -->
     <?php include('partials/footer.php'); ?>
