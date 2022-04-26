@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/css/homenav.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/account.css'); ?>">
 
+    <link rel="icon" href="<?php echo base_url('public/favicon.ico'); ?>" type="image/gif">
+
 
 
 </head>
