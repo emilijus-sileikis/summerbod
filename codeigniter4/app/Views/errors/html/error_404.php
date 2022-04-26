@@ -24,6 +24,7 @@ body {
     font-size: 1.5rem;
     color: rgba(128, 255, 128, 0.8);
     text-shadow: 0 0 1ex rgba(51, 255, 51, 1), 0 0 2px rgba(255, 255, 255, 0.8);
+	overflow: hidden;
 }
 
 .noise {
@@ -135,6 +136,26 @@ a::after {
 .errorcode {
     color: white;
 }
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.blink {
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
 	</style>
 </head>
 <body>
@@ -145,7 +166,7 @@ a::after {
   <h1>Error <span class="errorcode">404</span> :(</h1>
   <p class="output">The page you are looking for might have been removed, had its name changed or is temporarily unavailable.</p>
   <p class="output">Please try to go back or <a href="<?php echo base_url('public/home'); ?>">return to the homepage</a>.</p>
-  <p class="output">Good luck.</p>
+  <p class="output">Good luck.<span class="blink">_</span></p>
 </div>
 
 </body>
