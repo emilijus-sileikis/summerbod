@@ -15,7 +15,7 @@ $conn = OpenCon();
                 <div class="workout-menu-img">
 					<?php $result = mysqli_query($conn,"SELECT user_image FROM user_workouts WHERE user_id=1"); ?>
 					<?php $row = mysqli_fetch_array($result) ?>
-					<img src=data:image/gif;base64,<?php echo $row["user_image"]?> alt="Random1" class="img-responsive img-curve img-explore-stretch">
+					<img src=data:image/gif;base64,<?php echo $row["user_image"]?> alt="Random1" class="img-responsive img-curve img-explore-stretch" style="object-fit: contain;">
                 </div>
 
                 <div class="workout-menu-desc">
@@ -49,7 +49,7 @@ $conn = OpenCon();
                 <div class="workout-menu-img">
 					<?php $result = mysqli_query($conn,"SELECT user_image FROM user_workouts WHERE user_id=1"); ?>
 					<?php $row = mysqli_fetch_array($result) ?>
-					<img src=data:image/gif;base64,<?php echo $row["user_image"]?> alt="Random1" class="img-responsive img-curve img-explore-stretch">
+					<img src=data:image/gif;base64,<?php echo $row["user_image"]?> alt="Random1" class="img-responsive img-curve img-explore-stretch" style="object-fit: contain;">
                 </div>
 
                 <div class="workout-menu-desc">
@@ -82,7 +82,7 @@ $conn = OpenCon();
                 <div class="workout-menu-img">
 					<?php $result = mysqli_query($conn,"SELECT user_image FROM user_workouts WHERE user_id=1"); ?>
 					<?php $row = mysqli_fetch_array($result) ?>
-					<img src=data:image/gif;base64,<?php echo $row["user_image"]?> alt="Random1" class="img-responsive img-curve img-explore-stretch">
+					<img src=data:image/gif;base64,<?php echo $row["user_image"]?> alt="Random1" class="img-responsive img-curve img-explore-stretch" style="object-fit: contain;">
                 </div>
 
                 <div class="workout-menu-desc">
@@ -116,7 +116,7 @@ $conn = OpenCon();
 				
 				    <?php $result = mysqli_query($conn,"SELECT user_image FROM user_workouts WHERE user_id=1"); ?>
 					<?php $row = mysqli_fetch_array($result) ?>
-					<img src=data:image/gif;base64,<?php echo $row["user_image"]?> alt="Random1" class="img-responsive img-curve img-explore-stretch">
+					<img src=data:image/gif;base64,<?php echo $row["user_image"]?> alt="Random1" class="img-responsive img-curve img-explore-stretch" style="object-fit: contain;">
                 </div>
                 <div class="workout-menu-desc">
 				
