@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/homenav.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/account.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/translate.css'); ?>">
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="icon" href="<?php echo base_url('public/favicon.ico'); ?>" type="image/gif">
 
 
@@ -28,15 +31,8 @@
 			<div class="menu text-right">
                 <ul>
 					<li>
-						<div id="google_translate_element"></div>
-
-						<script type="text/javascript">
-						function googleTranslateElementInit() {
-							new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-						}
-						</script>
-
-						<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                    <div id="google_translate_element"></div>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 					</li>
                     <li><a id="accBtn" class=account-link style="cursor: pointer;" >ACCOUNT</a</li>
                     <li><a href="<?php echo base_url('public/home'); ?>">HOME</a></li>
@@ -131,4 +127,5 @@
 </div>
     <script src="<?php echo base_url('assets/js/search.js'); ?>"></script>
     <script src="<?php echo base_url('assets/js/login_modal.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/translate.js'); ?>"></script>
 
