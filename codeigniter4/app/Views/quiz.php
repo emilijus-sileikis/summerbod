@@ -27,7 +27,7 @@
             }
 
             $slides .= '
-                <div id="slide-'.$num.'">
+                <div id="slide-'.$num.'" style="margin-top: 110px;">
                     <table>
                         <tr>
                             <td colspan="2">   
@@ -64,7 +64,7 @@
         <title>Summerbod | Fitness Quiz</title>
         <link rel="stylesheet" href="<?php echo base_url('assets/css/quiz.css'); ?>">
     </head>
-    <body>
+    <body class="no-scroll">
         <main>
             <form method="post" action="<?php echo base_url('public/result'); ?>">
                 <div class="slider">
