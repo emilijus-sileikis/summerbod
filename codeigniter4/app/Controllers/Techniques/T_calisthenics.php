@@ -2,11 +2,14 @@
 
 namespace App\Controllers\Techniques;
 use App\Controllers\BaseController;
+use App\Modules\CalisthenicsModel;
 
 class T_calisthenics extends BaseController
 {
 	public function index()
 	{
-		return view('t_calisthenics');
+		$calistModel = new \App\Models\CalisthenicsModel();
+        $data['workouts'] = $calistModel->getData();
+		return view('t_calisthenics', $data);
 	}
 }

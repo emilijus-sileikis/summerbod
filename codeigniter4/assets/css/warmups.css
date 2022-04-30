@@ -35,6 +35,7 @@
 }
 
 .warmup-menu-desc {
+    word-wrap: break-word;
     width: 70%;
     float: left;
     margin-left: 8%;

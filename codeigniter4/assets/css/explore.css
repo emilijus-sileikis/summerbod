@@ -13,8 +13,7 @@
 .workout-menu-img{
     width: 20%;
     float: left;
-	max-width: 250px;
-	max-height: 500px;
+    object-fit: contain;
 }
 
 .workout-menu-desc{
@@ -39,5 +38,23 @@
         width: 90%;
         padding: 5%;
         margin-bottom: 5%;
+    }
+
+    .workout-menu-img{
+        width: auto;
+        float: left;
+        object-fit: contain;
+    }
+
+    .workout-menu-desc{
+        width: 70%;
+        float: left;
+        margin-left: 8%;
+    }
+    
+    .workout-detail{
+        font-size: 15px;
+        margin: 2% 0;
+        color: gray;
     }
 }
