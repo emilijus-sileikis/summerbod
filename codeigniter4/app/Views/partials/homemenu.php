@@ -33,7 +33,7 @@
                         <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 					</li>
 
-                    <li><a id="accBtn" class=account-link style="cursor: pointer;" >ACCOUNT</a></li>
+                    <li><a href="<?php echo base_url('public/signin'); ?>" style="cursor: pointer;" >ACCOUNT</a></li>
                     <li><a href="<?php echo base_url('public/home'); ?>">HOME</a></li>
 
 					<li class="dropdown">
