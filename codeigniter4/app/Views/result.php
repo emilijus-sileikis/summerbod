@@ -1,33 +1,29 @@
 <?php
     include('partials/menu_no_bar.php');
-    include "connection.php";
-    $conn = OpenCon();
-    
-    $key = [];
+
     $answers = array();
     $num = 0;
-    if(isset($_POST["btnSubmit"])) {
-        for ($i=1; $i < 5; $i++) { 
-            $stmt = $conn->prepare("SELECT * FROM `data` WHERE `id`=?");
-            $stmt->bind_param("i", $_POST["qid".$i]);
-            $stmt->execute();
-            $res = $stmt->get_result();
-            while ($row = $res->fetch_assoc()){
-                for ($x=1; $x < 5; $x++) {
-                    if ($_POST["answer".$i] == $row["choice_".$x]) {
-                        ($row["answer"] == $x)? $num++:"";
-                    }
 
-                    if ($row["answer"] == $x) {
-                        array_push($answers, $row["choice_".$x]);
-                    }
+    foreach ($res->getResultArray() as $row) 
+    {
+        for ($i=1; $i<5; $i++) 
+        {
+            for ($x=1; $x < 5; $x++) 
+            {
+                if ($_POST["answer".$i] == $row["choice_".$x]) 
+                {
+                    ($row["answer"] == $x)? $num++:"";
                 }
             }
-            $stmt->close();
+
+            if ($row["answer"] == $i) 
+            {
+                array_push($answers, $row["choice_".$i]);
+            }
         }
     }
-    $conn->close();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>

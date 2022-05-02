@@ -35,6 +35,11 @@ $routes->get('/', 'Home::index');
 $routes->get('/', 'Workouts/W_traps::index');
 $routes->get('/', 'Techniques/T_all_techniques::index');
 
+$routes->get('/', 'SignupController::index');
+$routes->get('/signup', 'SignupController::index');
+$routes->get('/signin', 'SigninController::index');
+$routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

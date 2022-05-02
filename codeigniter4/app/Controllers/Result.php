@@ -1,11 +1,14 @@
 <?php
 
 namespace App\Controllers;
+use App\Modules\AnswrModel;
 
 class Result extends BaseController
 {
     public function index()
     {
-       return view('result');
+        $answrModel = new \App\Models\AnswrModel();
+        $data['res'] = $answrModel->getData();
+       return view('result', $data);
     }
 }

@@ -1,62 +1,60 @@
 <?php
     include('partials/menu_no_bar.php');
-    include "connection.php";
-	$conn = OpenCon();
    
-    $stmt = $conn->prepare("SELECT * FROM `data` ORDER BY RAND()");
-    $stmt->execute();
-    $res = $stmt->get_result();
+    $res = $results->getResultArray();
     $links = $slides = $options = $choices = "";
-    if ($res->num_rows > 0) {
-        $num = 0;
-        while ($row = $res->fetch_assoc()) {
-            $num++;
-            $links .= '<a href="#slide-'.$num.'">'.$num.'</a>';
-            
-            $con1 = [1,2,3,4];
-            shuffle($con1);
-            for ($i=1; $i <= 4; $i++) { 
-                $choice = "choice_".$con1[$i-1];
-                ($i == 1)? $required="required":"";
-                $options .= '
-                            <input type="hidden" name="qid'.$num.'" value="'.$row["id"].'">
-                            <label class="option option-'.$i.'">
-                                <input type="radio" name="answer'.$num.'" class="optionbox" id="option-'.$num.$i.'" value="'.$row[$choice].'" '.$required.'>
-                                <span>'.wordwrap($row[$choice], 25, "<br />\n").'</span>
-                            </label>';
-            }
+    $num = 0;
 
-            $slides .= '
-                <div id="slide-'.$num.'" style="margin-top: 110px;">
-                    <table>
-                        <tr>
-                            <td colspan="2">   
-                                <div class="titleblock">Question #'.$num.'</div>
-                                <textarea name="txtQuestion'.$row["id"].'" rows="5" placeholder="Enter question #'.$row["id"].' here..." disabled required>'.$row["question"].'</textarea>
+    foreach ($res as $row) 
+    {
+        $num++;
+        $links .= '<a href="#slide-'.$num.'">'.$num.'</a>';
+            
+        $con1 = [1,2,3,4];
+        shuffle($con1);
+
+        for ($i=1; $i <= 4; $i++) 
+        { 
+            $choice = "choice_".$con1[$i-1];
+            ($i == 1)? $required="required":"";
+            $options .= '
+            <input type="hidden" name="qid'.$num.'" value="'.$row["id"].'">
+            <label class="option option-'.$i.'">
+                <input type="radio" name="answer'.$num.'" class="optionbox" id="option-'.$num.$i.'" value="'.$row[$choice].'" '.$required.'>
+                <span>'.wordwrap($row[$choice], 25, "<br />\n").'</span>
+            </label>';
+        }
+
+        $slides .= '
+        <div id="slide-'.$num.'" style="margin-top: 110px;">
+            <table>
+                <tr>
+                    <td colspan="2">   
+                        <div class="titleblock">Question #'.$num.'</div>
+                            <textarea name="txtQuestion'.$row["id"].'" rows="5" placeholder="Enter question #'.$row["id"].' here..." disabled required>'.$row["question"].'</textarea>
                                 <div class="images">
 
-                                    <img src=data:image/gif;base64,' . base64_encode($row["quiz_image"]) .' loop=infinite> 
+                                    <img src=data:image/gif;base64,' .$row["image"].' alt=""> 
                                     
                                 </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <div class="wrapper">
-                                    '.$options.'
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            ';
-            $options = $choices = "";
-        }
-    } else {
-        header("Location: home.php");
+                            </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <div class="wrapper">
+                            '.$options.'
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        ';
+        $options = $choices = "";
     }
-    CloseCon($conn);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>

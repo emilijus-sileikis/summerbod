@@ -4,13 +4,13 @@
         <div class="container text-center">
             <ul>
                 <li>
-                    <a href="#"><img src="https://img.icons8.com/metro/26/000000/facebook-new--v2.png"/></a>
+                    <a href="#"><img src="https://img.icons8.com/metro/26/000000/facebook-new--v2.png" alt=""/></a>
                 </li>
                 <li>
-                    <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png"/></a>
+                    <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png" alt=""/></a>
                 </li>
                 <li>
-                    <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png"/></a>
+                    <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png" alt=""/></a>
                 </li>
             </ul>
         </div>
