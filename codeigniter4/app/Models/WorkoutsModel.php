@@ -70,34 +70,34 @@ class WorkoutsModel extends Model
     }
 
     function getData($group){
-        $builder = $this->db->table('user_workouts');
+        $builder = $this->db->table('workouts');
 
         if(isset($_POST['but_sort_1'])) {
-            $builder->select()->where('user_category', $group)->where('user_difficulty', 'Beginner')->orWhere('user_category', $group)->where('user_difficulty', 'Intermediate')->orWhere('user_category', $group)->where('user_difficulty', 'Hard')->orderBy('user_difficulty', 'ASC');
+            $builder->select()->where('category', $group)->where('difficulty', 'Beginner')->orWhere('category', $group)->where('difficulty', 'Intermediate')->orWhere('category', $group)->where('difficulty', 'Hard')->orderBy('difficulty', 'ASC');
         }
         else if(isset($_POST['but_sort_2'])) {
-            $builder->select()->where('user_category', $group)->where('user_difficulty', 'Beginner')->orWhere('user_category', $group)->where('user_difficulty', 'Intermediate')->orWhere('user_category', $group)->where('user_difficulty', 'Hard')->orderBy('user_difficulty', 'DESC');
+            $builder->select()->where('category', $group)->where('difficulty', 'Beginner')->orWhere('category', $group)->where('difficulty', 'Intermediate')->orWhere('category', $group)->where('difficulty', 'Hard')->orderBy('difficulty', 'DESC');
         }
         else if(isset($_POST['but_sort_3'])) {
-            $builder->select()->where('user_category', $group)->where('user_difficulty', 'Beginner')->orWhere('user_category', $group)->where('user_difficulty', 'Intermediate')->orWhere('user_category', $group)->where('user_difficulty', 'Hard')->orderBy('user_name', 'ASC');
+            $builder->select()->where('category', $group)->where('difficulty', 'Beginner')->orWhere('category', $group)->where('difficulty', 'Intermediate')->orWhere('category', $group)->where('difficulty', 'Hard')->orderBy('name', 'ASC');
         }
         else if(isset($_POST['but_sort_4'])) {
-            $builder->select()->where('user_category', $group)->where('user_difficulty', 'Beginner')->orWhere('user_category', $group)->where('user_difficulty', 'Intermediate')->orWhere('user_category', $group)->where('user_difficulty', 'Hard')->orderBy('user_name', 'DESC');
+            $builder->select()->where('category', $group)->where('difficulty', 'Beginner')->orWhere('category', $group)->where('difficulty', 'Intermediate')->orWhere('category', $group)->where('difficulty', 'Hard')->orderBy('name', 'DESC');
         }
         else if(isset($_POST['but_filter_1'])) {
-            $builder->select()->where('user_category', $group)->where('user_difficulty', 'Beginner');
+            $builder->select()->where('category', $group)->where('difficulty', 'Beginner');
         }
         else if(isset($_POST['but_filter_2'])) {
-            $builder->select()->where('user_category', $group)->where('user_difficulty', 'Intermediate');
+            $builder->select()->where('category', $group)->where('difficulty', 'Intermediate');
         }
         else if(isset($_POST['but_filter_3'])) {
-            $builder->select()->where('user_category', $group)->where('user_difficulty', 'Hard');
+            $builder->select()->where('category', $group)->where('difficulty', 'Hard');
         }
         else if(isset($_POST['but_clear'])) {
-            $builder->select()->where('user_category', $group)->where('user_difficulty', 'Beginner')->orWhere('user_category', $group)->where('user_difficulty', 'Intermediate')->orWhere('user_category', $group)->where('user_difficulty', 'Hard');
+            $builder->select()->where('category', $group)->where('difficulty', 'Beginner')->orWhere('category', $group)->where('difficulty', 'Intermediate')->orWhere('category', $group)->where('difficulty', 'Hard');
         }
         else {
-            $builder->select()->where('user_category', $group)->where('user_difficulty', 'Beginner')->orWhere('user_category', $group)->where('user_difficulty', 'Intermediate')->orWhere('user_category', $group)->where('user_difficulty', 'Hard');
+            $builder->select()->where('category', $group)->where('difficulty', 'Beginner')->orWhere('category', $group)->where('difficulty', 'Intermediate')->orWhere('category', $group)->where('difficulty', 'Hard');
         }
         
         $workouts = $builder->get();
@@ -106,33 +106,3 @@ class WorkoutsModel extends Model
     }
 
 }
-
-/*
-if(isset($_POST['but_sort_1'])) {
-            $builder->select()->orderBy('user_difficulty', 'ASC');
-        }
-        else if(isset($_POST['but_sort_2'])) {
-            $builder->select()->orderBy('user_difficulty', 'DESC');
-        }
-        else if(isset($_POST['but_sort_3'])) {
-            $builder->select()->orderBy('user_name', 'ASC');
-        }
-        else if(isset($_POST['but_sort_4'])) {
-            $builder->select()->orderBy('user_name', 'DESC');
-        }
-        else if(isset($_POST['but_filter_1'])) {
-            $builder->select()->where('user_difficulty', 'Beginner');
-        }
-        else if(isset($_POST['but_filter_2'])) {
-            $builder->select()->where('user_difficulty', 'Intermediate');
-        }
-        else if(isset($_POST['but_filter_3'])) {
-            $builder->select()->where('user_difficulty', 'Hard');
-        }
-        else if(isset($_POST['but_clear'])) {
-            $builder->select();
-        }
-        else {
-            $builder->select();
-        }
-*/
