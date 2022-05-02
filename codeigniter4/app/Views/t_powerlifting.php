@@ -37,7 +37,7 @@ $conn = OpenCon();
 <div class="workout-menu-box">
 
 	<div class="workout-menu-img">
-		<?= '<img src=data:image/gif;base64,' .$workout["user_image"].' alt="" class="img-responsive img-curve">'?>
+		<?= '<img src=' .$workout["user_image"].' alt="" class="img-responsive img-curve">'?>
 	</div>
 
 	<div class="workout-menu-desc">
