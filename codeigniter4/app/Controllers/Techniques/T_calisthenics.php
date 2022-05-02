@@ -2,7 +2,7 @@
 
 namespace App\Controllers\Techniques;
 use App\Controllers\BaseController;
-use App\Modules\CalisthenicsModel;
+use App\Models\CalisthenicsModel;
 
 class T_calisthenics extends BaseController
 {

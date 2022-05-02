@@ -20,7 +20,7 @@ class QuizSeeder extends Seeder
         ],
         [
             'question' => '2 + 2 = ?',
-            'image' => 'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
+            'image' => base_url('assets/images/lol.gif'),
             'choice_1' => '6',
             'choice_2' => '8',
             'choice_3' => '10',
@@ -38,7 +38,7 @@ class QuizSeeder extends Seeder
         ],
         [
             'question' => 'Latest version of Microsoft Windows?',
-            'image' => 'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
+            'image' => base_url('assets/images/lol.gif'),
             'choice_1' => 'Window XP',
             'choice_2' => 'Windows 10',
             'choice_3' => 'Windows 11',
@@ -47,7 +47,6 @@ class QuizSeeder extends Seeder
         ],
         ];
 
-        // Using Query Builder
         $this->db->table('quiz')->insertBatch($data);
     }
 }

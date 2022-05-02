@@ -11,7 +11,7 @@ class UserWorkoutSeeder extends Seeder
         $data = [
         [
             'user_id' => '1',
-            'user_image' => 'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
+            'user_image' => base_url('assets/images/lol.gif'),
             'user_category' => 'Abdominals',
             'user_name' => 'Plank',
             'user_difficulty' => 'Beginner',
@@ -21,7 +21,7 @@ class UserWorkoutSeeder extends Seeder
         ],
         [
             'user_id' => '1',
-            'user_image' => 'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
+            'user_image' => base_url('assets/images/lol.gif'),
             'user_category' => 'Glutes',
             'user_name' => 'Lunge',
             'user_difficulty' => 'Beginner',
@@ -31,7 +31,7 @@ class UserWorkoutSeeder extends Seeder
         ],
         [
             'user_id' => '1',
-            'user_image' => 'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
+            'user_image' => base_url('assets/images/lol.gif'),
             'user_category' => 'Calves',
             'user_name' => 'Prone walkout',
             'user_difficulty' => 'Intermediate',
@@ -40,7 +40,7 @@ class UserWorkoutSeeder extends Seeder
         ],
         [
             'user_id' => '1',
-            'user_image' => 'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
+            'user_image' => base_url('assets/images/lol.gif'),
             'user_category' => 'Shoulders',
             'user_name' => 'Handstand push-up',
             'user_difficulty' => 'Hard',
@@ -49,7 +49,7 @@ class UserWorkoutSeeder extends Seeder
         ],
         [
             'user_id' => '1',
-            'user_image' => 'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
+            'user_image' => base_url('assets/images/lol.gif'),
             'user_category' => 'Chest',
             'user_name' => 'Bench Press',
             'user_difficulty' => 'Intermediate',
@@ -59,7 +59,6 @@ class UserWorkoutSeeder extends Seeder
         ]
         ];
 
-        // Using Query Builder
         $this->db->table('user_workouts')->insertBatch($data);
     }
 }

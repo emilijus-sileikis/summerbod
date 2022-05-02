@@ -25,7 +25,7 @@
 	<div class="warmup-menu-box">
 
 		<div class="warmup-menu-img">
-			<?= '<img src=data:image/gif;base64,' .$warmup["user_image"].' alt="" class="img-responsive img-curve">'?>
+			<?= '<img src=' .$warmup["user_image"].' alt="" class="img-responsive img-curve">'?>
 		</div>
 
 		<div class="warmup-menu-desc">

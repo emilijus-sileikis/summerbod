@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers;
-use App\Modules\QuizModel;
+use App\Models\QuizModel;
 
 class Quiz extends BaseController
 {

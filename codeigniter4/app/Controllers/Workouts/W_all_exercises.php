@@ -2,7 +2,7 @@
 
 namespace App\Controllers\Workouts;
 use App\Controllers\BaseController;
-use App\Modules\AllExModel;
+use App\Models\AllExModel;
 
 class W_all_exercises extends BaseController
 {
