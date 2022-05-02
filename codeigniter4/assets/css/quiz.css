@@ -5,10 +5,6 @@
     padding: 0;
 }
 
-.no-scroll, #no-scroll{
-    overflow: hidden;
-}
-
 main {
     background: #fff;
     overflow-x: hidden;
@@ -16,29 +12,33 @@ main {
     justify-content: center;
 }
 
-.title {
-    margin: 0 0 30px;
-    text-align: center;
-    color: #000;
-}
-
 h1 {
     font-size: 25px;
     line-height: 25px;
     text-transform: uppercase;
-    margin: 0 0 5px 0;
 }
 
 h2 {
     font-size: 20px;
-    margin: 0 0 10px 0;
 }
 
-.slider {
-    width: 100%;
-    text-align: center;
-    overflow: hidden;
-    margin: 0 auto;
+.slider>.links {
+    position: fixed;
+    float: left;
+    top: 50%;
+    z-index: 9999;
+}
+
+.slider .links>a {
+    background: black;
+    display:grid;
+    padding: 20px 15px;
+    color: #fff;
+    margin-bottom: 2px;
+}
+
+.slider .links>a:focus {
+    background: #000;
 }
 
 .slides {
@@ -46,15 +46,12 @@ h2 {
     overflow-x: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
 }
 
 .slides>div {
     scroll-snap-align: start;
     flex-shrink: 0;
     width: 100%;
-    height: 100%;
-    margin-right: 50px;
     background: #eee;
     transform-origin: center center;
     transform: scale(1);
@@ -67,7 +64,6 @@ h2 {
 }
 
 .titleblock {
-    width: 100%;
     text-align: center;
     padding: 20px;
     color: #f1f1f1;
@@ -76,7 +72,8 @@ h2 {
 
 table {
     border: solid black;
-    width: 60%;
+    width: 70%;
+    height: auto;
 }
 
 table th {
@@ -125,6 +122,7 @@ input {
 
 .btnWrapper {
     display: inline-flex;
+    border: solid green;
 }
 
 .btnblock {
@@ -132,6 +130,7 @@ input {
 }
 
 .txtScore {
+    text-align: center;
     margin: 80px 0;
     font-size: 50px;
     line-height: 1.2;
@@ -139,6 +138,7 @@ input {
 
 .btnQuiz,
 .btnSubmit,
+.btnEnd,
 button {
     color: #fff;
     padding: 15px;
@@ -155,22 +155,10 @@ button {
 }
 
 .btnSubmit {
-    width: 100%;
-}
-
-.btnNext {
-    background: black;
-    color: #fff;
-    padding: 15px;
-    font-size: 15px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    cursor: pointer;
-    text-decoration: none;
-    display: block;
-    margin: 2px 0 0;
-    width: 100%;
+    width: 200px;
+    position: relative;
+    left: 50%;
+    margin-left: -100px;
 }
 
 .btnQuiz,
@@ -183,6 +171,7 @@ button:hover {
 table th div,
 .btnSubmit,
 .btnQuiz,
+.btnEnd,
 button {
     background: black;
     font-weight: bold;
@@ -198,10 +187,6 @@ button {
 .btnHalf {
     border: solid white;
     width: 50%;
-}
-
-.btnQuiz {
-    background: black;
 }
 
 .wrapper {
@@ -244,48 +229,4 @@ input[type="radio"] {
     color: #808080;
     width: 100%;
     white-space: nowrap;
-}
-
-.message {
-    position: fixed;
-    top: 20px;
-    left: calc(50% - 200px);
-    width: 400px;
-    padding: 20px;
-    text-align: center;
-    -webkit-animation: cssAnimation 0s ease-in 4s forwards;
-    animation: cssAnimation 0s ease-in 4s forwards;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    color: #fff;
-}
-
-@keyframes cssAnimation {
-    to {
-        width:0;
-        height:0;
-        overflow:hidden;
-        padding: 0;
-    }
-}
-@-webkit-keyframes cssAnimation {
-    to {
-        width:0;
-        height:0;
-        visibility:hidden;
-        padding: 0;
-    }
-}
-
-.message.update {
-    background: #ffc107;
-    color: #000;
-}
-
-.message.save {
-    background: #4caf50;
-}
-
-.message.error {
-    background: #f44336;
 }

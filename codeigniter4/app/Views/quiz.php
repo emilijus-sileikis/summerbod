@@ -62,16 +62,20 @@
         <title>Summerbod | Fitness Quiz</title>
         <link rel="stylesheet" href="<?php echo base_url('assets/css/quiz.css'); ?>">
     </head>
-    <body class="no-scroll">
+    <body>
         <main>
             <form method="post" action="<?php echo base_url('public/result'); ?>">
                 <div class="slider">
+                    
+                    <div class="links">
+                        <?php echo $links; ?>
+                    </div>
+                    
                     <div class="slides">
                         <?php echo $slides; ?>
                     </div>
                     
-                    <a href="#slide-1" class="btnNext" id="nextbtn">Next</a>
-                    <button type="submit" name="btnSubmit" class="btnSubmit">Submit</button>
+                    <button type="submit" name="btnSubmit" class="btnSubmit" id="quizbtnn">Submit</button>
                     <script src="<?php echo base_url('assets/js/quizbtn.js'); ?>"></script>
                 </div>
             </form>

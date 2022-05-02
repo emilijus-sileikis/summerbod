@@ -11,7 +11,7 @@ class AnswrModel extends Model
 
         if (isset($_POST["btnSubmit"])) {
             $builder->select();
-            $res = $builder->get(4);
+            $res = $builder->get();
             $this->db->close();
             return $res;
         }

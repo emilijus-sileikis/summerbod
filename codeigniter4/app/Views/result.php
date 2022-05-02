@@ -8,7 +8,7 @@
     {
         for ($i=1; $i<5; $i++) 
         {
-            for ($x=1; $x < 5; $x++) 
+            for ($x=1; $x<5; $x++) 
             {
                 if ($_POST["answer".$i] == $row["choice_".$x]) 
                 {
@@ -51,8 +51,8 @@
                 <br>
 
                 <div class="btnWrapper">
-                    <a href="<?php echo base_url('public/home'); ?>" class="btnHalf btnSubmit">Back to Homepage</a>
-                    <a href="<?php echo base_url('public/quiz'); ?>" class="btnHalf btnQuiz">Take the Quiz Again?</a>
+                    <a href="<?php echo base_url('public/home'); ?>" class="btnHalf btnEnd">Back to Homepage</a>
+                    <a href="<?php echo base_url('public/quiz'); ?>" class="btnHalf btnEnd">Take the Quiz Again?</a>
                 </div>
             </div>
         </main>
