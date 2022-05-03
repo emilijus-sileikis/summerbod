@@ -15,10 +15,10 @@
 
     <div class="container">
         <label for="email"><b>Email</b></label>
-        <input type="email" placeholder="Enter Email" name="email" id="email" required>
+        <input type="email" class="name" placeholder="Enter Email" name="email" id="email" required>
 
         <label for="password"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="password" id="password" required>
+        <input type="password" class="name" placeholder="Enter Password" name="password" id="password" required>
 
         <button type="submit">Login</button>
     </div>

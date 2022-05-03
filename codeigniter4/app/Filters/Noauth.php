@@ -10,7 +10,7 @@ class Noauth implements FilterInterface
     public function before(RequestInterface $request, $arguments = null)
     {
         if (session()->get('isLoggedIn')) {
-            return redirect()->to(site_url('dashboard'));
+            return redirect()->to(site_url('public/profile'));
         }
 
     }
