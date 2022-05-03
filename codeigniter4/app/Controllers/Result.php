@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers;
-use App\Modules\AnswrModel;
+use App\Models\AnswrModel;
 
 class Result extends BaseController
 {

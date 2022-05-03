@@ -10,7 +10,7 @@
 		<div class="workout-menu-box">
 
             <div class="workout-menu-img">
-				<?= '<img src=data:image/gif;base64,' .$user["user_image"].' alt="" class="img-responsive img-curve img-explore-stretch">'?>
+				<?= '<img src=' .$user["user_image"].' alt="" class="img-responsive img-curve img-explore-stretch">'?>
             </div>
 
             <div class="workout-menu-desc">

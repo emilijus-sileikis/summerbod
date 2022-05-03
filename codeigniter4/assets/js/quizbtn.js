@@ -1,8 +1,16 @@
-document.getElementById('nextbtn').addEventListener('click', function(e) {
+//Work in progress
+var count = 0;
+const url = document.URL;
+const lastSegment = url.split("/").pop();
 
-var n = e.target.href.split('-')[1] * 1 + 1;
+document.getElementById('quizbtn').addEventListener('click', function(e) {
+++count;
+    if (url.split("-").pop().toString() === '3') {
+        document.getElementById('quizbtn').innerText = 'Finish';
+    }
 
-if (n > 4) //Number of questions
-    n = 1;
-e.target.href = e.target.href.split('-')[0] + '-' + n;
+    else {
+        document.getElementById('quizbtn').innerText = 'Next';
+    }
+
 }, false);

@@ -2,7 +2,7 @@
 
 namespace App\Controllers\Workouts;
 use App\Controllers\BaseController;
-use App\Modules\WorkoutsModel;
+use App\Models\WorkoutsModel;
 
 class W_traps extends BaseController
 {

@@ -25,16 +25,16 @@
 	<div class="warmup-menu-box">
 
 		<div class="warmup-menu-img">
-			<?= '<img src=data:image/gif;base64,' .$warmup["user_image"].' alt="" class="img-responsive img-curve">'?>
+			<?= '<img src=' .$warmup["image"].' alt="" class="img-responsive img-curve">'?>
 		</div>
 
 		<div class="warmup-menu-desc">
 
-			<h3><?php echo $warmup["user_name"]; ?></h3>	
+			<h3><?php echo $warmup["name"]; ?></h3>	
 			<p class="warmup-detail">
-				Muscle group: <?php echo $warmup["user_category"]; ?><br> <br>
-				Difficulty: <?php echo $warmup["user_difficulty"]; ?><br> <br>
-				Description: <?php echo $warmup["user_descr"]; ?> <br> <br>
+				Muscle group: <?php echo $warmup["category"]; ?><br> <br>
+				Difficulty: <?php echo $warmup["difficulty"]; ?><br> <br>
+				Description: <?php echo $warmup["descr"]; ?> <br> <br>
 			</p>
 			
 		</div>

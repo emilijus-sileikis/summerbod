@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 use App\Controllers\BaseController;
-use App\Modules\WarmupModel;
+use App\Models\WarmupModel;
 
 class Warmups extends BaseController
 {

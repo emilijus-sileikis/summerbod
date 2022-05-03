@@ -34,7 +34,7 @@
                             <textarea name="txtQuestion'.$row["id"].'" rows="5" placeholder="Enter question #'.$row["id"].' here..." disabled required>'.$row["question"].'</textarea>
                                 <div class="images">
 
-                                    <img src=data:image/gif;base64,' .$row["image"].' alt=""> 
+                                    <img src=' .$row["image"].' alt="" style="max-height: 350px; max-width: 400px;"> 
                                     
                                 </div>
                             </div>
@@ -62,16 +62,20 @@
         <title>Summerbod | Fitness Quiz</title>
         <link rel="stylesheet" href="<?php echo base_url('assets/css/quiz.css'); ?>">
     </head>
-    <body class="no-scroll">
+    <body>
         <main>
             <form method="post" action="<?php echo base_url('public/result'); ?>">
                 <div class="slider">
+                    
+                    <div class="links">
+                        <?php echo $links; ?>
+                    </div>
+                    
                     <div class="slides">
                         <?php echo $slides; ?>
                     </div>
                     
-                    <a href="#slide-1" class="btnNext" id="nextbtn">Next</a>
-                    <button type="submit" name="btnSubmit" class="btnSubmit">Submit</button>
+                    <button type="submit" name="btnSubmit" class="btnSubmit" id="quizbtnn">Submit</button>
                     <script src="<?php echo base_url('assets/js/quizbtn.js'); ?>"></script>
                 </div>
             </form>

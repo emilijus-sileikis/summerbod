@@ -21,7 +21,6 @@ class UserSeeder extends Seeder
         ]
         ];
 
-        // Using Query Builder
         $this->db->table('user_info')->insertBatch($data);
     }
 }

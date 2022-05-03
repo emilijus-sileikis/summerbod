@@ -28,7 +28,7 @@ class Workouts extends Migration
                 'constraint' => '30',
                 'null' => false,
             ],
-			'diff' => [
+			'difficulty' => [
                 'type' => 'ENUM',
                 'constraint' => ['Beginner', 'Intermediate', 'Hard', 'Warm-up'],
                 'default' => 'Beginner',
