@@ -10,17 +10,17 @@ class UserSeeder extends Seeder
     {
         $data = [
         [
-            'name' => 'Patrik',
-            'email' => 'patrik@codeigniter.com',
-            'pass' => 'patriklovesci4'
+            'name' => 'Admin',
+            'email' => 'summerbod@admin.com',
+            'password' => 'nuladna123'
         ],
         [
-            'name' => 'Nazar',
-            'email' => 'nazar@kliedesiai.com',
-            'pass' => 'unixexpert123'
+            'name' => 'Patrik',
+            'email' => 'patrik@codeigniter.com',
+            'password' => 'codeigniter'
         ]
         ];
 
-        $this->db->table('user_info')->insertBatch($data);
+        $this->db->table('users')->insertBatch($data);
     }
 }

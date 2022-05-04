@@ -9,7 +9,6 @@
     <!-- Link CSS files -->
     <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/homenav.css'); ?>">
-    <link rel="stylesheet" href="<?php echo base_url('assets/css/login.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/translate.css'); ?>">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"

@@ -15,7 +15,7 @@ class User extends BaseController
         {
 
             $rules = [
-                'email' => 'required|min_length[6]|max_length[50]|valid_email',
+                'email' => 'required|min_length[6]|max_length[100]|valid_email',
                 'password' => 'required|min_length[8]|max_length[255]|validateUser[email,password]',
             ];
 
@@ -89,7 +89,7 @@ class User extends BaseController
         {
             $rules = [
                 'name' => 'required|min_length[3]|max_length[20]',
-                'email' => 'required|min_length[6]|max_length[50]|valid_email|is_unique[users.email]',
+                'email' => 'required|min_length[6]|max_length[100]|valid_email|is_unique[users.email]',
                 'password' => 'required|min_length[8]|max_length[255]',
                 'password_confirm' => 'matches[password]',
             ];
@@ -101,7 +101,7 @@ class User extends BaseController
                 ],
                 'email' => [
                     'min_length' => "Your email must be at least 6 characters long!",
-                    'max_length' => "Your email is too long! Maximum length is 50 characters.",
+                    'max_length' => "Your email is too long! Maximum length is 100 characters.",
                     'is_unique' => "A user with this email is already registered!",
                 ],
                 'password' => [

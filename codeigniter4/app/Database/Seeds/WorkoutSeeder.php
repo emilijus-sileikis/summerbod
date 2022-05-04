@@ -10,7 +10,7 @@ class WorkoutSeeder extends Seeder
     {
         $data = [
         [
-            'image' => base_url('assets/images/lol.gif'),
+            'image' => base_url('assets/images/workouts/lol.gif'),
             'category' => 'Abdominals',
             'name' => 'Plank',
             'difficulty' => 'Beginner',
@@ -19,7 +19,7 @@ class WorkoutSeeder extends Seeder
             Keeping your back straight, tighten your core and hold the position for as long as you can.'
         ],
         [
-            'image' => base_url('assets/images/lol.gif'),
+            'image' => base_url('assets/images/workouts/lol.gif'),
             'category' => 'Glutes',
             'name' => 'Lunge',
             'difficulty' => 'Beginner',
@@ -28,7 +28,7 @@ class WorkoutSeeder extends Seeder
             Return to the starting position and repeat on the other side.'
         ],
         [
-            'image' => base_url('assets/images/lol.gif'),
+            'image' => base_url('assets/images/workouts/lol.gif'),
             'category' => 'Calves',
             'name' => 'Prone walkout',
             'difficulty' => 'Intermediate',
@@ -36,7 +36,7 @@ class WorkoutSeeder extends Seeder
             Next, gradually walk your hands backward to the starting position, maintaining stability and balance.'
         ],
         [
-            'image' => base_url('assets/images/lol.gif'),
+            'image' => base_url('assets/images/workouts/lol.gif'),
             'category' => 'Shoulders',
             'name' => 'Handstand push-up',
             'difficulty' => 'Hard',
@@ -44,7 +44,7 @@ class WorkoutSeeder extends Seeder
             Bend your elbows at a 90-degree angle, doing an upside-down push-up so your head moves toward the floor and your legs remain against the wall.'
         ],
         [
-            'image' => base_url('assets/images/lol.gif'),
+            'image' => base_url('assets/images/workouts/lol.gif'),
             'category' => 'Chest',
             'name' => 'Bench Press',
             'difficulty' => 'Intermediate',
