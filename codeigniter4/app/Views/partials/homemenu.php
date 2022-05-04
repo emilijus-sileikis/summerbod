@@ -9,7 +9,6 @@
     <!-- Link CSS files -->
     <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/homenav.css'); ?>">
-    <link rel="stylesheet" href="<?php echo base_url('assets/css/account.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/translate.css'); ?>">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -33,7 +32,7 @@
                         <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 					</li>
 
-                    <li><a href="<?php echo base_url('public/signin'); ?>" style="cursor: pointer;" >ACCOUNT</a></li>
+                    <li><a href="<?php echo base_url('public/login'); ?>" style="cursor: pointer;" >ACCOUNT</a></li>
                     <li><a href="<?php echo base_url('public/home'); ?>">HOME</a></li>
 
 					<li class="dropdown">
@@ -97,38 +96,6 @@
 
         <div class="clearfix"></div>
 
-
-    </div>
-    
-    <div id="login_modal" class="registration-popup-modal-container">
-
-        <div class="login-form">
-            <form>
-                <span id="close_modal" class="close">&#10006;</span>
-                <br>
-                <h1>Login</h1>
-
-                <div class="content">
-
-                    <div class="input-field">
-                        <input type="email" placeholder="Email" autocomplete="off">
-                    </div>
-
-                    <div class="input-field">
-                        <input type="password" placeholder="Password" autocomplete="current-password">
-                    </div>
-
-                    <a href="#" class="link">Forgot Your Password?</a>
-
-                </div>
-
-                <div class="action">
-                    <button>Register</button>
-                    <button>Sign in</button>
-                </div>
-
-            </form>
-        </div>
     </div>
 
     <script src="<?php echo base_url('assets/js/search.js'); ?>"></script>

@@ -35,10 +35,11 @@ $routes->get('/', 'Home::index');
 $routes->get('/', 'Workouts/W_traps::index');
 $routes->get('/', 'Techniques/T_all_techniques::index');
 
-$routes->get('/', 'SignupController::index');
-$routes->get('/signup', 'SignupController::index');
-$routes->get('/signin', 'SigninController::index');
-$routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
+$routes->match(['get', 'post'], 'register', 'User::register', ['filter' => 'noauth']);
+$routes->match(['get', 'post'], 'login', 'User::login', ['filter' => 'noauth']);
+$routes->get('dashboard', 'Dashboard::index', ['filter' => 'adminauth']);
+$routes->get('profile', 'User::profile', ['filter' => 'auth']);
+$routes->get('logout', 'User::logout');
 
 /*
  * --------------------------------------------------------------------

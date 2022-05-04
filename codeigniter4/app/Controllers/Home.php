@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 use \CodeIgniter\Controller;
-use App\Modules\HomeModel;
+use App\Models\HomeModel;
 
 class Home extends BaseController
 {

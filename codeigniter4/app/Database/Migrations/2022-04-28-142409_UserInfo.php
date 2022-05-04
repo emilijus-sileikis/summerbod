@@ -10,13 +10,13 @@ class UserInfo extends Migration
         $this->forge->addField([
             'id' => [
                 'type' => 'INT',
-                'constraint' => 5,
+                'constraint' => 11,
                 'unsigned' => true,
-                'auto_increment' => true,
+                'auto_increment' => true
             ],
             'name' => [
                 'type' => 'VARCHAR',
-                'constraint' => '15',
+                'constraint' => '20',
                 'null' => false
             ],
             'email' => [
@@ -25,18 +25,22 @@ class UserInfo extends Migration
                 'null' => false,
                 'unique' => true
             ],
-            'pass' => [
+            'password' => [
                 'type' => 'VARCHAR',
-				'constraint' => '20',
+				'constraint' => '255',
+                'null' => false
+            ],
+            'created_at' => [
+                'type' => 'TIMESTAMP',
                 'null' => false,
             ],
         ]);
         $this->forge->addPrimaryKey('id');
-        $this->forge->createTable('user_info');
+        $this->forge->createTable('users');
     }
 
     public function down()
     {
-        $this->forge->dropTable('user_info');
+        $this->forge->dropTable('users');
     }
 }

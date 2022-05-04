@@ -34,16 +34,16 @@
 <div class="workout-menu-box">
 
 	<div class="workout-menu-img">
-		<?= '<img src=data:image/gif;base64,' .$workout["user_image"].' alt="" class="img-responsive img-curve">'?>
+		<?= '<img src=' .$workout["image"].' alt="" class="img-responsive img-curve">'?>
 	</div>
 
 	<div class="workout-menu-desc">
 
-		<h3><?php echo $workout["user_name"]; ?></h3>	
+		<h3><?php echo $workout["name"]; ?></h3>	
 		<p class="workout-detail">
-			Muscle group: <?php echo $workout["user_category"]; ?><br> <br>
-			Difficulty: <?php echo $workout["user_difficulty"]; ?><br> <br>
-			Description: <?php echo $workout["user_descr"]; ?> <br> <br>
+			Muscle group: <?php echo $workout["category"]; ?><br> <br>
+			Difficulty: <?php echo $workout["difficulty"]; ?><br> <br>
+			Description: <?php echo $workout["descr"]; ?> <br> <br>
 		</p>
 			
 	</div>

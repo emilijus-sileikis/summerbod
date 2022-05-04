@@ -34,7 +34,7 @@
                             <textarea name="txtQuestion'.$row["id"].'" rows="5" placeholder="Enter question #'.$row["id"].' here..." disabled required>'.$row["question"].'</textarea>
                                 <div class="images">
 
-                                    <img src=data:image/gif;base64,' .$row["image"].' alt=""> 
+                                    <img src=' .$row["image"].' alt="" style="max-height: 350px; max-width: 400px;"> 
                                     
                                 </div>
                             </div>

@@ -12,7 +12,7 @@
     font-family: Carlito;
     font-style: normal;
     font-weight: normal;
-    src: local('Carlito'), url('../resources/carlito/Carlito-Bold.woff') format('woff');
+    src: local('Carlito'), url('/codeigniter4/assets/resources/carlito/Carlito-Bold.woff') format('woff');
     }
     
 

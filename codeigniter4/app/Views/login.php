@@ -1,113 +1,31 @@
-<?php include('partials/menu_no_bar.php'); ?>
+<?php echo view('partials/menu_no_bar'); ?>
+<link rel="stylesheet" href="<?php echo base_url('assets/css/login.css'); ?>">
 
-<?php
-// Initialize the session
-session_start();
- 
-// Check if the user is already logged in, if yes then redirect him to welcome page
-if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    header("location: welcome.php");
-    exit;
-}
- 
-// Define variables and initialize with empty values
-$username = $password = "";
-$username_err = $password_err = $login_err = "";
- 
-// Processing form data when form is submitted
-if($_SERVER["REQUEST_METHOD"] == "POST"){
- 
-    // Check if username is empty
-    if(empty(trim($_POST["username"]))){
-        $username_err = "Please enter username.";
-    } else{
-        $username = trim($_POST["username"]);
-    }
-    
-    // Check if password is empty
-    if(empty(trim($_POST["password"]))){
-        $password_err = "Please enter your password.";
-    } else{
-        $password = trim($_POST["password"]);
-    }
-    
-    // Validate credentials
-    if(empty($username_err) && empty($password_err)){
-        // Prepare a select statement
-        $sql = "SELECT id, username, password FROM users WHERE username = ?";
-        
-        if($stmt = mysqli_prepare($link, $sql)){
-            // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "s", $param_username);
-            
-            // Set parameters
-            $param_username = $username;
-            
-            // Attempt to execute the prepared statement
-            if(mysqli_stmt_execute($stmt)){
-                // Store result
-                mysqli_stmt_store_result($stmt);
-                
-                // Check if username exists, if yes then verify password
-                if(mysqli_stmt_num_rows($stmt) == 1){                    
-                    // Bind result variables
-                    mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
-                    if(mysqli_stmt_fetch($stmt)){
-                        if(password_verify($password, $hashed_password)){
-                            // Password is correct, so start a new session
-                            session_start();
-                            
-                            // Store data in session variables
-                            $_SESSION["loggedin"] = true;
-                            $_SESSION["id"] = $id;
-                            $_SESSION["username"] = $username;                            
-                            
-                            // Redirect user to welcome page
-                            header("location: welcome.php");
-                        } else{
-                            // Password is not valid, display a generic error message
-                            $login_err = "Invalid username or password.";
-                        }
-                    }
-                } else{
-                    // Username doesn't exist, display a generic error message
-                    $login_err = "Invalid username or password.";
-                }
-            } else{
-                echo "Oops! Something went wrong. Please try again later.";
-            }
+<form class="modal-content animate" action="<?= base_url('public/login') ?>" method="post">
 
-            // Close statement
-            mysqli_stmt_close($stmt);
-        }
-    }
-    
-    // Close connection
-    mysqli_close($link);
-}
-?>
- 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <h2 style="text-align: center;">Login</h2>
 
-    <style>
-        body{ font: 20px sans-serif; }
-        .wrapper{ width: 360px; padding: 20px; }
-    </style>
-</head>
-<body>
-    <div class="registration-buttons-container">
-        <button>
-            Login
-        </button>
-        <button>
-            Sign_up
-        </button>
+    <?php if (isset($validation)) : ?>
+
+    <div class="alert alert-danger" role="alert" style="text-align:center; color:red;">
+        <?= $validation->listErrors() ?>
     </div>
-</body>
-</html>
+    
+    <?php endif; ?>
 
+    <div class="container">
+        <label for="email"><b>Email</b></label>
+        <input type="email" class="name" placeholder="Enter Email" name="email" id="email" required>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" class="name" placeholder="Enter Password" name="password" id="password" required>
+
+        <button type="submit">Login</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+        <a href="<?= base_url('public/register') ?>" style="text-align:left; color:black;">Don't have an account? Register Here</a>
+    </div>
+
+</form>
+<?php echo view('partials/footer'); ?>

@@ -44,7 +44,7 @@ class UserWorkouts extends Migration
 			],
         ]);
         $this->forge->addPrimaryKey('user_workoutid');
-        $this->forge->addForeignKey('user_id', 'user_info', 'id');
+        $this->forge->addForeignKey('user_id', 'users', 'id');
         $this->forge->createTable('user_workouts');
     }
 
