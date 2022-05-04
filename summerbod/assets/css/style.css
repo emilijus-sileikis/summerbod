@@ -1,0 +1,112 @@
+/* 
+    Author: Veliau Industries;
+    Theme: Workout Learning Webpage;
+    Version: 0.3;
+*/
+
+@import url("dumbellstop.css");
+@import url("dumbells.css");
+
+/* CSS for all */
+@font-face {
+    font-family: Carlito;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Carlito'), url('/summerbod/assets/resources/carlito/Carlito-Bold.woff') format('woff');
+    }
+    
+
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Carlito;
+}
+
+.menu-container{
+    width: 95%;
+    padding: 15px; /* Or 4% */
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px; /* Or 4% */
+}
+
+.img-responsive{
+    width: 100%;
+}
+
+.img-curve{
+    border-radius: 15px;
+}
+
+.img-explore-stretch{
+    object-fit: cover;
+	width: 150px;
+    height: 150px;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-white{
+    color: white;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+a{
+	color: white;
+    text-decoration: none;
+}
+
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.btn-primary{
+    background-color: #A9A9A9;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    color: white;
+    background-color: #696969;
+}
+
+h2{
+    color: black;
+    font-size: 3rem;
+    margin-bottom: 2%;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+.float-container{
+    position: relative;
+}
+
+.float-text{
+    position: absolute;
+    bottom: 40px;
+    left: 20%;
+}

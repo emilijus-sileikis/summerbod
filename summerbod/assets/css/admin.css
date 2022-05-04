@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    position: relative;
+    margin-top: 10%;
+    background-color: #f1f2f6;
+    padding: 3% 0;
+}
+
+.wrapper {
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wrapper a{
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+.col-4 {
+    width: 18%;
+    background-color: black;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+}
+
+.col-4:hover{
+    background-color: gray;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+}
