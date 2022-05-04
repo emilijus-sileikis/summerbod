@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class UserModel extends Model
 {
 	protected $DBGroup              = 'default';
-	protected $table                = 'tbl_users';
+	protected $table                = 'users';
 	protected $primaryKey           = 'id';
 	protected $useAutoIncrement     = true;
 	protected $insertID             = 0;
@@ -17,7 +17,6 @@ class UserModel extends Model
 	protected $allowedFields        = [
 		"name",
 		"email",
-		"phone_no",
 		"password"
 	];
 
@@ -48,6 +47,7 @@ class UserModel extends Model
 	protected function beforeInsert(array $data)
 	{
 		$data = $this->passwordHash($data);
+		$this->db->close();
 		return $data;
 	}
 
@@ -56,7 +56,7 @@ class UserModel extends Model
 		if (isset($data['data']['password'])) {
 			$data['data']['password'] = password_hash($data['data']['password'], PASSWORD_DEFAULT);
 		}
-
+		$this->db->close();
 		return $data;
 	}
 }

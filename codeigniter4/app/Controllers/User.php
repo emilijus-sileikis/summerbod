@@ -11,7 +11,8 @@ class User extends BaseController
     {
         $data = [];
 
-        if ($this->request->getMethod() == 'post') {
+        if ($this->request->getMethod() == 'post') 
+        {
 
             $rules = [
                 'email' => 'required|min_length[6]|max_length[50]|valid_email',
@@ -20,26 +21,34 @@ class User extends BaseController
 
             $errors = [
                 'password' => [
-                    'validateUser' => "Email or Password don't match",
+                    'validateUser' => "Email or Password is incorrect!",
                 ],
             ];
 
-            if (!$this->validate($rules, $errors)) {
+            if (!$this->validate($rules, $errors)) 
+            {
 
                 return view('login', [
                     "validation" => $this->validator,
                 ]);
 
-            } else {
+            } 
+            else 
+            {
                 $model = new UserModel();
 
-                $user = $model->where('email', $this->request->getVar('email'))
-                    ->first();
+                $user = $model->where('email', $this->request->getVar('email'))->first();
 
-                // Stroing session values
-                $this->setUserSession($user);
-                // Redirecting to dashboard after login
-                return redirect()->to(base_url('public/profile'));
+                if ($user['email'] == 'summerbod@admin.com') 
+                {
+                    $this->setUserSession($user);
+                    return redirect()->to(base_url('public/dashboard'));
+                }
+                else 
+                {
+                    $this->setUserSession($user);
+                    return redirect()->to(base_url('public/profile'));
+                }
 
             }
         }
@@ -48,13 +57,26 @@ class User extends BaseController
 
     private function setUserSession($user)
     {
-        $data = [
-            'id' => $user['id'],
-            'name' => $user['name'],
-            'email' => $user['email'],
-            'isLoggedIn' => true,
-        ];
-
+        if ($user['email'] == 'summerbod@admin.com')
+        {
+            $data = [
+                'id' => $user['id'],
+                'name' => $user['name'],
+                'email' => $user['email'],
+                'isLoggedIn' => true,
+                'isAdmin' => true,
+            ];
+        }
+        else
+        {
+            $data = [
+                'id' => $user['id'],
+                'name' => $user['name'],
+                'email' => $user['email'],
+                'isLoggedIn' => true,
+            ];
+    
+        }
         session()->set($data);
         return true;
     }
@@ -63,21 +85,42 @@ class User extends BaseController
     {
         $data = [];
 
-        if ($this->request->getMethod() == 'post') {
-            //let's do the validation here
+        if ($this->request->getMethod() == 'post') 
+        {
             $rules = [
                 'name' => 'required|min_length[3]|max_length[20]',
-                'email' => 'required|min_length[6]|max_length[50]|valid_email|is_unique[tbl_users.email]',
+                'email' => 'required|min_length[6]|max_length[50]|valid_email|is_unique[users.email]',
                 'password' => 'required|min_length[8]|max_length[255]',
                 'password_confirm' => 'matches[password]',
             ];
 
-            if (!$this->validate($rules)) {
+            $errors = [
+                'name' => [
+                    'min_length' => "The name must be at least 3 characters long!",
+                    'max_length' => "Your name is too long! Maximum length is 20 characters.",
+                ],
+                'email' => [
+                    'min_length' => "Your email must be at least 6 characters long!",
+                    'max_length' => "Your email is too long! Maximum length is 50 characters.",
+                    'is_unique' => "A user with this email is already registered!",
+                ],
+                'password' => [
+                    'min_length' => "Your password must be at least 8 characters long!",
+                    'max_length' => "Your password is too long! Maximum length is 255 characters.",
+                ],
+                'password_confirm' => [
+                    'matches' => "'Password' and 'Confirm Password' fields must match!",
+                ],
+            ];
 
+            if (!$this->validate($rules, $errors)) 
+            {
                 return view('register', [
                     "validation" => $this->validator,
                 ]);
-            } else {
+            } 
+            else 
+            {
                 $model = new UserModel();
 
                 $newData = [
