@@ -68,9 +68,14 @@ EMILIJUS SILEIKIS
 25/04/2022 | 6 hours | Fixed some code (css, html, js). Removed unnecessary things, moved out some js scripts to js directory. Tested out the quiz page and added gifs to it.
 26/04/2022 | 5 hours | Searching, editing and testing various error screens for the webpage (403, 404, 500). Polishing some demo gifs and questions for the demonstration.
 27/04/2022 | 4 hours | Few server configurations (mainly phpmyadmin). Fixing and designing the google translate css, implementing it to vm.
+28/04/2022 | 5 hours | Creating and integrating migrations for databse.
+29/04/2022 | 4 hours | Creating and integrating seeders for database.
+02/05/2022 | 5 hours | Started modifying database to use the new system.
+03/05/2022 | 6 hours | Started moving databse select statements out of views, creating additional models and controllers. 
+04/05/2022 | 5 hours | Finishing touches on Models, Controllers and Views.
 
-Total: 194 hours.
-This week: 15 hours.
+Total: 219 hours.
+This week: 25 hours.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 PATRIK VORONOVIC
