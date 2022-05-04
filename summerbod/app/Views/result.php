@@ -43,7 +43,7 @@
 
                 <h1 class="txtScore">Score: <?php echo ($num)." correct answers"; ?> Or <?php echo ($num*25)."%"; ?></h1>
 
-                <div>
+                <div style="margin-left: 1%;">
                     <p>Correct Answers:</p>
                     <?php echo json_encode($answers) ?>
                 </div>

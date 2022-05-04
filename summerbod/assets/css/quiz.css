@@ -122,7 +122,6 @@ input {
 
 .btnWrapper {
     display: inline-flex;
-    border: solid green;
 }
 
 .btnblock {

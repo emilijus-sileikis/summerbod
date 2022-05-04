@@ -19,90 +19,121 @@
     </p>
     
     <div class="health-menu-container">
-        <div class="health-menu-box solid">
-            <h4>BMI Table For Adults:</h4>
-            <table>
-                <tr>
-                    <td class="table-name">⠀⠀⠀Category⠀⠀⠀</td>
-                    <td class="table-name">⠀⠀⠀BMI - kg/m2⠀⠀⠀</td>
-                </tr>
-                <tr>
-                    <td>Underweight</td>
-                    <td>< 16 to 18.5</td>
-                </tr>
-                <tr>
-                    <td>Normal Weight</td>
-                    <td>from 18.5 to 25</td>
-                </tr>
-                <tr>
-                    <td>Overweight</td>
-                    <td>from 25 to 29.9</td>
-                </tr>
-                <tr>
-                    <td>Obesity</td>
-                    <td>> 29.9</td>
-                </tr>
-            </table>
-        </div>
 
-        <div class="health-menu-box solid">	
-            <h4>BMI Table For Non-Adults (Girls):</h4>
-            <table>
+        <table>
+            <caption>BMI Table For Adults:</caption>
+            <thead>
                 <tr>
-                    <td class="table-name">⠀⠀⠀Category⠀⠀⠀</td>
-                    <td class="table-name">⠀⠀⠀BMI - kg/m2⠀⠀⠀</td>
+                    <th scope="col">Category</th>
+                    <th scope="col">BMI - kg/m2</th>
                 </tr>
+            </thead>
+
+            <tbody>
                 <tr>
-                    <td>Underweight</td>
-                    <td>< 17.8</td>
+                    <td data-label="Account">Underweight</td>
+                    <td data-label="Due Date">< 16 to 18.5</td>
                 </tr>
+    
                 <tr>
-                    <td>Normal Weight</td>
-                    <td>from 17.8 to 26.6</td>
+                    <td scope="row" data-label="Account">Normal Weight</td>
+                    <td data-label="Due Date">from 18.5 to 25</td>
                 </tr>
+    
                 <tr>
-                    <td>Overweight</td>
-                    <td>from 26.6 to 32.6</td>
+                    <td scope="row" data-label="Account">Overweight</td>
+                    <td data-label="Due Date">from 25 to 29.9</td>
                 </tr>
+                
                 <tr>
-                    <td>Obesity</td>
-                    <td>> 32.6</td>
+                    <td scope="row" data-label="Acount">Obesity</td>
+                    <td data-label="Due Date">> 29.9</td>
                 </tr>
-            </table>
-        </div>
-        
-        <div class="health-menu-box solid">		
-            <h4>BMI Table For Non-Adults (Boys):</h4>
-            <table>
-                <tr>
-                    <td class="table-name">⠀⠀⠀Category⠀⠀⠀</td>
-                    <td class="table-name">⠀⠀⠀BMI - kg/m2⠀⠀⠀</td>
-                </tr>
-                <tr>
-                    <td>Underweight</td>
-                    <td>< 19.1</td>
-                </tr>
-                <tr>
-                    <td>Normal Weight</td>
-                    <td>from 19.1 to 27.1</td>
-                </tr>
-                <tr>
-                    <td>Overweight</td>
-                    <td>from 27.1 to 31.1</td>
-                </tr>
-                <tr>
-                    <td>Obesity</td>
-                    <td>> 31.1</td>
-                </tr>
-            </table>
-        </div>
+            </tbody>
+        </table>
     </div>
 
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <div class="health-menu-container">
+
+        <table>
+            <caption>BMI Table For Non-Adults (Girls):</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Category</th>
+                    <th scope="col">BMI - kg/m2</th>
+                </tr>
+            </thead>
+  
+            <tbody>
+                <tr>
+                    <td data-label="Account">Underweight</td>
+                    <td data-label="Due Date">< 17.8</td>
+                </tr>
+    
+                <tr>
+                    <td scope="row" data-label="Account">Normal Weight</td>
+                    <td data-label="Due Date">from 17.8 to 26.6</td>
+                </tr>
+    
+                <tr>
+                    <td scope="row" data-label="Account">Overweight</td>
+                    <td data-label="Due Date">from 26.6 to 32.6</td>
+                </tr>
+    
+                <tr>
+                    <td scope="row" data-label="Acount">Obesity</td>
+                    <td data-label="Due Date">> 32.6</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="health-menu-container">
+
+        <table>
+            <caption>BMI Table For Non-Adults (Boys):</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Category</th>
+                    <th scope="col">BMI - kg/m2</th>
+                </tr>
+            </thead>
+  
+            <tbody>
+                <tr>
+                    <td data-label="Account">Underweight</td>
+                    <td data-label="Due Date">< 19.1</td>
+                </tr>
+    
+                <tr>
+                    <td scope="row" data-label="Account">Normal Weight</td>
+                    <td data-label="Due Date">from 19.1 to 27.1</td>
+                </tr>
+    
+                <tr>
+                    <td scope="row" data-label="Account">Overweight</td>
+                    <td data-label="Due Date">from 27.1 to 31.1</td>
+                </tr>
+    
+                <tr>
+                    <td scope="row" data-label="Acount">Obesity</td>
+                    <td data-label="Due Date">> 31.1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="clearfix"></div>
 
     <div class="health-text-container">
 
-        <?php include('bodymass.php'); ?>
+        <div class="bmi-container">
+    
+            <?php include('bodymass.php'); ?>
+
+        </div>
+
+        <br> <br>
 
         <h3 class="health-text-header">Risks Associated With Being Overweight:</h3> <br>
         <li class="health-text">High blood pressure.</li>
@@ -113,8 +144,10 @@
         <li class="health-text">Osteoarthritis.</li>
         <li class="health-text">Breathing problems.</li>
         <li class="health-text">Clinical depression, anxiety.</li>
-        <li class="health-text">Body pain and others.</li>			
+        <li class="health-text">Body pain and others.</li>	
+
         <br> <br> 
+        
         <h3 class="health-text-header">Risks Associated With Being Underweight:</h3> <br>
         <li class="health-text">Malnutrition, vitamin deficiencies, anemia.</li>
         <li class="health-text">Osteoporosis and other bone diseases.</li>
