@@ -1,4 +1,3 @@
-<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 <link rel="stylesheet" href="<?php echo base_url('assets/css/sidenav.css'); ?>">
 
 <div id="mySidenav" class="sidenav">

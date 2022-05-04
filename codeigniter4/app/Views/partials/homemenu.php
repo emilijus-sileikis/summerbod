@@ -1,10 +1,11 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
 
     <!-- Website responsive -->
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <title>SummerBod</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 
     <!-- Link CSS files -->
     <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css'); ?>">

@@ -88,6 +88,7 @@
             </li>
         </ul>
     </div>
+    <div class="clearfix"></div>
 </div>
 <!-- Workouts section end -->
 <?php include('partials/footer.php'); ?>
