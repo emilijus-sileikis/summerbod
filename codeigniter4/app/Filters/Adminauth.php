@@ -1,22 +1,22 @@
 <?php 
 namespace App\Filters;
+
+use CodeIgniter\Filters\FilterInterface;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
-use CodeIgniter\Filters\FilterInterface;
 
-class AuthGuard implements FilterInterface
+class Adminauth implements FilterInterface
 {
     public function before(RequestInterface $request, $arguments = null)
     {
-        if (!session()->get('isLoggedIn'))
-        {
-            return redirect()
-                ->to('/signin');
+        if (!session()->get('isAdmin')) {
+            return redirect()->to(site_url('public/login'));
         }
+
     }
-    
+
     public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)
     {
-        
+        // Do something here
     }
 }
