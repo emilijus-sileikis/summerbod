@@ -12,12 +12,12 @@ class UserSeeder extends Seeder
         [
             'name' => 'Admin',
             'email' => 'summerbod@admin.com',
-            'password' => 'nuladna123'
+            'password' => password_hash('nuladna123', PASSWORD_DEFAULT)
         ],
         [
             'name' => 'Patrik',
             'email' => 'patrik@codeigniter.com',
-            'password' => 'codeigniter'
+            'password' => password_hash('codeigniter', PASSWORD_DEFAULT)
         ]
         ];
 
