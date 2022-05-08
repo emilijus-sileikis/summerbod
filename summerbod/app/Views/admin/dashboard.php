@@ -8,7 +8,7 @@
 
         <h1>Dashboard</h1>
 
-        <a href="#">
+        <a href="<?php echo base_url('public/admin/manage_quiz'); ?>">
 
             <div class="col-4 text-center">
                 <h1><?php echo $quiz->getNumRows(); ?></h1>
@@ -18,7 +18,7 @@
 
         </a>
 
-        <a href="#">
+        <a href="<?php echo base_url('public/admin/manage_users'); ?>">
 
             <div class="col-4 text-center">
                 <h1><?php echo $users->getNumRows(); ?></h1>
@@ -28,7 +28,7 @@
 
         </a>
                 
-        <a href="#">
+        <a href="<?php echo base_url('public/admin/manage_workouts'); ?>">
 
             <div class="col-4 text-center">
                 <h1><?php echo $workouts->getNumRows(); ?></h1>
@@ -38,7 +38,7 @@
 
         </a>
 
-        <a href="#">
+        <a href="<?php echo base_url('public/admin/manage_user_workouts'); ?>">
 
             <div class="col-4 text-center">
                 <h1><?php echo $usr_wrkt->getNumRows(); ?></h1>

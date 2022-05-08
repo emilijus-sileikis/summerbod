@@ -32,13 +32,25 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/', 'Workouts/W_traps::index');
-$routes->get('/', 'Techniques/T_all_techniques::index');
 
 $routes->match(['get', 'post'], 'register', 'User::register', ['filter' => 'noauth']);
 $routes->match(['get', 'post'], 'login', 'User::login', ['filter' => 'noauth']);
+
+$routes->get('dashboard', 'Dashboard::index', ['filter' => 'adminauth']);
+
 $routes->get('admin/dashboard', 'Dashboard::index', ['filter' => 'adminauth']);
+$routes->get('admin/manage_users', 'ManageUsers::index', ['filter' => 'adminauth']);
+$routes->get('admin/manage_user_workouts', 'ManageUserWorkouts::index', ['filter' => 'adminauth']);
+$routes->get('admin/manage_quiz', 'ManageQuiz::index', ['filter' => 'adminauth']);
+$routes->get('admin/manage_workouts', 'ManageWorkouts::index', ['filter' => 'adminauth']);
+
 $routes->get('profile', 'User::profile', ['filter' => 'auth']);
+
+$routes->get('admin/manage_users/delete/(:num)', 'ManageUsers::delete/$1', ['filter' => 'adminauth']);
+$routes->get('admin/manage_user_workouts/delete/(:num)', 'ManageUserWorkouts::delete/$1', ['filter' => 'adminauth']);
+$routes->get('admin/manage_quiz/delete/(:num)', 'ManageQuiz::delete/$1', ['filter' => 'adminauth']);
+$routes->get('admin/manage_workouts/delete/(:num)', 'ManageWorkouts::delete/$1', ['filter' => 'adminauth']);
+
 $routes->get('logout', 'User::logout');
 
 /*

@@ -24,10 +24,10 @@
                 <ul>
 
                     <li><a href="<?= site_url('public/logout') ?>">Logout</a></li>
-                    <li><a href="#">Quiz</a></li>
-                    <li><a href="#">Users</a></li>
-                    <li><a href="#">Workouts</a></li>
-                    <li><a href="#">User_Workouts</a></li>
+                    <li><a href="<?php echo base_url('public/admin/manage_quiz'); ?>">Quiz</a></li>
+                    <li><a href="<?php echo base_url('public/admin/manage_users'); ?>">Users</a></li>
+                    <li><a href="<?php echo base_url('public/admin/manage_workouts'); ?>">Workouts</a></li>
+                    <li><a href="<?php echo base_url('public/admin/manage_user_workouts'); ?>">User_Workouts</a></li>
 
                 </ul>
             </div>
