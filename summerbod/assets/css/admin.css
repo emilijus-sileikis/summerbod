@@ -41,6 +41,7 @@
     margin: 1%;
     padding: 2%;
     float: left;
+    word-break: break-all;
 }
 
 .col-4:hover{
@@ -80,6 +81,12 @@ table {
     font-size: .95em;
     letter-spacing: .1em;
     text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 830px) {
+    .content {
+      margin-top: 25%;
+  }
   }
   
   @media screen and (max-width: 600px) {
@@ -121,4 +128,19 @@ table {
     table td:last-child {
       border-bottom: 0;
     }
+
+    .col-4 {
+      width: 20%;
+      font-size: 10px;
   }
+  }
+
+  @media screen and (max-width: 340px) {
+    .content {
+      margin-top: 50%;
+  }
+  .col-4 {
+    width: 50%;
+}
+  }
+  

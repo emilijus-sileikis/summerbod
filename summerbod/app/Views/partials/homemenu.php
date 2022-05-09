@@ -100,6 +100,5 @@
     </div>
 
     <script src="<?php echo base_url('assets/js/search.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/js/login_modal.js'); ?>"></script>
     <script src="<?php echo base_url('assets/js/translate.js'); ?>"></script>
 

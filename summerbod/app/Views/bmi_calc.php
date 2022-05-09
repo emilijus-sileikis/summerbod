@@ -31,23 +31,23 @@
 
             <tbody>
                 <tr>
-                    <td data-label="Account">Underweight</td>
-                    <td data-label="Due Date">< 16 to 18.5</td>
+                    <td data-label="Category">Underweight</td>
+                    <td data-label="BMI - kg/m2">< 16 to 18.5</td>
                 </tr>
     
                 <tr>
-                    <td scope="row" data-label="Account">Normal Weight</td>
-                    <td data-label="Due Date">from 18.5 to 25</td>
+                    <td scope="row" data-label="Category">Normal Weight</td>
+                    <td data-label="BMI - kg/m2">from 18.5 to 25</td>
                 </tr>
     
                 <tr>
-                    <td scope="row" data-label="Account">Overweight</td>
-                    <td data-label="Due Date">from 25 to 29.9</td>
+                    <td scope="row" data-label="Category">Overweight</td>
+                    <td data-label="BMI - kg/m2">from 25 to 29.9</td>
                 </tr>
                 
                 <tr>
-                    <td scope="row" data-label="Acount">Obesity</td>
-                    <td data-label="Due Date">> 29.9</td>
+                    <td scope="row" data-label="Category">Obesity</td>
+                    <td data-label="BMI - kg/m2e">> 29.9</td>
                 </tr>
             </tbody>
         </table>
@@ -66,23 +66,23 @@
   
             <tbody>
                 <tr>
-                    <td data-label="Account">Underweight</td>
-                    <td data-label="Due Date">< 17.8</td>
+                    <td data-label="Category">Underweight</td>
+                    <td data-label="BMI - kg/m2">< 17.8</td>
                 </tr>
     
                 <tr>
-                    <td scope="row" data-label="Account">Normal Weight</td>
-                    <td data-label="Due Date">from 17.8 to 26.6</td>
+                    <td scope="row" data-label="Category">Normal Weight</td>
+                    <td data-label="BMI - kg/m2">from 17.8 to 26.6</td>
                 </tr>
     
                 <tr>
-                    <td scope="row" data-label="Account">Overweight</td>
-                    <td data-label="Due Date">from 26.6 to 32.6</td>
+                    <td scope="row" data-label="Category">Overweight</td>
+                    <td data-label="BMI - kg/m2">from 26.6 to 32.6</td>
                 </tr>
     
                 <tr>
-                    <td scope="row" data-label="Acount">Obesity</td>
-                    <td data-label="Due Date">> 32.6</td>
+                    <td scope="row" data-label="Category">Obesity</td>
+                    <td data-label="BMI - kg/m2">> 32.6</td>
                 </tr>
             </tbody>
         </table>
@@ -101,23 +101,23 @@
   
             <tbody>
                 <tr>
-                    <td data-label="Account">Underweight</td>
-                    <td data-label="Due Date">< 19.1</td>
+                    <td data-label="Category">Underweight</td>
+                    <td data-label="BMI - kg/m2">< 19.1</td>
                 </tr>
     
                 <tr>
-                    <td scope="row" data-label="Account">Normal Weight</td>
-                    <td data-label="Due Date">from 19.1 to 27.1</td>
+                    <td scope="row" data-label="Category">Normal Weight</td>
+                    <td data-label="BMI - kg/m2">from 19.1 to 27.1</td>
                 </tr>
     
                 <tr>
-                    <td scope="row" data-label="Account">Overweight</td>
-                    <td data-label="Due Date">from 27.1 to 31.1</td>
+                    <td scope="row" data-label="Category">Overweight</td>
+                    <td data-label="BMI - kg/m2">from 27.1 to 31.1</td>
                 </tr>
     
                 <tr>
-                    <td scope="row" data-label="Acount">Obesity</td>
-                    <td data-label="Due Date">> 31.1</td>
+                    <td scope="row" data-label="Category">Obesity</td>
+                    <td data-label="BMI - kg/m2">> 31.1</td>
                 </tr>
             </tbody>
         </table>

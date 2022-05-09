@@ -33,20 +33,44 @@ button:hover {
     padding: 20px;
 }
   
-
-span.psw {
-    float: right;
-    padding-top: 16px;
-}
+@media (max-width: 1010px) {
+    form {
+        margin-top: 15%;
+    }
   
+  }
 
-@media screen and (max-width: 300px) 
-{
-    span.psw {
-      display: block;
-      float: none;
+@media (max-width: 740px) {
+    form {
+        margin-top: 20%;
     }
-    .cancelbtn {
-      width: 100%;
+  
+}
+
+@media (max-width: 500px) {
+    form {
+        margin-top: 25%;
     }
+  
+}
+
+@media (max-width: 400px) {
+    form {
+        margin-top: 30%;
+    }
+  
+}
+
+@media (max-width: 340px) {
+    form {
+        margin-top: 40%;
+    }
+  
+}
+
+@media (max-width: 250px) {
+    form {
+        margin-top: 50%;
+    }
+  
 }

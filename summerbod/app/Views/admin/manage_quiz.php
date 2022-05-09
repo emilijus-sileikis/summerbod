@@ -34,7 +34,7 @@
                         <?php if ($quiz['image'] == "NULL") { 
                                 $image = "No Image";
                             }
-                            else $image = '<img src=' .$quiz['image'].' alt="" class="img-responsive img-curve img-explore-stretch">';
+                            else $image = '<img src=' .$quiz['image'].' alt="" class="img-responsive img-curve img-explore-stretch" style="width:100%; height:100%; object-fit:contain;">';
                         ?>
                         <td data-label="Image"><?php echo $image ?></td>
                         <td data-label="Op. 1"><?php echo $quiz['choice_1']?></td>

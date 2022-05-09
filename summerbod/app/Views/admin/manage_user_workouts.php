@@ -34,7 +34,7 @@
                     <tr>
                         <td data-label="Id"><?php echo $user['user_workoutid']?></td>
                         <td data-label="Author"><?php echo $user['name']?></td>
-                        <td data-label="Image"><?= '<img src=' .$user["user_image"].' alt="" class="img-responsive img-curve img-explore-stretch">'?></td>
+                        <td data-label="Image"><?= '<img src=' .$user["user_image"].' alt="" class="img-responsive img-curve img-explore-stretch" style="width:100%; height:100%; object-fit:contain;">'?></td>
                         <td data-label="Category"><?php echo $user['user_category']?></td>
                         <td data-label="Name"><?php echo $user['user_name']?></td>
                         <td data-label="Difficulty"><?php echo $user['user_difficulty']?></td>

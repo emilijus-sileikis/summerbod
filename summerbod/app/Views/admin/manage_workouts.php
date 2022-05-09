@@ -28,7 +28,7 @@
   
                     <tr>
                         <td data-label="Id"><?php echo $wrkt['id']?></td>
-                        <td data-label="Image"><?= '<img src=' .$wrkt["image"].' alt="" class="img-responsive img-curve img-explore-stretch">'?></td>
+                        <td data-label="Image"><?= '<img src=' .$wrkt["image"].' alt="" class="img-responsive img-curve img-explore-stretch" style="width:100%; height:100%; object-fit:contain;">'?></td>
                         <td data-label="Category"><?php echo $wrkt['category']?></td>
                         <td data-label="Name"><?php echo $wrkt['name']?></td>
                         <td data-label="Difficulty"><?php echo $wrkt['difficulty']?></td>
