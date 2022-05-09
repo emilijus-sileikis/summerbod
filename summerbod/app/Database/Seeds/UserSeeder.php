@@ -17,8 +17,28 @@ class UserSeeder extends Seeder
         [
             'name' => 'Patrik',
             'email' => 'patrik@codeigniter.com',
-            'password' => password_hash('codeigniter', PASSWORD_DEFAULT)
+            'password' => password_hash('123456789', PASSWORD_DEFAULT)
         ]
+		[
+            'name' => 'Emilijus',
+            'email' => 'emilijus@yahoo.com',
+            'password' => password_hash('123456789', PASSWORD_DEFAULT)
+        ],
+		[
+            'name' => 'Nazar',
+            'email' => 'nazar@nocap.com',
+            'password' => password_hash('123456789', PASSWORD_DEFAULT)
+        ],
+		[
+            'name' => 'Chad',
+            'email' => 'gigachad@gmail.com',
+            'password' => password_hash('123456789', PASSWORD_DEFAULT)
+        ],
+		[
+            'name' => 'Test',
+            'email' => 'test@hotmail.com',
+            'password' => password_hash('123456789', PASSWORD_DEFAULT)
+        ],
         ];
 
         $this->db->table('users')->insertBatch($data);

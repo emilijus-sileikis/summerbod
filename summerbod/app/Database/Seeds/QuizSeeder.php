@@ -20,7 +20,7 @@ class QuizSeeder extends Seeder
         ],
         [
             'question' => 'When should you do your warmups?',
-            'image' => base_url('assets/images/lol.gif'),
+            'image' => base_url('assets/images/workouts/lol.gif'),
             'choice_1' => 'After waking up',
             'choice_2' => 'After a workout',
             'choice_3' => 'Before going to bed',
@@ -37,12 +37,12 @@ class QuizSeeder extends Seeder
             'answer' => '3'
         ],
         [
-            'question' => 'Latest version of Microsoft Windows?',
-            'image' => base_url('assets/images/lol.gif'),
-            'choice_1' => 'Window XP',
-            'choice_2' => 'Windows 10',
-            'choice_3' => 'Windows 11',
-            'choice_4' => 'Windows 95',
+            'question' => 'Which of these exercises targets triceps?',
+            'image' => base_url('assets/images/workouts/lol.gif'),
+            'choice_1' => 'Hammer Curls',
+            'choice_2' => 'Bench Press',
+            'choice_3' => 'Diamond Push-ups',
+            'choice_4' => 'Back Extensions',
             'answer' => '3'
         ],
         ];
