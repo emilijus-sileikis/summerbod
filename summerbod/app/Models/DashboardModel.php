@@ -32,7 +32,7 @@ class DashboardModel extends Model
 
     function getUsr_Wrkt(){
         $builder = $this->db->table('user_workouts, users');
-        $builder->select()->orderBy('user_workoutid', 'DESC');
+        $builder->select()->where('id', 1)->orderBy('user_workoutid', 'DESC');
         $usr_wrkt = $builder->get();
         $this->db->close();
         return $usr_wrkt;
