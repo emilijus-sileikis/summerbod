@@ -55,19 +55,7 @@ PRIMARY KEY (question_id, answer_id)
 INSERT INTO `user_info` (`id`, `name`, `pass`, `email`) VALUES (NULL, 'Emilij', 'xxxemilij', 'emilij@gmail.com');
 INSERT INTO `user_info` (`id`, `name`, `pass`, `email`) VALUES (NULL, 'Patrik', 'xxxpatrik', 'patricia@yahoo.ru');
 
-INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
-'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
-'Abdominals', 'Plank', 'Beginner', 
-'Lie facedown with your forearms on the floor and your hands clasped.
-Extend your legs behind you and rise up onto your toes.
-Keeping your back straight, tighten your core and hold the position for as long as you can.');
-
-INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
-'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
-'Abdominals', 'Inchworm', 'Intermediate', 
-'Stand up tall with your legs straight, making sure your knees aren’t locked.
-Slowly lower your torso toward the floor, then walk your hands forward.
-Once in a push-up position, start taking tiny steps so your feet meet your hands.');
+---ABDOMINALS---
 
 INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
 'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
@@ -165,22 +153,7 @@ INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_ca
 Bend your hips and waist to raise your body off the ground. Lower your body back to the ground into the starting position.');
 
 
-
-
-INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
-'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
-'Glutes', 'Squat', 'Beginner', 
-'Stand with your feet parallel.
-Slowly start to crouch by bending your hips and knees until your thighs are at least parallel to the floor.
-Make sure your heels do not rise off the floor.
-Press through your heels to return to a standing position.');
-
-INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
-'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
-'Glutes', 'Lunge', 'Beginner', 
-'Stand with your hands on your hips and your feet hip-width apart.
-Step your right leg forward and slowly lower your body until your left (back) knee is close to or touching the floor and bent at least 90 degrees.
-Return to the starting position and repeat on the other side.');
+---GLUTES---
 
 INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
 'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
@@ -279,21 +252,7 @@ With your chest up, squat down until the bottoms of your thighs are parallel to 
 Now, drive back up by pushing your feet through the platform.');
 
 
-
-
-INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
-'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
-'Calves', 'Step-up', 'Beginner', 
-'Find a step or bench.
-Place your right foot on the elevated surface.
-Step up until your right leg is straight.
-Return to the starting position.');
-
-INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
-'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
-'Calves', 'Prone walkout', 'Intermediate', 
-'Slowly walk your hands forward, staying on your toes but not moving them forward.
-Next, gradually walk your hands backward to the starting position, maintaining stability and balance.');
+---CALVES---
 
 INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
 'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
@@ -347,13 +306,7 @@ Push back as far as you can while keeping your toes connected to the platform
 Return and repeat');
 
 
-
-
-INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
-'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
-'Shoulders', 'Bear crawl', 'Intermediate', 
-'Starting on your hands and knees, rise up onto your toes.
-Tighten your core, and slowly reach forward with your right arm and right knee, followed by your left side.');
+---SHOULDERS---
 
 INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
 'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
@@ -456,6 +409,7 @@ Press the dumbbell overhead and lock out.
 Repeat.');
 
 
+---CHEST---
 
 
 INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
@@ -480,20 +434,6 @@ INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_ca
 Use your arms to lower the front of your body until your chin comes close to the floor.
 Swoop your head and shoulders upward and lower your hips down, keeping your knees off the floor.
 Reverse the move to come back to your raised-hip position.');
-
-INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
-'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
-'Chest', 'Reverse fly', 'Beginner', 
-'Grab a pair of dumbbells.
-Stand up straight, with one foot in front of the other and your front knee slightly bent.
-With your palms facing each other and abs engaged, bend forward slightly from your waist and extend your arms out to the sides, squeezing your shoulder blades.');
-
-INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
-'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
-'Chest', 'Bench Press', 'Intermediate', 
-'Lay flat on the bench with your feet on the ground. With straight arms unrack the bar.
-Lower the bar to your mid chest
-Raise the bar until youve locked your elbows.');
 
 INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
 'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
@@ -572,15 +512,7 @@ Slowly lower your body until your chest almost touches the ground
 Raise your body until you almost lock your elbows.');
 
 
-
-
-INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
-'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
-'Quads', 'Leg Press', 'Intermediate', 
-'Place your legs on the platform with your feet at shoulder width.
-Release the weight and extend your legs fully, without locking your knees.
-Lower the weight until your legs are at a 90° angle (but DO NOT allow your butt and lower back to rise off of the pad. This will put your lower back in a rounded position, which is very dangerous.)
-Raise the weight back to starting position.');
+---Quads---
 
 INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
 'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
@@ -589,13 +521,6 @@ INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_ca
 Get your elbows directly underneath the bar, squat straight up and then walk back a few steps.
 Break at your knees and hips to initiate the squat. Make sure you maintain a flat back.
 Squat all the way back to a standing position.');
-
-INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
-'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
-'Quads', 'Barbell Curtsy Lunge', 'Hard', 
-'Place the barbell on your back
-Step your foot back and around while simultaneously bringing the weight down.
-Return to start and repeat on other leg.');
 
 INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
 'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
@@ -681,22 +606,7 @@ When you feel a stretch through your quads, or begin to lose balance, explosivel
 Repeat.');
 
 
-
-
-INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
-'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
-'Lower-back', 'Superman', 'Intermediate', 
-'Lie facedown with your arms and legs extended.
-Keeping your torso as still as possible, simultaneously raise your arms and legs to form a small curve in your body.
-Lower your limbs, and repeat.');
-
-INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
-'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
-'Lower-back', 'Deadlift', 'Hard', 
-'Stand with your mid-foot under the bar and grip the bar with your hands, about a shoulder width apart.
-Bend your knees, then lift the bar by straightening your back. It is important to keep your back straight.
-Stand to your full height and hold.
-Lower the bar to the floor by bending your knees and keeping your back straight.');
+---LOWER_BACK---
 
 INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
 'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
@@ -756,22 +666,8 @@ With your arms fully extended, rest your buttocks on the heels of your feet, you
 Hold the extended position for a few seconds, and return to starting position.');
 
 
+---Biceps---
 
-
-INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
-'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
-'Biceps', 'Barbell Curl', 'Beginner', 
-'While holding the upper arms stationary, curl the weights forward while contracting the biceps as you breathe out.
-Continue the movement until your biceps are fully contracted and the bar is at shoulder level.
-Hold the contracted position for a second and squeeze the biceps hard.
-Slowly bring the weight back down to the starting position.');
-
-INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
-'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
-'Biceps', 'Dumbbell Curl', 'Beginner', 
-'Stand up straight with a dumbbell in each hand at arms length.
-Raise one dumbbell and twist your forearm until it is vertical and your palm faces the shoulder.
-Lower to original position and repeat with opposite arm.');
 
 INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
 'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
@@ -867,21 +763,8 @@ Row the barbell to the stomach.
 Pull with both the back and the arms, lowering the weight under control and repeating for reps.');
 
 
+---Triceps---
 
-
-INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
-'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
-'Triceps', 'Tricep dips', 'Beginner', 
-'Sit on the floor near a step or bench with your knees slightly bent.
-Grab the edge of the elevated surface and straighten your arms.
-Bend your arms to a 90-degree angle and straighten again while your heels push into the floor, lifting yourself.
-For some extra fire, reach your right arm out while lifting your left leg.');
-
-INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
-'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
-'Triceps', 'Diamond push-up', 'Intermediate', 
-'Get into a push-up position with diamond-shaped hands, so that your thumbs and index fingers touch.
-Then, do regular push-ups.');
 
 INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
 'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
@@ -978,22 +861,8 @@ INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_ca
 Reverse the move, placing the weight back on the floor and “rolling” the bar back. Repeat.');
 
 
+---Lats---
 
-
-INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
-'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
-'Lats', 'Pull Ups', 'Intermediate', 
-'Grasp the bar with an overhand grip, arms and shoulders fully extended.
-Pull your body up until your chin is above the bar.
-Lower your body back to starting position.');
-
-INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
-'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
-'Lats', 'Neutral Grip Pulldown', 'Beginner', 
-'Grip the bar with the palms facing forward, your hands need to be spaced out at a distance wider than shoulder width.
-As you have both arms extended in front of you holding the bar, bring your torso back around 30 degrees while sticking your chest out.
-Pull the bar down to about chin level or a little lower in a smooth movement whilst squeezing the shoulder blades together.
-After a second of squeezing, slowly raise the bar back to the starting position when your arms are fully extended.');
 
 INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
 'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
@@ -1089,23 +958,8 @@ Grab the handle and crush it, gripping it as hard as you can. From there, row th
 Repeat.');
 
 
+---TRAPS MID-BACK---
 
-
-INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
-'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
-'Traps mid-back', 'Traps (mid-back) Stretch', 'Warm-up', 
-'Sit on the ground and lay one leg flat and the other over the top.
-Hold your leg with the same side arm and slowly rotate your hips and back.
-Hold at the peak of the stretch, then slowly return to starting position.
-Switch sides and repeat.');
-
-INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
-'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
-'Traps mid-back', 'Superman Holds', 'Beginner', 
-'Get on the floor on your belly. Squeeze your glutes to raise your feet and legs and squeeze your shoulder blades to raise your arms off the floor in an extended position.
-Focus on firing your entire posterior chain to begin the movement—your lower back shouldnt take all the strain.
-Keep your neck in a neutral position and avoid looking up. Hold the top position for a two count before lowering back to the ground.
-Repeat');
 
 INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
 'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
@@ -1124,23 +978,8 @@ Squeeze your back to pull the band ends simultaneously to your chest, or as clos
 Pause for a moment at the top of the motion, then slowly return to the original position. Repeat.');
 
 
+---FOREARMS---
 
-
-INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
-'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
-'Forearms', 'Wrist Curl', 'Beginner', 
-'Grip the dumbbell with your palm facing upwards with your forearm rested against the bench.
-Slowly curl your wrist upwards in a semicircular motion.
-Return to starting position and repeat.');
-
-INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
-'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
-'Forearms', 'Barbell Wrist Curl', 'Beginner', 
-'Grab a straight bar with a supinated (underhand) grip.
-Kneel down next to a flat bench and place your forearms on the bench with your wrists just off the bench.
-Let the barbell pull down on your wrists until they are extended.
-Curl the barbell until your wrists are fully flexed.
-Lower in a controlled manner and repeat.');
 
 INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
 'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
@@ -1202,6 +1041,7 @@ Hold for 3–5 seconds, then relax your grip for a few seconds.
 Continue for 10–15 minutes.');
 
 
+---TRAPS---
 
 
 INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
@@ -1274,23 +1114,8 @@ Place your left hand on your head and gently pull your head down towards your le
 Repeat, using your right hand pulling towards your right shoulder.');
 
 
+---HAMSTRINGS---
 
-
-INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
-'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
-'Hamstrings', 'Stiff Leg Deadlifts', 'Intermediate', 
-'Stand with a barbell at your shins with your feet shoulder width apart.
-Bend forward at your hips and keep your knees as fully extended as possible.
-Grab the barbell and then extend your hips while maintaining a straight back.
-From the standing position, lower the weight in a controlled manner.
-You can either lower the weight to the floor or before you touch the floor, depending on your mobility.');
-
-INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
-'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',
-'Hamstrings', 'Hamstring Curl', 'Beginner', 
-'Lay down on the machine, placing your legs beneath the padded lever. Position your legs so that the padded lever is below your calve muscles.
-Support yourself by grabbing the side handles of the machine, and slowly raise the weight with your legs, toes pointed straight.
-Pause at the apex of the motion, then slowly return to starting position.');
 
 INSERT INTO `user_workouts` (`user_workoutid`, `user_id`, `user_image`, `user_category`, `user_name`, `user_difficulty`, `user_descr`) VALUES (NULL, '1', 
 'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWbbE4OECL3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC',

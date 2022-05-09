@@ -1,0 +1,76 @@
+form {
+    position: inherit;
+    height: 60%;
+    margin-top: 10%;
+    border: 3px solid #f1f1f1;
+}
+
+.name {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+  
+button {
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+  
+button:hover {
+    opacity: 0.8;
+}
+  
+.container {
+    position: relative;
+    padding: 20px;
+}
+  
+@media (max-width: 1010px) {
+    form {
+        margin-top: 15%;
+    }
+  
+  }
+
+@media (max-width: 740px) {
+    form {
+        margin-top: 20%;
+    }
+  
+}
+
+@media (max-width: 500px) {
+    form {
+        margin-top: 25%;
+    }
+  
+}
+
+@media (max-width: 400px) {
+    form {
+        margin-top: 30%;
+    }
+  
+}
+
+@media (max-width: 340px) {
+    form {
+        margin-top: 40%;
+    }
+  
+}
+
+@media (max-width: 250px) {
+    form {
+        margin-top: 50%;
+    }
+  
+}
