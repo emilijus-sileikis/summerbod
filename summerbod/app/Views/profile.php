@@ -10,8 +10,8 @@
         <p>Email: <?= $user['email'] ?></p>
         <p>Created At: <?= $user['created_at'] ?></p> <br><br>
         <button class="open-button" onclick="openForm()">Create an exercise</button>
-        <p><a href="#">Your favorites</a></p> <br>
-        <h3><a href="<?= site_url('public/logout') ?>">Logout</a></h3>
+        <p><a href="<?= base_url('public/favorites') ?>">Your favorites</a></p> <br>
+        <h3><a href="<?= base_url('public/logout') ?>">Logout</a></h3>
     </div>
 </div>
 

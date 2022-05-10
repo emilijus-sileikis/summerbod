@@ -41,4 +41,30 @@ class AllExModel extends Model
         return $workouts;
     }
 
+    function insertFav($id){
+        $builder = $this->db->table('fav_workouts');
+        $data = [
+            'ex_id' => $id,
+            'user_id'  => session()->get('id'),
+        ];
+        
+        $builder->insert($data);
+    }
+
+    function getFav(){
+        $builder = $this->db->table('fav_workouts');
+        $builder->select()->where('id', session()->get('id'))->orderBy('name', 'ASC');
+        $favorites = $builder->get();
+        $this->db->close();
+        return $favoritess;
+    }
+
+    function removeFav($id){
+        $builder = $this->db->table('fav_workouts');
+        $builder->where('user_id', session()->get('id'))->delete(['ex_id' => $id]);
+        $workout = $builder->get();
+        $this->db->close();
+        return $workout;
+    }
+
 }
