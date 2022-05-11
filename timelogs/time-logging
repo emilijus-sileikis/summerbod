@@ -73,9 +73,15 @@ EMILIJUS SILEIKIS
 02/05/2022 | 5 hours | Started modifying database to use the new system.
 03/05/2022 | 6 hours | Started moving databse select statements out of views, creating additional models and controllers. 
 04/05/2022 | 5 hours | Finishing touches on Models, Controllers and Views.
+05/05/2022 | 5 hours | Some redesign on quiz, starting to work with file paths instead of base64 images.
+06/05/2022 | 7 hours | Making auth system for the website (css + functionality).
+07/05/2022 | 3 hours | Admin permission and dashboard initial design.
+09/05/2022 | 4 hours | Some minor health css fixes and table changes.
+10/05/2022 | 8 hours | Dashboard with auth and delete functions.
+11/05/2022 | 3 hours | Some polishing touches before hack a project, minor css fixes.
 
-Total: 219 hours.
-This week: 25 hours.
+Total: 249 hours.
+This week: 30 hours.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 PATRIK VORONOVIC
