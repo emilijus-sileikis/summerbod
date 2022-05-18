@@ -73,10 +73,16 @@
       command: mv /var/www/html/phpmyadmin/ /usr/share/phpmyadmin
 
     - name: Move project files to Apache
-      shell: mv wiket/codeigniter4/* "/var/www/{{ http_host }}"
+      shell: mv wiket/summerbod/* "/var/www/{{ http_host }}"
 
     - name: Change permissions for writable folder
       command: chmod 777 -R "/var/www/{{ http_host }}/writable"
+	  
+    - name: Change permissions for session folder
+      command: chmod 777 -R "/var/www/{{ http_host }}/writable/session"
+	  
+    - name: Change permissions for cache folder
+      command: chmod 777 -R "/var/www/{{ http_host }}/writable/cache"
 
     - name: Put htaccess file for PMA
       shell: mv wiket/Ansible/files/.htaccess /usr/share/phpmyadmin
