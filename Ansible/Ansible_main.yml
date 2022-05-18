@@ -9,7 +9,7 @@
 
   tasks:
     - name: Server setup
-      script: shell/Server_setup
+      script: shell/Server_setup.sh
 
   #Apache Configuration
     - name: Install LAMP Packages

@@ -54,4 +54,4 @@ scp -rp -P $CSSH_PORT wiket/* $CUSER@193.219.91.103:~/wiket/
 ## Launch Conn Check ##
 #######################
 cd
-ansible-playbook wiket/Ansible/Ansible_main -K
+ansible-playbook wiket/Ansible/Ansible_main.yml -K
