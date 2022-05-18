@@ -4,10 +4,16 @@
     padding: 0;
 }
 
+.cont {
+  position: relative;
+  margin-top: 10%;
+  margin-left: 1%;
+}
+
 .card {
-  margin-top: 20%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
+  float: left;
   margin: auto;
   text-align: center;
 }
@@ -15,6 +21,38 @@
 .title {
   color: grey;
   font-size: 18px;
+}
+
+.workout-menu-box {
+  margin: 2%;
+  padding: 2%;
+  margin-left: 350px;
+  background-color: #e6e6e6;
+  border-radius: 15px;
+}
+
+.workout-menu-img {
+  width: 20%;
+  float: left;
+  max-width: 250px;
+  max-height: 500px;
+}
+
+.workout-menu-desc {
+  word-wrap: break-word;
+  width: 70%;
+  float: left;
+  margin-left: 8%;
+}
+
+.workout-detail {
+  font-size: 15px;
+  margin: 2% 0;
+  color: gray;
+}
+
+.exsection {
+  text-align: center;
 }
 
 button {
@@ -94,4 +132,10 @@ a {
 
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
+}
+
+@media screen and (max-width: 1065px) {
+    #google_translate_element {
+      display: none;
+  }
 }

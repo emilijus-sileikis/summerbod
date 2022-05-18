@@ -144,6 +144,7 @@ class User extends BaseController
         $model = new UserModel();
 
         $data['user'] = $model->where('id', session()->get('id'))->first();
+        $data['workouts'] = $model->getUserData();
         return view('profile', $data);
     }
 

@@ -6,26 +6,30 @@
 <div class="diff-menu-container">
 
 	<form method="post">
-		<a class="dropdownex"> 
-			<button class="dropbtnex diff-menu-box">Sort by</button>
-			<div class="dropdownex-content sort-content">
-                <li> <button type="submit" name="but_sort_1" class="diff-menu-sort-box" >Difficulty ↑</button> </li>
-                <li> <button type="submit" name="but_sort_2" class="diff-menu-sort-box" >Difficulty ↓</button> </li>
-                <li> <button type="submit" name="but_sort_3" class="diff-menu-sort-box" >Name ↑</button> </li>
-				<li> <button type="submit" name="but_sort_4" class="diff-menu-sort-box" >Name ↓</button> </li>
-            </div>
-		</a>
+	
+		<div class="dropdownex">
+  			<button class="dropbtnex">Dropdown</button>
+  			<div class="dropdown-contentex">
+    			<button type="submit" name="but_sort_1">Difficulty ↑</button>
+    			<button type="submit" name="but_sort_2">Difficulty ↓</button>
+    			<button type="submit" name="but_sort_3">Name ↑</button>
+				<button type="submit" name="but_sort_4">Name ↓</button>
+  			</div>
+		</div>
           
-        <a class="dropdownex"> 
-			<button class="dropbtnex diff-menu-box">Difficulty</button>
-			<div class="dropdownex-content filter-content">
-                <li> <button type="submit" name="but_filter_1" class="diff-menu-sort-box" >Beginner</button> </li>
-                <li> <button type="submit" name="but_filter_2" class="diff-menu-sort-box" >Intermediate</button> </li>
-                <li> <button type="submit" name="but_filter_3" class="diff-menu-sort-box" >Hard</button> </li>
-            </div>
-		</a>
-				
-		<button type="submit" name="but_clear" class="button diff-menu-box" value="Clear filters">Clear Filters</button>
+        <div class="dropdownex">
+  			<button class="dropbtnex">Dropdown</button>
+  			<div class="dropdown-contentex">
+    			<button type="submit" name="but_filter_1">Beginner</button>
+    			<button type="submit" name="but_filter_2">Intermediate</button>
+    			<button type="submit" name="but_filter_3">Hard</button>
+  			</div>
+		</div>
+
+		<div class="dropdownex">
+    		<button class="dropbtnex" type="submit" name="but_clear">Clear Filters</button>
+		</div>
+
     </form>
 </div>
 

@@ -55,6 +55,8 @@ $routes->get('admin/manage_user_workouts/delete/(:num)', 'ManageUserWorkouts::de
 $routes->get('admin/manage_quiz/delete/(:num)', 'ManageQuiz::delete/$1', ['filter' => 'adminauth']);
 $routes->get('admin/manage_workouts/delete/(:num)', 'ManageWorkouts::delete/$1', ['filter' => 'adminauth']);
 
+$routes->get('profile/add', 'Profile::add', ['filter' => 'auth']);
+
 $routes->get('logout', 'User::logout');
 
 /*

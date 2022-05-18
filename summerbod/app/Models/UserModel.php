@@ -59,4 +59,12 @@ class UserModel extends Model
 		$this->db->close();
 		return $data;
 	}
+
+	function getUserData() {
+		$builder = $this->db->table('user_workouts');
+        $builder->select()->where('user_id', session()->get('id'));
+        $exercises = $builder->get();
+        $this->db->close();
+        return $exercises;
+    }
 }
