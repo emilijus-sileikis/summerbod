@@ -77,10 +77,10 @@
 
     - name: Change permissions for writable folder
       command: chmod 777 -R "/var/www/{{ http_host }}/writable"
-	  
+
     - name: Change permissions for session folder
       command: chmod 777 -R "/var/www/{{ http_host }}/writable/session"
-	  
+  
     - name: Change permissions for cache folder
       command: chmod 777 -R "/var/www/{{ http_host }}/writable/cache"
 
@@ -88,7 +88,7 @@
       shell: mv wiket/Ansible/files/.htaccess /usr/share/phpmyadmin
 
     - name: Put htaccess file for summerbod
-      shell: mv wiket/codeigniter4/.htaccess "/var/www/{{ http_host }}"
+      shell: mv wiket/summerbod/.htaccess "/var/www/{{ http_host }}"
 
     - name: Change the password for the user
       command: htpasswd -cb /usr/share/phpmyadmin/.htpasswd "{{ phpmyadmin_user }}" "{{ phpmyadmin_password }}"
@@ -109,17 +109,17 @@
         name: "{{ http_host }}"
         state: present
 
-    - name: Create tables
-      script: shell/Migrations.sh
-	  
-    - name: Seed the tables
-	  script: shell/Seeders.sh
-
     - name: Change the URL in App.php
       shell: awk '{ if (NR == 26) printf "    public $baseURL = \x27http://{{ url }}\x27;"; else print $0 }' /var/www/summerbod/app/Config/App.php > App.php; mv -f App.php /var/www/summerbod/app/Config/App.php
 
     - name: Enable PMA conf
       command: a2enconf phpmyadmin.conf
+      
+    - name: Create tables
+      script: shell/Migrations.sh
+  
+    - name: Seed the tables
+      script: shell/Seeders.sh
 
     - name: Enable rewrite
       command: a2enmod rewrite
