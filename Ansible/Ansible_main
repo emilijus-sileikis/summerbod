@@ -106,8 +106,11 @@
         name: "{{ http_host }}"
         state: present
 
-    - name: Import database to mysql
-      shell: mysql -u "{{ phpmyadmin_user }}" -p"{{ phpmyadmin_password }}" "{{ http_host }}" < wiket/Database/summerbodDB.sql
+    - name: Create tables
+      script: shell/Migrations.sh
+	  
+    - name: Seed the tables
+	  script: shell/Seeders.sh
 
     - name: Change the URL in App.php
       shell: awk '{ if (NR == 26) printf "    public $baseURL = \x27http://{{ url }}\x27;"; else print $0 }' /var/www/summerbod/app/Config/App.php > App.php; mv -f App.php /var/www/summerbod/app/Config/App.php
