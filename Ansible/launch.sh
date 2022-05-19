@@ -19,4 +19,4 @@ ansible-galaxy install robertdebock.phpmyadmin
 ######################
 
 cd
-./wiket/Ansible/shell/Create_VM
+./wiket/Ansible/shell/Create_VM.sh

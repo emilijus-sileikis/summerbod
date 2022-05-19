@@ -10,10 +10,10 @@ CPU=0.5
 VCPU=3
 RAM='3072m'
 
-echo "Please provide your MIF username: "
+echo "Please provide your MIF username (For OpenNebula): "
 read CUSER
 
-echo "Please provide your MIF password: "
+echo "Please provide your MIF password (For OpenNebula): "
 stty -echo
 read CPASS
 stty echo
@@ -54,4 +54,4 @@ scp -rp -P $CSSH_PORT wiket/* $CUSER@193.219.91.103:~/wiket/
 ## Launch Conn Check ##
 #######################
 cd
-ansible-playbook wiket/Ansible/Ansible_main -K
+ansible-playbook wiket/Ansible/Ansible_main.yml -K

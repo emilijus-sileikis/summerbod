@@ -79,6 +79,7 @@ li a, .dropbtn{
 
 .search{
     position: relative;
+    text-align: center;
     padding: 1% 0;
 }
 

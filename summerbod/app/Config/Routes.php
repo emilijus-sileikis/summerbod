@@ -45,11 +45,17 @@ $routes->get('admin/manage_quiz', 'ManageQuiz::index', ['filter' => 'adminauth']
 $routes->get('admin/manage_workouts', 'ManageWorkouts::index', ['filter' => 'adminauth']);
 
 $routes->get('profile', 'User::profile', ['filter' => 'auth']);
+$routes->get('favorites', 'Favorites::index', ['filter' => 'auth']);
+
+$routes->get('public/Workouts/w_all_exercises/add/(:num)', 'W_all_exercises::add/$1', ['filter' => 'auth']);
+$routes->get('public/Workouts/w_all_exercises/remove/(:num)', 'W_all_exercises::remove/$1', ['filter' => 'auth']);
 
 $routes->get('admin/manage_users/delete/(:num)', 'ManageUsers::delete/$1', ['filter' => 'adminauth']);
 $routes->get('admin/manage_user_workouts/delete/(:num)', 'ManageUserWorkouts::delete/$1', ['filter' => 'adminauth']);
 $routes->get('admin/manage_quiz/delete/(:num)', 'ManageQuiz::delete/$1', ['filter' => 'adminauth']);
 $routes->get('admin/manage_workouts/delete/(:num)', 'ManageWorkouts::delete/$1', ['filter' => 'adminauth']);
+
+$routes->get('profile/add', 'Profile::add', ['filter' => 'auth']);
 
 $routes->get('logout', 'User::logout');
 

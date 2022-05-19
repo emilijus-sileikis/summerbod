@@ -9,7 +9,7 @@
 
   tasks:
     - name: Server setup
-      script: shell/Server_setup
+      script: shell/Server_setup.sh
 
   #Apache Configuration
     - name: Install LAMP Packages
@@ -73,16 +73,25 @@
       command: mv /var/www/html/phpmyadmin/ /usr/share/phpmyadmin
 
     - name: Move project files to Apache
-      shell: mv wiket/codeigniter4/* "/var/www/{{ http_host }}"
+      shell: mv wiket/summerbod/* "/var/www/{{ http_host }}"
 
     - name: Change permissions for writable folder
       command: chmod 777 -R "/var/www/{{ http_host }}/writable"
+
+    - name: Change permissions for session folder
+      command: chmod 777 -R "/var/www/{{ http_host }}/writable/session"
+  
+    - name: Change permissions for cache folder
+      command: chmod 777 -R "/var/www/{{ http_host }}/writable/cache"
+      
+    - name: Change permissions for images folder
+      command: chmod 777 "/var/www/{{ http_host }}/assets/images/workouts"
 
     - name: Put htaccess file for PMA
       shell: mv wiket/Ansible/files/.htaccess /usr/share/phpmyadmin
 
     - name: Put htaccess file for summerbod
-      shell: mv wiket/codeigniter4/.htaccess "/var/www/{{ http_host }}"
+      shell: mv wiket/summerbod/.htaccess "/var/www/{{ http_host }}"
 
     - name: Change the password for the user
       command: htpasswd -cb /usr/share/phpmyadmin/.htpasswd "{{ phpmyadmin_user }}" "{{ phpmyadmin_password }}"
@@ -92,6 +101,9 @@
 
     - name: Increase php upload size
       shell: mv wiket/Ansible/files/php.ini /etc/php/7.4/apache2
+      
+    - name: Enable production environment
+      shell: cp "/var/www/{{ http_host }}/env" "/var/www/{{ http_host }}/.env"
 
     - name: Create a new database
       mysql_db:
@@ -100,14 +112,17 @@
         name: "{{ http_host }}"
         state: present
 
-    - name: Import database to mysql
-      shell: mysql -u "{{ phpmyadmin_user }}" -p"{{ phpmyadmin_password }}" "{{ http_host }}" < wiket/Database/summerbodDB.sql
-
     - name: Change the URL in App.php
       shell: awk '{ if (NR == 26) printf "    public $baseURL = \x27http://{{ url }}\x27;"; else print $0 }' /var/www/summerbod/app/Config/App.php > App.php; mv -f App.php /var/www/summerbod/app/Config/App.php
 
     - name: Enable PMA conf
       command: a2enconf phpmyadmin.conf
+      
+    - name: Create tables
+      script: shell/Migrations.sh
+  
+    - name: Seed the tables
+      script: shell/Seeders.sh
 
     - name: Enable rewrite
       command: a2enmod rewrite
