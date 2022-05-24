@@ -28,7 +28,15 @@
     color: gray;
 }
 
-@media only screen and (max-width:425px){
+@media only screen and (max-width:1000px){
+
+    .workout-menu-desc{
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+
+@media only screen and (max-width:795px){
 
     .workout-menu{
         padding: 20% auto;
@@ -56,5 +64,36 @@
         font-size: 15px;
         margin: 2% 0;
         color: gray;
+    }
+}
+
+@media only screen and (max-width:758px){
+
+    .workout-menu-desc{
+        width: 60%;
+        float: left;
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width:555px){
+
+    .workout-menu-desc{
+        width: 40%;
+        float: left;
+        margin-left: 20%;
+    }
+}
+
+
+@media only screen and (max-width:425px){
+
+    .workout-menu-desc{
+        width: 50%;
+        margin-left: 10%;
+    }
+
+    .workout-detail{
+        font-size: 10px;
     }
 }

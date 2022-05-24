@@ -4,6 +4,7 @@ namespace App\Controllers;
  
 use CodeIgniter\Controller;
 use App\Models\ProfileModel;
+use App\Models\UserModel;
  
 class Profile extends Controller
 {
@@ -14,10 +15,15 @@ class Profile extends Controller
  
     public function add()
     { 
+		$data = [];
+        $model = new UserModel();
+
+        $data['user'] = $model->where('id', session()->get('id'))->first();
+        $data['workouts'] = $model->getUserData();
 		
 		$rules = [
             'cat' => 'required',
-            'exName' => 'required',
+            'exName' => 'required|max_length[25]',
             'descr' => 'required',
             'diff' => 'required',
 			"image" => [
@@ -26,9 +32,25 @@ class Profile extends Controller
                 'max_size[image,10240]',
 			],
 		];
+		$errors = [
+			'cat' => "The Category field is required.",
+			'exName' => [
+				'required' => "The Name field is required.",
+				'max_length' => "Your Name is too long! Maximum length is 25 characters.",
+			],
+			'descr' => [
+				'required' => "The Description field is required.",
+				'max_length' => "Your Description is too long! Maximum length is 250 characters.",
+			],
+			'diff' => "The Dificulty field is required.",
+			'image' => [
+				'mime_in' => "Supported formats for uploading are: .jpg, .jpeg, .gif, .png.",
+				'max_size' => "Your image is too big! Maximum size is 10MB.",
+			],
+		];
 		
-		if (!$this->validate($rules)) {
-			return view('profile', ['validation' => $this->validator]);
+		if (!$this->validate($rules, $errors)) {
+			return view('profile', $data, ['validation' => $this->validator]);
 		} else {
 			$image = $this->request->getFile('image');
             $image->move(ROOTPATH . 'assets/images/workouts');

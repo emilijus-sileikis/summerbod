@@ -43,20 +43,34 @@ class AllExModel extends Model
 
     function insertFav($id){
         $builder = $this->db->table('fav_workouts');
+
+        if ($builder->select()->where('user_id', session()->get('id'))->where('ex_id', $id)->countAllResults() > 0) {
+
+            $_SESSION['error'] = 'Exercise is already in your favorites list!';
+            session()->markAsFlashdata("error");
+
+            return redirect()->to('public/Workouts/w_all_exercises');
+        }
+        else {
+
         $data = [
             'ex_id' => $id,
             'user_id'  => session()->get('id'),
         ];
+
+        $_SESSION['message'] = 'Exercise added to the favorite list successfuly!';
+        session()->markAsFlashdata("message");
         
         $builder->insert($data);
+        }
     }
 
     function getFav(){
         $builder = $this->db->table('fav_workouts');
-        $builder->select()->where('id', session()->get('id'))->orderBy('name', 'ASC');
+        $builder->select()->where('user_id', session()->get('id'));
         $favorites = $builder->get();
         $this->db->close();
-        return $favoritess;
+        return $favorites;
     }
 
     function removeFav($id){

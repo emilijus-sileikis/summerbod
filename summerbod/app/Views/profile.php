@@ -20,12 +20,16 @@
 
     <h2 class="workout-header">Your Created Exercises</h2>
 
+    <div id="err" style="color: red; font-size: 15px; list-style-position: inside;">
+      <?= \Config\Services::validation()->listErrors(); ?>
+    </div>
+
     <?php foreach ($workouts->getResultArray() as $workout) { ?>
 
       <div class="workout-menu-box">
 
         <div class="workout-menu-img">
-          <?= '<img src=' .$workout["user_image"].' alt="" class="img-responsive img-curve img-explore-stretch">'?>
+          <?= '<img src=' .$workout["user_image"].' alt="" class="img-responsive img-curve">'?>
         </div>
 
         <div class="workout-menu-desc">
@@ -54,8 +58,6 @@
   <form method="post" action="<?= base_url('public/profile/add') ?>" enctype="multipart/form-data" class="form-container">
 
     <h2>Add Exercise</h2>
-
-    <?= \Config\Services::validation()->listErrors(); ?>
 
     <label for="cat">Category:</label>
     <select name="cat" required>
@@ -107,4 +109,5 @@
 </div>
 
 <script src="<?php echo base_url('assets/js/ex_modal.js'); ?>"></script>
+<script> window.setTimeout("document.getElementById('err').style.display='none';", 4000); </script>
 <?php echo view('partials/footer'); ?>

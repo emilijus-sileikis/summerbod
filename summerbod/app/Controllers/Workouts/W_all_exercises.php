@@ -10,6 +10,7 @@ class W_all_exercises extends BaseController
     {
         $workoutModel = new \App\Models\AllExModel();
         $data['workouts'] = $workoutModel->getData();
+        $data['favorites'] = $workoutModel->getFav();
         return view('w_all_exercises', $data);
     }
 
@@ -18,7 +19,8 @@ class W_all_exercises extends BaseController
         if (session()->get('isLoggedIn')) {
             $model = new \App\Models\AllExModel();
             $model->insertFav($id);
-            return redirect()->to('public/Workouts/w_all_exercises');
+
+            return redirect()->to($_SERVER['HTTP_REFERER']);
         }
         else { 
             return redirect()->to('public/login');
@@ -30,7 +32,7 @@ class W_all_exercises extends BaseController
         if (session()->get('isLoggedIn')) {
             $model = new \App\Models\AllExModel();
             $model->removeFav($id);
-            return redirect()->to('public/favorites');
+            return redirect()->to($_SERVER['HTTP_REFERER']);
         }
         else { 
             return redirect()->to('public/login');

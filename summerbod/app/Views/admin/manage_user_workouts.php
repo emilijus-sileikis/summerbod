@@ -1,4 +1,11 @@
-<?php include($_SERVER['DOCUMENT_ROOT'].'/summerbod/app/Views/partials/adminmenu.php'); ?>
+<?php
+    if ($_SERVER['CI_ENVIRONMENT'] == 'development') {
+        include($_SERVER['DOCUMENT_ROOT'].'/summerbod/app/Views/partials/adminmenu.php');
+    }
+    else {
+        include($_SERVER['DOCUMENT_ROOT'].'/app/Views/partials/adminmenu.php');
+    }
+?>
 
 <link rel="stylesheet" href="<?php echo base_url('assets/css/admin.css'); ?>">
 
@@ -53,4 +60,11 @@
     </div>
 </div>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/summerbod/app/Views/partials/footer.php'); ?>
+<?php
+    if ($_SERVER['CI_ENVIRONMENT'] == 'development') {
+        include($_SERVER['DOCUMENT_ROOT'].'/summerbod/app/Views/partials/footer.php');
+    }
+    else {
+        include($_SERVER['DOCUMENT_ROOT'].'/app/Views/partials/footer.php');
+    }
+?>

@@ -15,7 +15,7 @@ class FavWorkouts extends Migration
             ],
             'user_id' => [
                 'type' => 'INT',
-                'constraint' => '11',
+                'constraint' => 11,
 				'unsigned' => true
             ],
         ]);

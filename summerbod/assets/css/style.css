@@ -43,8 +43,8 @@
 
 .img-explore-stretch{
     object-fit: cover;
-	width: 150px;
-    height: 150px;
+	width: 130px;
+    height: 140px;
 }
 
 .text-right{
@@ -109,4 +109,36 @@ h3{
     position: absolute;
     bottom: 40px;
     left: 20%;
+}
+
+@media only screen and (max-width:1350px){
+
+    .img-explore-stretch{
+        width: 100px;
+        height: 110px;
+    }
+}
+
+@media only screen and (max-width:1050px){
+
+    .img-explore-stretch{
+        width: 80px;
+        height: 90px;
+    }
+}
+
+@media only screen and (max-width:1000px){
+
+    .img-explore-stretch{
+        width: 120px;
+        height: 130px;
+    }
+}
+
+@media only screen and (max-width:425px){
+
+    .img-explore-stretch{
+        width: 80px;
+        height: 90px;
+    }
 }
