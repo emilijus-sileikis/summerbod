@@ -8,12 +8,14 @@ class T_calisthenics extends BaseController
 {
 	public function index()
 	{
+        $title = 'Calisthenics Exercises';
 		$calistModel = new \App\Models\CalisthenicsModel();
 		$model = new \App\Models\AllExModel();
         $data['workouts'] = $calistModel->getData();
 		$data['favorites'] = $model->getFav();
+        $data['title'] = $title;
 
-		return view('t_calisthenics', $data);
+		return view('workouts/techniques', $data);
 	}
 
 	public function add($id)

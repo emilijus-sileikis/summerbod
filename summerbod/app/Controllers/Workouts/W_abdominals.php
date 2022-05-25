@@ -9,11 +9,14 @@ class W_abdominals extends BaseController
     public function index()
     {
         $name = 'Abdominals';
+        $title = 'Abdominals Exercises';
         $workoutModel = new \App\Models\WorkoutsModel();
         $model = new \App\Models\AllExModel();
         $data['workouts'] = $workoutModel->getData($name);
         $data['favorites'] = $model->getFav();
-        return view('w_abdominals', $data);
+        $data['title'] = $title;
+        
+        return view('workouts/workouts', $data);
     }
 
     public function add($id)

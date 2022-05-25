@@ -9,6 +9,6 @@ class Result extends BaseController
     {
         $answrModel = new \App\Models\AnswrModel();
         $data['res'] = $answrModel->getData();
-       return view('result', $data);
+       return view('workouts/result', $data);
     }
 }

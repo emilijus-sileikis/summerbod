@@ -9,12 +9,14 @@ class W_shoulders extends BaseController
     public function index()
     {
         $name = 'Shoulders';
+        $title = 'Shoulder Exercises';
         $workoutModel = new \App\Models\WorkoutsModel();
         $model = new \App\Models\AllExModel();
         $data['workouts'] = $workoutModel->getData($name);
         $data['favorites'] = $model->getFav();
+        $data['title'] = $title;
 
-        return view('w_shoulders', $data);
+        return view('workouts/workouts', $data);
     }
 
     public function add($id)

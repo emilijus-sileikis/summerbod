@@ -8,12 +8,14 @@ class T_powerlifting extends BaseController
 {
 	public function index()
 	{
+        $title = 'Powerlifting Exercises';
 		$calistModel = new \App\Models\CalisthenicsModel();
 		$model = new \App\Models\AllExModel();
         $data['workouts'] = $calistModel->getData();
 		$data['favorites'] = $model->getFav();
+        $data['title'] = $title;
 
-		return view('t_powerlifting', $data);
+		return view('workouts/techniques', $data);
 	}
 
 	public function add($id)

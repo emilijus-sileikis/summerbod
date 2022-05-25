@@ -45,6 +45,33 @@ class QuizSeeder extends Seeder
             'choice_4' => 'Back Extensions',
             'answer' => '3'
         ],
+		[
+            'question' => 'How much water it is recommended to drink before a workout?',
+            'image' => 'NULL',
+            'choice_1' => '600ml-700ml',
+            'choice_2' => '800ml-900ml',
+            'choice_3' => '100ml-200ml',
+            'choice_4' => '400ml-500ml',
+            'answer' => '4'
+        ],
+		[
+            'question' => 'Which one of these is a recommended way to prevent injuries?',
+            'image' => 'NULL',
+            'choice_1' => 'Keep pushing yourself',
+            'choice_2' => 'Let your body rest',
+            'choice_3' => 'Ignore the pain',
+            'choice_4' => 'Do shorter breaks',
+            'answer' => '2'
+        ],
+		[
+            'question' => 'Which of these exercises targets calves?',
+            'image' => 'NULL',
+            'choice_1' => 'Prone walkout',
+            'choice_2' => 'Reverse fly',
+            'choice_3' => 'Plank',
+            'choice_4' => 'Hamstring Curl',
+            'answer' => '1'
+        ],
         ];
 
         $this->db->table('quiz')->insertBatch($data);

@@ -1,4 +1,4 @@
-<?php include('partials/menu.php'); ?>
+<?php echo view('partials/menu'); ?>
 
 <link rel="stylesheet" href="<?php echo base_url('assets/css/warmups.css'); ?>">
 
@@ -72,4 +72,4 @@
 <script> window.setTimeout("document.getElementById('msg').style.display='none';", 2000); </script>
 <script> window.setTimeout("document.getElementById('err').style.display='none';", 2000); </script>
 
-<?php include('partials/footer.php'); ?>
+<?php echo view('partials/footer'); ?>

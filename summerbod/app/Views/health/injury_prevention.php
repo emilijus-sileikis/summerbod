@@ -1,4 +1,4 @@
-<?php include('partials/menuhealthnav.php'); ?>
+<?php echo view('partials/menuhealthnav'); ?>
 <!-- Health section start -->
 <link rel="stylesheet" href="<?php echo base_url('assets/css/techniques.css'); ?>">
 
@@ -91,7 +91,7 @@
         it will get better.
     </p>
 
-    <a class="tech-text"><?php include('partials/base64/slouching.php'); ?></a>
+    <a class="tech-text"><?php include('base64/slouching.php'); ?></a>
 
     <br></br>
     <h4 class="tech-text"> "Donald Duck" Posture </h4>
@@ -101,7 +101,7 @@
         excessive weight around the stomach and pregnancy can all contribue to a "Donald Duck" posture.
     </p>
 
-    <a class="tech-text"><?php include('partials/base64/duck.php'); ?></a>
+    <a class="tech-text"><?php include('base64/duck.php'); ?></a>
 
     <br></br>
     <h4 class="tech-text"> Flat back posture </h4>
@@ -111,7 +111,7 @@
         which encourage you to adopt such a position. Spending long periods sitting down can also contribute to a flat back.
     </p>
 
-    <a class="tech-text"><?php include('partials/base64/flatback.php'); ?></a>
+    <a class="tech-text"><?php include('base64/flatback.php'); ?></a>
 
     <br></br>
     <h4 class="tech-text"> Leaning on one leg </h4>
@@ -121,7 +121,7 @@
         Other causes of uneven hips include carrying heavy backpacks on one shoulder, and parents carrying toddlers on one hip.
     </p>
 
-    <a class="tech-text"><?php include('partials/base64/1leg.php'); ?></a>
+    <a class="tech-text"><?php include('base64/1leg.php'); ?></a>
 
     <br></br>
     <h4 class="tech-text"> "Text neck" </h4>
@@ -130,7 +130,7 @@
         upper back (a small bump on your neck), which can cause shoulder and upper back stiffness and even pain.
     </p>
 
-    <a class="tech-text"><?php include('partials/base64/textback.php'); ?></a>
+    <a class="tech-text"><?php include('base64/textback.php'); ?></a>
 
     <br></br>
     <h4 class="tech-text"> Poking your chin </h4>
@@ -138,8 +138,8 @@
         This posture is also associated with sitting too long in front of a desk or a computer with its screen being too low. Correcting this posture requires your work place adjustments.
     </p>
 
-    <a class="tech-text"><?php include('partials/base64/chin.php'); ?></a>
+    <a class="tech-text"><?php include('base64/chin.php'); ?></a>
 
 </div>
 <!-- Workouts section end -->
-<?php include('partials/footer.php'); ?>
+<?php echo view('partials/footer'); ?>

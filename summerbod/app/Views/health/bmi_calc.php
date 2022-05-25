@@ -1,4 +1,4 @@
-<?php include('partials/menuhealthnav.php'); ?>
+<?php echo view('partials/menuhealthnav'); ?>
 
 <link rel="stylesheet" href="<?php echo base_url('assets/css/health.css'); ?>">
 
@@ -160,4 +160,4 @@
 
 </div>
 
-<?php include('partials/footer.php'); ?>
+<?php echo view('partials/footer'); ?>

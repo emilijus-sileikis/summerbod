@@ -8,10 +8,13 @@ class W_all_exercises extends BaseController
 {
     public function index()
     {
+        $title = 'All Exercises';
         $workoutModel = new \App\Models\AllExModel();
         $data['workouts'] = $workoutModel->getData();
         $data['favorites'] = $workoutModel->getFav();
-        return view('w_all_exercises', $data);
+        $data['title'] = $title;
+        
+        return view('workouts/workouts', $data);
     }
 
     public function add($id)

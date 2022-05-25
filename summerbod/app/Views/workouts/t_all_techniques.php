@@ -1,4 +1,4 @@
-<?php include('partials/menu.php'); ?>
+<?php echo view('partials/menu'); ?>
 
 <link rel="stylesheet" href="<?php echo base_url('assets/css/techniques.css'); ?>">
 
@@ -70,4 +70,5 @@
         </li>
     </ul>
 </div>
-<?php include('partials/footer.php'); ?>
+
+<?php echo view('partials/footer'); ?>

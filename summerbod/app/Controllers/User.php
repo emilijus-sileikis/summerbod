@@ -28,7 +28,7 @@ class User extends BaseController
             if (!$this->validate($rules, $errors)) 
             {
 
-                return view('login', [
+                return view('user/login', [
                     "validation" => $this->validator,
                 ]);
 
@@ -47,12 +47,12 @@ class User extends BaseController
                 else 
                 {
                     $this->setUserSession($user);
-                    return redirect()->to(base_url('public/profile'));
+                    return redirect()->to(base_url('public/user/profile'));
                 }
 
             }
         }
-        return view('login');
+        return view('user/login');
     }
 
     private function setUserSession($user)
@@ -115,7 +115,7 @@ class User extends BaseController
 
             if (!$this->validate($rules, $errors)) 
             {
-                return view('register', [
+                return view('user/register', [
                     "validation" => $this->validator,
                 ]);
             } 
@@ -131,10 +131,10 @@ class User extends BaseController
                 $model->save($newData);
                 $session = session();
                 $session->setFlashdata('success', 'Successful Registration');
-                return redirect()->to(base_url('public/login'));
+                return redirect()->to(base_url('public/user/login'));
             }
         }
-        return view('register');
+        return view('user/register');
     }
 
     public function profile()
@@ -145,7 +145,7 @@ class User extends BaseController
 
         $data['user'] = $model->where('id', session()->get('id'))->first();
         $data['workouts'] = $model->getUserData();
-        return view('profile', $data);
+        return view('user/profile', $data);
     }
 
     public function logout()

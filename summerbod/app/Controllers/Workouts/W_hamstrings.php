@@ -8,11 +8,14 @@ class W_hamstrings extends BaseController
 {
     public function index()
     {   $name = 'Hamstrings';
+        $title = 'Hamstrings Exercises';
         $workoutModel = new \App\Models\WorkoutsModel();
         $model = new \App\Models\AllExModel();
         $data['workouts'] = $workoutModel->getData($name);
         $data['favorites'] = $model->getFav();
-        return view('w_hamstrings', $data);
+        $data['title'] = $title;
+
+        return view('workouts/workouts', $data);
     }
 
     public function add($id)

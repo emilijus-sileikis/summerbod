@@ -1,5 +1,6 @@
 <?php
-    include('partials/menu_no_bar.php');
+
+    echo view('partials/menu_no_bar');
    
     $res = $results->getResultArray();
     $links = $slides = $options = $choices = "";

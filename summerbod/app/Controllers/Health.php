@@ -6,6 +6,6 @@ class Health extends BaseController
 {
     public function index()
     {
-       return view('health');
+       return view('health/health');
     }
 }

@@ -9,11 +9,14 @@ class W_lowerback extends BaseController
     public function index()
     {
         $name = 'Lower-back';
+        $title = 'Lowerback Exercises';
         $workoutModel = new \App\Models\WorkoutsModel();
         $model = new \App\Models\AllExModel();
         $data['workouts'] = $workoutModel->getData($name);
         $data['favorites'] = $model->getFav();
-        return view('w_lowerback', $data);
+        $data['title'] = $title;
+
+        return view('workouts/workouts', $data);
     }
 
     public function add($id)

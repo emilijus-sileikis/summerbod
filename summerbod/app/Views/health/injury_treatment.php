@@ -1,4 +1,4 @@
-<?php include('partials/menuhealthnav.php'); ?>
+<?php echo view('partials/menuhealthnav'); ?>
 <!-- Health section start -->
 <link rel="stylesheet" href="<?php echo base_url('assets/css/techniques.css'); ?>">
 
@@ -16,4 +16,4 @@
     </p>
 </div>
 <!-- Workouts section end -->
-<?php include('partials/footer.php'); ?>
+<?php echo view('partials/footer'); ?>

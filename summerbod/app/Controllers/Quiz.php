@@ -9,6 +9,6 @@ class Quiz extends BaseController
     {
         $quizModel = new \App\Models\QuizModel();
         $data['results'] = $quizModel->getData();
-        return view('quiz', $data);
+        return view('workouts/quiz', $data);
     }
 }

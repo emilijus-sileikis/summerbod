@@ -10,6 +10,6 @@ class Favorites extends BaseController
     {
         $model = new \App\Models\FavoritesModel();
         $data['workouts'] = $model->getData();
-        return view('favorites', $data);
+        return view('user/favorites', $data);
     }
 }

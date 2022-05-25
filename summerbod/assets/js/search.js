@@ -32,9 +32,9 @@ function clear() {
   document.getElementById('searchUL').style.display= "none";
 }
 
-    window.onscroll = function() {myFunction()};
+    window.onscroll = function() { remove() };
 
-function myFunction() {
+function remove() {
   if (document.body.scrollTop > 2 || document.documentElement.scrollTop > 2) {
     document.getElementById('searchInput').style = "z-index: 0;";
     document.getElementById('clearBtn').style = "z-index: 0;";

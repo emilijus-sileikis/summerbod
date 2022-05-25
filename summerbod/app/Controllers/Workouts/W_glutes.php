@@ -9,11 +9,14 @@ class W_glutes extends BaseController
     public function index()
     {
         $name = 'Glutes';
+        $title = 'Glutes Exercises';
         $workoutModel = new \App\Models\WorkoutsModel();
         $model = new \App\Models\AllExModel();
         $data['workouts'] = $workoutModel->getData($name);
         $data['favorites'] = $model->getFav();
-        return view('w_glutes', $data);
+        $data['title'] = $title;
+
+        return view('workouts/workouts', $data);
     }
 
     public function add($id)

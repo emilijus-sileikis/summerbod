@@ -114,7 +114,6 @@
       <div class = "bmi-output">
         <h3 id = "bmi-value"></h3>
         <p id = "bmi-category"></p>
-        <p id = "bmi-gender"></p>
       </div>
 
     </div>

@@ -1,5 +1,6 @@
 <?php
-    include('partials/menu_no_bar.php');
+
+    echo view('partials/menu_no_bar');
 
     $answers = array();
     $num = 0;
@@ -57,5 +58,5 @@
             </div>
         </main>
     </body>
-    <?php include('partials/footer.php'); ?>
+    <?php echo view('partials/footer'); ?>
 </html>

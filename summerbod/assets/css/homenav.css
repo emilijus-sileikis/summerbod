@@ -79,12 +79,11 @@ li a, .dropbtn{
 
 .search{
     position: relative;
-    text-align: center;
     padding: 1% 0;
 }
 
 .list{
-    position:absolute;
+    position: absolute;
     max-height: 203px;
     overflow: hidden;
     width: 33%;
@@ -97,7 +96,6 @@ li a, .dropbtn{
     font-size: 1rem;
     border: none;
     border-radius: 5px;
-	float: center;
   }
   
   #searchUL li{

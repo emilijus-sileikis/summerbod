@@ -13,7 +13,7 @@ class Warmups extends BaseController
         $data['warmups'] = $warmupModel->getData();
 		$data['favorites'] = $model->getFav();
 
-		return view('warmups', $data);
+		return view('workouts/warmups', $data);
 	}
 
 	public function add($id)
