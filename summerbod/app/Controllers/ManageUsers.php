@@ -25,7 +25,8 @@ class ManageUsers extends BaseController
         $model = new \App\Models\DashboardModel();
 		
 		$fp = fopen('usersessionlogging.txt', 'a');
-		fwrite($fp, 'Account deletion process successful:'. PHP_EOL .'id: '. $id . PHP_EOL . PHP_EOL);
+		date_default_timezone_set("Europe/Vilnius");
+		fwrite($fp, 'Account deletion process successful:'. PHP_EOL . 'timestamp: ' . date("m/d/Y h:i:s a", time()) . PHP_EOL .'id: '. $id . PHP_EOL . PHP_EOL);
 		fclose($fp);
 
         $data['user'] = $model->delUser($id);
