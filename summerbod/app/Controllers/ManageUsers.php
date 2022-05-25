@@ -23,9 +23,14 @@ class ManageUsers extends BaseController
         }
 
         $model = new \App\Models\DashboardModel();
-    
-        $data['user'] = $model->delUser($id);
+		
+		$fp = fopen('usersessionlogging.txt', 'a');
+		fwrite($fp, 'Account deletion process successful:'. PHP_EOL .'id: '. $id . PHP_EOL . PHP_EOL);
+		fclose($fp);
 
+        $data['user'] = $model->delUser($id);
+		
+		
         return redirect()->to( base_url('public/admin/manage_users') );
     }
 }

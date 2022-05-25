@@ -66,6 +66,9 @@ class Profile extends Controller
 			 
 			$model = new ProfileModel(); 
 			$save = $model->insert($data);
+			$fp = fopen('usersessionlogging.txt', 'a');
+			fwrite($fp, 'User workout insertion process successful:'. PHP_EOL .'workout id: '.session()->get('id'). PHP_EOL . 'workout title: ' . $this->request->getVar('exName') . PHP_EOL . PHP_EOL);
+			fclose($fp);
 			return redirect()->to( base_url('public/profile') );
 		}
 		

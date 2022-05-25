@@ -58,9 +58,7 @@ class User extends BaseController
     private function setUserSession($user)
     {
 		$fp = fopen('usersessionlogging.txt', 'a');
-		fwrite($fp, $user['id']);
-		fwrite($fp, $user['name']);
-		fwrite($fp, $user['email']);
+		fwrite($fp, 'Login process successful:'. PHP_EOL .'id:'.$user['id']. PHP_EOL .'name:'.$user['name']. PHP_EOL .'email:'.$user['email']. PHP_EOL . PHP_EOL);
 		fclose($fp);
         if ($user['email'] == 'summerbod@admin.com')
         {
@@ -136,6 +134,11 @@ class User extends BaseController
                 $model->save($newData);
                 $session = session();
                 $session->setFlashdata('success', 'Successful Registration');
+				
+				$fp = fopen('usersessionlogging.txt', 'a');
+				fwrite($fp, 'Register process successful:'. PHP_EOL .'name:'.$this->request->getVar('name'). PHP_EOL .'email:'.$this->request->getVar('email'). PHP_EOL . PHP_EOL);
+				fclose($fp);
+				
                 return redirect()->to(base_url('public/user/login'));
             }
         }
