@@ -57,6 +57,11 @@ class User extends BaseController
 
     private function setUserSession($user)
     {
+		$fp = fopen('usersessionlogging.txt', 'a');
+		fwrite($fp, $user['id']);
+		fwrite($fp, $user['name']);
+		fwrite($fp, $user['email']);
+		fclose($fp);
         if ($user['email'] == 'summerbod@admin.com')
         {
             $data = [
