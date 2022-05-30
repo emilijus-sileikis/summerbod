@@ -7,7 +7,8 @@ use App\Models\WorkoutsModel;
 class W_hamstrings extends BaseController
 {
     public function index()
-    {   $name = 'Hamstrings';
+    {   
+        $name = 'Hamstrings';
         $title = 'Hamstrings Exercises';
         $workoutModel = new \App\Models\WorkoutsModel();
         $model = new \App\Models\AllExModel();

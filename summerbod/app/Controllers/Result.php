@@ -8,7 +8,11 @@ class Result extends BaseController
     public function index()
     {
         $answrModel = new \App\Models\AnswrModel();
-        $data['res'] = $answrModel->getData();
+
+        if (isset($_POST["btnSubmit"])) {
+            $data['res'] = $answrModel->getData();
+        }
+
        return view('workouts/result', $data);
     }
 }

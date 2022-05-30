@@ -6,7 +6,8 @@ use CodeIgniter\Model;
 
 class WarmupModel extends Model
 {
-    function getData(){
+    function getData()
+    {
         $builder = $this->db->table('workouts');
         $builder->select()->where('difficulty', 'Warm-up');
         $warmups = $builder->get();

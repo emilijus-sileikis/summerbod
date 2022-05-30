@@ -6,66 +6,67 @@ use CodeIgniter\Model;
 
 class AllExModel extends Model
 {
-    function getData(){
+    function getSort($order, $opt)
+    {   
         $builder = $this->db->table('workouts');
-
-        if(isset($_POST['but_sort_1'])) {
-            $builder->select()->where('difficulty', 'Beginner')->orWhere('difficulty', 'Intermediate')->orWhere('difficulty', 'Hard')->orderBy('difficulty', 'ASC');
-        }
-        else if(isset($_POST['but_sort_2'])) {
-            $builder->select()->where('difficulty', 'Beginner')->orWhere('difficulty', 'Intermediate')->orWhere('difficulty', 'Hard')->orderBy('difficulty', 'DESC');
-        }
-        else if(isset($_POST['but_sort_3'])) {
-            $builder->select()->where('difficulty', 'Beginner')->orWhere('difficulty', 'Intermediate')->orWhere('difficulty', 'Hard')->orderBy('name', 'ASC');
-        }
-        else if(isset($_POST['but_sort_4'])) {
-            $builder->select()->where('difficulty', 'Beginner')->orWhere('difficulty', 'Intermediate')->orWhere('difficulty', 'Hard')->orderBy('name', 'DESC');
-        }
-        else if(isset($_POST['but_filter_1'])) {
-            $builder->select()->where('difficulty', 'Beginner');
-        }
-        else if(isset($_POST['but_filter_2'])) {
-            $builder->select()->where('difficulty', 'Intermediate');
-        }
-        else if(isset($_POST['but_filter_3'])) {
-            $builder->select()->where('difficulty', 'Hard');
-        }
-        else if(isset($_POST['but_clear'])) {
-            $builder->select()->where('difficulty', 'Beginner')->orWhere('difficulty', 'Intermediate')->orWhere('difficulty', 'Hard');
-        }
-        else {
-            $builder->select()->where('difficulty', 'Beginner')->orWhere('difficulty', 'Intermediate')->orWhere('difficulty', 'Hard');
-        }
+        $diff = ['Warm-up'];
+        $builder->select()->whereNotIn('difficulty', $diff)->orderBy($order, $opt);
         $workouts = $builder->get();
         $this->db->close();
         return $workouts;
     }
 
-    function insertFav($id){
+    function getDifficulty($diff)
+    {
+        $builder = $this->db->table('workouts');
+        $builder->select()->where('difficulty', $diff);
+        $workouts = $builder->get();
+        $this->db->close();
+        return $workouts;
+    }
+
+    function getData()
+    {
+        $builder = $this->db->table('workouts');
+        $diff = ['Warm-up'];
+        $builder->select()->whereNotIn('difficulty', $diff);
+        $workouts = $builder->get();
+        $this->db->close();
+        return $workouts;
+    }
+
+    function insertFav($id)
+    {
         $builder = $this->db->table('fav_workouts');
 
-        if ($builder->select()->where('user_id', session()->get('id'))->where('ex_id', $id)->countAllResults() > 0) {
+        if ($builder->select()->where('user_id', session()->get('id'))->where('ex_id', $id)->countAllResults() > 0) 
+        {
 
             $_SESSION['error'] = 'Exercise is already in your favorites list!';
             session()->markAsFlashdata("error");
 
             return redirect()->to('public/Workouts/w_all_exercises');
         }
-        else {
+        else 
+        {
 
-        $data = [
-            'ex_id' => $id,
-            'user_id'  => session()->get('id'),
-        ];
+            $data = 
+            [
+                'ex_id' => $id,
+                'user_id'  => session()->get('id'),
+            ];
 
-        $_SESSION['message'] = 'Exercise added to the favorite list successfuly!';
-        session()->markAsFlashdata("message");
+            $_SESSION['message'] = 'Exercise added to the favorite list successfuly!';
+            session()->markAsFlashdata("message");
         
-        $builder->insert($data);
+            $builder->insert($data);
         }
+
+        $this->db->close();
     }
 
-    function getFav(){
+    function getFav()
+    {
         $builder = $this->db->table('fav_workouts');
         $builder->select()->where('user_id', session()->get('id'));
         $favorites = $builder->get();
@@ -73,7 +74,8 @@ class AllExModel extends Model
         return $favorites;
     }
 
-    function removeFav($id){
+    function removeFav($id)
+    {
         $builder = $this->db->table('fav_workouts');
         $builder->where('user_id', session()->get('id'))->delete(['ex_id' => $id]);
         $workout = $builder->get();

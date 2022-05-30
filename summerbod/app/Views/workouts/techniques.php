@@ -16,7 +16,7 @@
 	<form method="post">
 	
 		<div class="dropdownex">
-  			<button class="dropbtnex">Dropdown</button>
+  			<button class="dropbtnex">Sort By:</button>
   			<div class="dropdown-contentex">
     			<button type="submit" name="but_sort_1">Difficulty ↑</button>
     			<button type="submit" name="but_sort_2">Difficulty ↓</button>
@@ -26,7 +26,7 @@
 		</div>
           
         <div class="dropdownex">
-  			<button class="dropbtnex">Dropdown</button>
+  			<button class="dropbtnex">Difficulty:</button>
   			<div class="dropdown-contentex">
     			<button type="submit" name="but_filter_1">Beginner</button>
     			<button type="submit" name="but_filter_2">Intermediate</button>
