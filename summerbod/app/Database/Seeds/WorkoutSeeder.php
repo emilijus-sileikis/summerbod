@@ -10,7 +10,7 @@ class WorkoutSeeder extends Seeder
     {
         $data = [
         [
-            'image' => base_url('assets/images/workouts/lol.gif'),
+            'image' => base_url('assets/images/workouts/Plank.gif'),
             'category' => 'Abdominals',
             'name' => 'Plank',
             'difficulty' => 'Beginner',
@@ -19,7 +19,7 @@ class WorkoutSeeder extends Seeder
             Keeping your back straight, tighten your core and hold the position for as long as you can.'
         ],
         [
-            'image' => base_url('assets/images/workouts/lol.gif'),
+            'image' => base_url('assets/images/workouts/Lunge.gif'),
             'category' => 'Glutes',
             'name' => 'Lunge',
             'difficulty' => 'Beginner',
@@ -28,7 +28,7 @@ class WorkoutSeeder extends Seeder
             Return to the starting position and repeat on the other side.'
         ],
 		[
-            'image' => base_url('assets/images/workouts/lol.gif'),
+            'image' => base_url('assets/images/workouts/Squat.gif'),
             'category' => 'Glutes',
             'name' => 'Squat',
             'difficulty' => 'Beginner',
@@ -37,16 +37,8 @@ class WorkoutSeeder extends Seeder
 			Make sure your heels do not rise off the floor.
 			Press through your heels to return to a standing position.'
         ],
-        [
-            'image' => base_url('assets/images/workouts/lol.gif'),
-            'category' => 'Calves',
-            'name' => 'Prone walkout',
-            'difficulty' => 'Intermediate',
-            'descr' => 'Slowly walk your hands forward, staying on your toes but not moving them forward.
-            Next, gradually walk your hands backward to the starting position, maintaining stability and balance.'
-        ],
 		[
-            'image' => base_url('assets/images/workouts/lol.gif'),
+            'image' => base_url('assets/images/workouts/Step-up.gif'),
             'category' => 'Calves',
             'name' => 'Step-up',
             'difficulty' => 'Beginner',
@@ -56,7 +48,7 @@ class WorkoutSeeder extends Seeder
 			Return to the starting position.'
         ],
         [
-            'image' => base_url('assets/images/workouts/lol.gif'),
+            'image' => base_url('assets/images/workouts/Handstand push-up.gif'),
             'category' => 'Shoulders',
             'name' => 'Handstand push-up',
             'difficulty' => 'Hard',
@@ -64,7 +56,7 @@ class WorkoutSeeder extends Seeder
             Bend your elbows at a 90-degree angle, doing an upside-down push-up so your head moves toward the floor and your legs remain against the wall.'
         ],
 		[
-            'image' => base_url('assets/images/workouts/lol.gif'),
+            'image' => base_url('assets/images/workouts/Bear crawl.gif'),
             'category' => 'Shoulders',
             'name' => 'Bear crawl',
             'difficulty' => 'Intermediate',
@@ -72,7 +64,7 @@ class WorkoutSeeder extends Seeder
 			Tighten your core, and slowly reach forward with your right arm and right knee, followed by your left side.'
         ],
         [
-            'image' => base_url('assets/images/workouts/lol.gif'),
+            'image' => base_url('assets/images/workouts/Bench press.gif'),
             'category' => 'Chest',
             'name' => 'Bench Press',
             'difficulty' => 'Intermediate',
@@ -81,7 +73,7 @@ class WorkoutSeeder extends Seeder
             Raise the bar until youve locked your elbows.'
         ],
 		[
-            'image' => base_url('assets/images/workouts/lol.gif'),
+            'image' => base_url('assets/images/workouts/Reverse fly.gif'),
             'category' => 'Chest',
             'name' => 'Reverse fly',
             'difficulty' => 'Beginner',
@@ -90,7 +82,7 @@ class WorkoutSeeder extends Seeder
             Raise the bar until youve locked your elbows.'
         ],
 		[
-            'image' => base_url('assets/images/workouts/lol.gif'),
+            'image' => base_url('assets/images/workouts/Leg press.gif'),
             'category' => 'Quads',
             'name' => 'Leg Press',
             'difficulty' => 'Intermediate',
@@ -100,7 +92,7 @@ class WorkoutSeeder extends Seeder
 			Raise the weight back to starting position.'
         ],
 		[
-            'image' => base_url('assets/images/workouts/lol.gif'),
+            'image' => base_url('assets/images/workouts/Inchworm.gif'),
             'category' => 'Abdominals',
             'name' => 'Inchworm',
             'difficulty' => 'Intermediate',
@@ -109,7 +101,7 @@ class WorkoutSeeder extends Seeder
 			With your palms facing each other and abs engaged, bend forward slightly from your waist and extend your arms out to the sides, squeezing your shoulder blades.'
         ],
 		[
-            'image' => base_url('assets/images/workouts/lol.gif'),
+            'image' => base_url('assets/images/workouts/Barbell curtsy lunge.gif'),
             'category' => 'Quads',
             'name' => 'Barbell Curtsy Lunge',
             'difficulty' => 'Hard',
@@ -118,7 +110,7 @@ class WorkoutSeeder extends Seeder
 			Return to start and repeat on other leg.'
         ],
 		[
-            'image' => base_url('assets/images/workouts/lol.gif'),
+            'image' => base_url('assets/images/workouts/Superman.gif'),
             'category' => 'Lower-back',
             'name' => 'Superman',
             'difficulty' => 'Intermediate',
@@ -137,7 +129,7 @@ class WorkoutSeeder extends Seeder
 			Lower the bar to the floor by bending your knees and keeping your back straight.'
         ],
 		[
-            'image' => base_url('assets/images/workouts/lol.gif'),
+            'image' => base_url('assets/images/workouts/Barbell curl.gif'),
             'category' => 'Biceps',
             'name' => 'Barbell Curl',
             'difficulty' => 'Beginner',
@@ -156,7 +148,7 @@ class WorkoutSeeder extends Seeder
 			Lower to original position and repeat with opposite arm.'
         ],
 		[
-            'image' => base_url('assets/images/workouts/lol.gif'),
+            'image' => base_url('assets/images/workouts/Tricep dips.gif'),
             'category' => 'Triceps',
             'name' => 'Tricep dips',
             'difficulty' => 'Beginner',
@@ -166,7 +158,7 @@ class WorkoutSeeder extends Seeder
 			For some extra fire, reach your right arm out while lifting your left leg.'
         ],
 		[
-            'image' => base_url('assets/images/workouts/lol.gif'),
+            'image' => base_url('assets/images/workouts/Diamond push up.gif'),
             'category' => 'Triceps',
             'name' => 'Diamond push-up',
             'difficulty' => 'Intermediate',
@@ -174,7 +166,7 @@ class WorkoutSeeder extends Seeder
 			Then, do regular push-ups.'
         ],
 		[
-            'image' => base_url('assets/images/workouts/lol.gif'),
+            'image' => base_url('assets/images/workouts/Pull ups.gif'),
             'category' => 'Lats',
             'name' => 'Pull Ups',
             'difficulty' => 'Intermediate',
@@ -183,7 +175,7 @@ class WorkoutSeeder extends Seeder
 			Lower your body back to starting position.'
         ],
 		[
-            'image' => base_url('assets/images/workouts/lol.gif'),
+            'image' => base_url('assets/images/workouts/Neutral grip pulldown.gif'),
             'category' => 'Lats',
             'name' => 'Neutral Grip Pulldown',
             'difficulty' => 'Beginner',
@@ -193,7 +185,7 @@ class WorkoutSeeder extends Seeder
 			After a second of squeezing, slowly raise the bar back to the starting position when your arms are fully extended.'
         ],
 		[
-            'image' => base_url('assets/images/workouts/lol.gif'),
+            'image' => base_url('assets/images/workouts/Traps stretch (mid).gif'),
             'category' => 'Traps mid-back',
             'name' => 'Traps (mid-back) Stretch',
             'difficulty' => 'Warm-up',
@@ -213,7 +205,7 @@ class WorkoutSeeder extends Seeder
 			Repeat.'
         ],
 		[
-            'image' => base_url('assets/images/workouts/lol.gif'),
+            'image' => base_url('assets/images/workouts/Wrist curls.gif'),
             'category' => 'Forearms',
             'name' => 'Wrist Curl',
             'difficulty' => 'Beginner',
@@ -222,7 +214,7 @@ class WorkoutSeeder extends Seeder
 			Return to starting position and repeat.'
         ],
 		[
-            'image' => base_url('assets/images/workouts/lol.gif'),
+            'image' => base_url('assets/images/workouts/Barbell wrist curl.gif'),
             'category' => 'Forearms',
             'name' => 'Barbell Wrist Curl',
             'difficulty' => 'Beginner',
@@ -233,7 +225,7 @@ class WorkoutSeeder extends Seeder
 			Lower in a controlled manner and repeat.'
         ],
 		[
-            'image' => base_url('assets/images/workouts/lol.gif'),
+            'image' => base_url('assets/images/workouts/30 degree shrug.gif'),
             'category' => 'Traps',
             'name' => '30 Degree Shrug',
             'difficulty' => 'Beginner',
@@ -242,7 +234,7 @@ class WorkoutSeeder extends Seeder
 			Pull your shoulder blades up and in towards your ears. Let your shoulder blades depress back to the starting position.'
         ],
 		[
-            'image' => base_url('assets/images/workouts/lol.gif'),
+            'image' => base_url('assets/images/workouts/Silverback shrug.gif'),
             'category' => 'Traps',
             'name' => 'Silverback Shrug',
             'difficulty' => 'Beginner',
