@@ -5,31 +5,31 @@ namespace App\Models;
 use CodeIgniter\Model;
 
 class WorkoutsModel extends Model
-{   
-    function getSort($order, $opt)
+{
+    function getSort($order, $opt, $group)
     {   
         $builder = $this->db->table('workouts');
         $diff = ['Warm-up'];
-        $builder->select()->whereNotIn('difficulty', $diff)->orderBy($order, $opt);
+        $builder->select()->where('category', $group)->whereNotIn('difficulty', $diff)->orderBy($order, $opt);
         $workouts = $builder->get();
         $this->db->close();
         return $workouts;
     }
 
-    function getDifficulty($diff)
+    function getDifficulty($diff, $group)
     {
         $builder = $this->db->table('workouts');
-        $builder->select()->where('difficulty', $diff);
+        $builder->select()->where('category', $group)->where('difficulty', $diff);
         $workouts = $builder->get();
         $this->db->close();
         return $workouts;
     }
 
-    function getData()
+    function getData($group)
     {
         $builder = $this->db->table('workouts');
         $diff = ['Warm-up'];
-        $builder->select()->whereNotIn('difficulty', $diff);
+        $builder->select()->where('category', $group)->whereNotIn('difficulty', $diff);
         $workouts = $builder->get();
         $this->db->close();
         return $workouts;
