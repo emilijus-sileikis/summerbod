@@ -21,7 +21,7 @@ class ManageUserWorkouts extends BaseController
     
         $data['workout'] = $model->delUserWorkout($id);
 		
-		$fp = fopen('usersessionlogging.txt', 'a');
+		$fp = fopen(ROOTPATH . 'writable/usersessionlogging.txt', 'a');
 		date_default_timezone_set("Europe/Vilnius");
 		fwrite($fp, 'User workout deletion process successful:'. PHP_EOL . 'timestamp: ' . date("m/d/Y h:i:s a", time()) . PHP_EOL .'workout id:' .$id. PHP_EOL . PHP_EOL);
 		fclose($fp);

@@ -66,7 +66,7 @@ class Profile extends Controller
 			 
 			$model = new ProfileModel(); 
 			$save = $model->insert($data);
-			$fp = fopen('usersessionlogging.txt', 'a');
+			$fp = fopen(ROOTPATH . 'writable/usersessionlogging.txt', 'a');
 			date_default_timezone_set("Europe/Vilnius");
 			fwrite($fp, 'User workout insertion process successful:'. PHP_EOL . 'timestamp: ' . date("m/d/Y h:i:s a", time()) . PHP_EOL .'workout id: '.session()->get('id'). PHP_EOL . 'workout title: ' . $this->request->getVar('exName'). PHP_EOL . 'workout descr: ' . $this->request->getVar('descr')  . PHP_EOL . PHP_EOL);
 			fclose($fp);
