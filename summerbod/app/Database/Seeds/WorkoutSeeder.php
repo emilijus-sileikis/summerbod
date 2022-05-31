@@ -185,7 +185,7 @@ class WorkoutSeeder extends Seeder
 			After a second of squeezing, slowly raise the bar back to the starting position when your arms are fully extended.'
         ],
 		[
-            'image' => base_url('assets/images/workouts/Traps stretch (mid).gif'),
+            'image' => base_url('assets/images/workouts/Traps stretch mid.gif'),
             'category' => 'Traps mid-back',
             'name' => 'Traps (mid-back) Stretch',
             'difficulty' => 'Warm-up',

@@ -2,7 +2,8 @@
 
     echo view('partials/menu_no_bar');
 
-    $answers = array();
+    $coranswers = array();
+    $incanswers = array();
     $num = 0;
 
     foreach ($res->getResultArray() as $row) 
@@ -13,13 +14,16 @@
             {
                 if ($_POST["answer".$i] == $row["choice_".$x]) 
                 {
-                    ($row["answer"] == $x)? $num++:"";
+                    if ($row["answer"] == $x)
+                    {
+                        $num++;
+                        array_push($coranswers, $row["choice_".$x]);
+                    }
+                    else
+                    {
+                        array_push($incanswers, $row["choice_".$x]);
+                    }
                 }
-            }
-
-            if ($row["answer"] == $i) 
-            {
-                array_push($answers, $row["choice_".$i]);
             }
         }
     }
@@ -44,9 +48,21 @@
 
                 <h1 class="txtScore">Score: <?php echo ($num)." correct answers"; ?> Or <?php echo ($num*25)."%"; ?></h1>
 
-                <div style="margin-left: 1%;">
+                <div style="margin-left: 1%; font-size: 20px;">
                     <p>Correct Answers:</p>
-                    <?php echo json_encode($answers) ?>
+                    <br>
+                    <div style="color: green;">
+                        <?php foreach ($coranswers as $cor) 
+                            echo $cor . ";" . "<br>";
+                        ?>
+                    </div>
+                    <br><br><br>
+                    <p>Incorrect Answers:</p>
+                    <br>
+                    <div style="color: red;">
+                        <?php foreach ($incanswers as $inc) 
+                            echo $inc . ";" . "<br>";
+                        ?>
                 </div>
 
                 <br>
