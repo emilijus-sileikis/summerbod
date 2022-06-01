@@ -32,22 +32,22 @@
             <tbody>
                 <tr>
                     <td data-label="Category">Underweight</td>
-                    <td data-label="BMI - kg/m2">< 16 to 18.5</td>
+                    <td data-label="BMI - kg/m2">&lt; 16 to 18.5</td>
                 </tr>
     
                 <tr>
-                    <td scope="row" data-label="Category">Normal Weight</td>
+                    <td data-label="Category">Normal Weight</td>
                     <td data-label="BMI - kg/m2">from 18.5 to 25</td>
                 </tr>
     
                 <tr>
-                    <td scope="row" data-label="Category">Overweight</td>
+                    <td data-label="Category">Overweight</td>
                     <td data-label="BMI - kg/m2">from 25 to 29.9</td>
                 </tr>
                 
                 <tr>
-                    <td scope="row" data-label="Category">Obesity</td>
-                    <td data-label="BMI - kg/m2e">> 29.9</td>
+                    <td data-label="Category">Obesity</td>
+                    <td data-label="BMI - kg/m2e">&gt; 29.9</td>
                 </tr>
             </tbody>
         </table>
@@ -67,22 +67,22 @@
             <tbody>
                 <tr>
                     <td data-label="Category">Underweight</td>
-                    <td data-label="BMI - kg/m2">< 17.8</td>
+                    <td data-label="BMI - kg/m2">&lt; 17.8</td>
                 </tr>
     
                 <tr>
-                    <td scope="row" data-label="Category">Normal Weight</td>
+                    <td data-label="Category">Normal Weight</td>
                     <td data-label="BMI - kg/m2">from 17.8 to 26.6</td>
                 </tr>
     
                 <tr>
-                    <td scope="row" data-label="Category">Overweight</td>
+                    <td data-label="Category">Overweight</td>
                     <td data-label="BMI - kg/m2">from 26.6 to 32.6</td>
                 </tr>
     
                 <tr>
-                    <td scope="row" data-label="Category">Obesity</td>
-                    <td data-label="BMI - kg/m2">> 32.6</td>
+                    <td data-label="Category">Obesity</td>
+                    <td data-label="BMI - kg/m2">&gt; 32.6</td>
                 </tr>
             </tbody>
         </table>
@@ -102,22 +102,22 @@
             <tbody>
                 <tr>
                     <td data-label="Category">Underweight</td>
-                    <td data-label="BMI - kg/m2">< 19.1</td>
+                    <td data-label="BMI - kg/m2">&lt; 19.1</td>
                 </tr>
     
                 <tr>
-                    <td scope="row" data-label="Category">Normal Weight</td>
+                    <td data-label="Category">Normal Weight</td>
                     <td data-label="BMI - kg/m2">from 19.1 to 27.1</td>
                 </tr>
     
                 <tr>
-                    <td scope="row" data-label="Category">Overweight</td>
+                    <td data-label="Category">Overweight</td>
                     <td data-label="BMI - kg/m2">from 27.1 to 31.1</td>
                 </tr>
     
                 <tr>
-                    <td scope="row" data-label="Category">Obesity</td>
-                    <td data-label="BMI - kg/m2">> 31.1</td>
+                    <td data-label="Category">Obesity</td>
+                    <td data-label="BMI - kg/m2">&gt; 31.1</td>
                 </tr>
             </tbody>
         </table>
@@ -136,25 +136,25 @@
         <br> <br>
 
         <h3 class="health-text-header">Risks Associated With Being Overweight:</h3> <br>
-        <li class="health-text">High blood pressure.</li>
-        <li class="health-text">Higher levels of cholesterol.</li>
-        <li class="health-text">Type II diabetes.</li>
-        <li class="health-text">Coronary heart disease, stroke.</li>
-        <li class="health-text">Gallbladder disease.</li>
-        <li class="health-text">Osteoarthritis.</li>
-        <li class="health-text">Breathing problems.</li>
-        <li class="health-text">Clinical depression, anxiety.</li>
-        <li class="health-text">Body pain and others.</li>	
+        <ul class="health-text"><li>High blood pressure.</li></ul>
+        <ul class="health-text"><li>Higher levels of cholesterol.</li></ul>
+        <ul class="health-text"><li>Type II diabetes.</li></ul>
+        <ul class="health-text"><li>Coronary heart disease, stroke.</li></ul>
+        <ul class="health-text"><li>Gallbladder disease.</li></ul>
+        <ul class="health-text"><li>Osteoarthritis.</li></ul>
+        <ul class="health-text"><li>Breathing problems.</li></ul>
+        <ul class="health-text"><li>Clinical depression, anxiety.</li></ul>
+        <ul class="health-text"><li>Body pain and others.</li></ul>
 
         <br> <br> 
         
         <h3 class="health-text-header">Risks Associated With Being Underweight:</h3> <br>
-        <li class="health-text">Malnutrition, vitamin deficiencies, anemia.</li>
-        <li class="health-text">Osteoporosis and other bone diseases.</li>
-        <li class="health-text">Decrease in immune function.</li>
-        <li class="health-text">Growth and development issues.</li>
-        <li class="health-text">Possible reproductive issues for women.</li>
-        <li class="health-text">Generally, an increased risk of mortality.</li>
+        <ul class="health-text"><li>Malnutrition, vitamin deficiencies, anemia.</li></ul>
+        <ul class="health-text"><li>Osteoporosis and other bone diseases.</li></ul>
+        <ul class="health-text"><li>Decrease in immune function.</li></ul>
+        <ul class="health-text"><li>Growth and development issues.</li></ul>
+        <ul class="health-text"><li>Possible reproductive issues for women.</li></ul>
+        <ul class="health-text"><li>Generally, an increased risk of mortality.</li></ul>
 
     </div>
 
