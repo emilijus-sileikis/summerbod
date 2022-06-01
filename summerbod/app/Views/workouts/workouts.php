@@ -18,19 +18,19 @@
 		<div class="dropdownex">
   			<button class="dropbtnex">Sort By:</button>
   			<div class="dropdown-contentex">
-    			<button type="submit" name="but_sort_1">Difficulty ↑</button>
-    			<button type="submit" name="but_sort_2">Difficulty ↓</button>
-    			<button type="submit" name="but_sort_3">Name ↑</button>
-				<button type="submit" name="but_sort_4">Name ↓</button>
+    			<button type="submit" name="diff_asc">Difficulty ↑</button>
+    			<button type="submit" name="diff_desc">Difficulty ↓</button>
+    			<button type="submit" name="name_asc">Name ↑</button>
+				<button type="submit" name="name_desc">Name ↓</button>
   			</div>
 		</div>
           
         <div class="dropdownex">
   			<button class="dropbtnex">Difficulty:</button>
   			<div class="dropdown-contentex">
-    			<button type="submit" name="but_filter_1">Beginner</button>
-    			<button type="submit" name="but_filter_2">Intermediate</button>
-    			<button type="submit" name="but_filter_3">Hard</button>
+    			<button type="submit" name="beginner">Beginner</button>
+    			<button type="submit" name="intermediate">Intermediate</button>
+    			<button type="submit" name="hard">Hard</button>
   			</div>
 		</div>
 

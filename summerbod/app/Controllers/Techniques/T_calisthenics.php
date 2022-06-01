@@ -12,35 +12,35 @@ class T_calisthenics extends BaseController
 		$calistModel = new \App\Models\CalisthenicsModel();
 		$workoutModel = new \App\Models\AllExModel();
         
-        if(isset($_POST['but_sort_1'])) {
+        if(isset($_POST['diff_asc'])) {
             $order = 'difficulty';
             $opt = 'ASC';
             $data['workouts'] = $workoutModel->getSort($order, $opt);
         }
-        else if(isset($_POST['but_sort_2'])) {
+        else if(isset($_POST['diff_desc'])) {
             $order = 'difficulty';
             $opt = 'DESC';
             $data['workouts'] = $workoutModel->getSort($order, $opt);
         }
-        else if(isset($_POST['but_sort_3'])) {
+        else if(isset($_POST['name_asc'])) {
             $order = 'name';
             $opt = 'ASC';
             $data['workouts'] = $workoutModel->getSort($order, $opt);
         }
-        else if(isset($_POST['but_sort_4'])) {
+        else if(isset($_POST['name_desc'])) {
             $order = 'name';
             $opt = 'DESC';
             $data['workouts'] = $workoutModel->getSort($order, $opt);
         }
-        else if(isset($_POST['but_filter_1'])) {
+        else if(isset($_POST['beginner'])) {
             $diff = 'Beginner';
             $data['workouts'] = $workoutModel->getDifficulty($diff);
         }
-        else if(isset($_POST['but_filter_2'])) {
+        else if(isset($_POST['intermediate'])) {
             $diff = 'Intermediate';
             $data['workouts'] = $workoutModel->getDifficulty($diff);
         }
-        else if(isset($_POST['but_filter_3'])) {
+        else if(isset($_POST['hard'])) {
             $diff = 'Hard';
             $data['workouts'] = $workoutModel->getDifficulty($diff);
         }
