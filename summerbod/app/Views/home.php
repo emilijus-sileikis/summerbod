@@ -4,4 +4,6 @@
 
 <?php echo view('explore.php'); ?>
 
+<?php echo view('random.php'); ?>
+
 <?php echo view('partials/footer.php'); ?>
