@@ -33,7 +33,7 @@
                         <td data-label="Name"><?php echo $wrkt['name']?></td>
                         <td data-label="Difficulty"><?php echo $wrkt['difficulty']?></td>
                         <td data-label="Description"><?php echo $wrkt['descr']?></td>
-                        <td data-label="Remove"><a href="<?php  echo base_url("public/admin/manage_workouts/delete/". $wrkt['id']);?>" style="color:black; font-size:30px;">&#10060;</button></td>
+                        <td data-label="Remove"><a href="<?php  echo base_url("public/admin/manage_workouts/delete/". $wrkt['id']);?>" style="color:black; font-size:30px;">&#10060;</a></td>
                     </tr>
             
                 <?php } ?>

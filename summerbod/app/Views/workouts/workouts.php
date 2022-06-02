@@ -43,39 +43,37 @@
 
 <?php foreach ($workouts->getResultArray() as $workout) { ?>
 
-<div class="workout-menu-box">
+	<div class="workout-menu-box">
 
-	<div class="workout-menu-img">
-		<?= '<img src=' .$workout["image"].' alt="" class="img-responsive img-curve">'?>
-	</div>
+		<div class="workout-menu-img">
+			<?= '<img src=' .$workout["image"].' alt="" class="img-responsive img-curve">'?>
+		</div>
 
-	<div class="workout-menu-desc">
+		<div class="workout-menu-desc">
 
-		<h3><?php echo $workout["name"]; ?></h3>	
-		<p class="workout-detail">
-			Muscle group: <?php echo $workout["category"]; ?><br> <br>
-			Difficulty: <?php echo $workout["difficulty"]; ?><br> <br>
-			Description: <?php echo $workout["descr"]; ?> <br> <br>
-		</p>
+			<h3><?php echo $workout["name"]; ?></h3>	
+			<p class="workout-detail">
+				Muscle group: <?php echo $workout["category"]; ?><br> <br>
+				Difficulty: <?php echo $workout["difficulty"]; ?><br> <br>
+				Description: <?php echo $workout["descr"]; ?> <br> <br>
+			</p>
 		
-	</div>
+		</div>
 
-	<div class="clearfix"></div>
+		<div class="clearfix"></div>
 
-	<a href="<?= base_url('public/Workouts/w_all_exercises/add').'/'.$workout['id']; ?>" id="ex-<?php echo $workout['id']?>" style="font-size: 25px; filter: grayscale(1);">&#128151;</a>
+		<a href="<?= base_url('public/Workouts/w_all_exercises/add').'/'.$workout['id']; ?>" id="ex-<?php echo $workout['id']?>" style="font-size: 25px; filter: grayscale(1);">&#128151;</a>
 
-	<?php foreach ($favorites->getResultArray() as $fav) { ?>
+		<?php foreach ($favorites->getResultArray() as $fav) { ?>
 
-		<?php if ($fav["ex_id"] === $workout["id"]) { ?>
-			<a href="<?= base_url('public/Workouts/w_all_exercises/remove').'/'.$workout['id']; ?>" style="font-size: 25px; filter: grayscale(0);">&#128151;</a>
-			<script> document.getElementById('ex-<?php echo $workout['id']?>').style.display='none'; </script>
+			<?php if ($fav["ex_id"] === $workout["id"]) { ?>
+				<a href="<?= base_url('public/Workouts/w_all_exercises/remove').'/'.$workout['id']; ?>" style="font-size: 25px; filter: grayscale(0);">&#128151;</a>
+				<script> document.getElementById('ex-<?php echo $workout['id']?>').style.display='none'; </script>
+			<?php } ?>
+
 		<?php } ?>
 
-	<?php } ?>
-
-	<div class="clearfix"></div>
-
-</div>
+	</div>
 
 <?php } ?>
 

@@ -33,7 +33,7 @@
                         <td data-label="Name"><?php echo $user['name']?></td>
                         <td data-label="Email"><?php echo $user['email']?></td>
                         <td data-label="Created At"><?php echo $user['created_at']?></td>
-                        <td data-label="Remove"><a href="<?php  echo base_url("public/admin/manage_users/delete/". $user['id']);?>" style="color:black; font-size:30px;">&#10060;</button></td>
+                        <td data-label="Remove"><a href="<?php  echo base_url("public/admin/manage_users/delete/". $user['id']);?>" style="color:black; font-size:30px;">&#10060;</a></td>
                     </tr>
             
                 <?php } ?>

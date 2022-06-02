@@ -11,7 +11,7 @@ class UserWorkoutSeeder extends Seeder
         $data = [
         [
             'user_id' => '1',
-            'user_image' => base_url('assets/images/workouts/lol.gif'),
+            'user_image' => base_url('assets/images/workouts/Plank.gif'),
             'user_category' => 'Abdominals',
             'user_name' => 'Plank',
             'user_difficulty' => 'Beginner',
@@ -21,7 +21,7 @@ class UserWorkoutSeeder extends Seeder
         ],
         [
             'user_id' => '1',
-            'user_image' => base_url('assets/images/workouts/lol.gif'),
+            'user_image' => base_url('assets/images/workouts/Lunge.gif'),
             'user_category' => 'Glutes',
             'user_name' => 'Lunge',
             'user_difficulty' => 'Beginner',
@@ -40,7 +40,7 @@ class UserWorkoutSeeder extends Seeder
         ],
 		[
 			'user_id' => '1',
-            'user_image' => base_url('assets/images/workouts/lol.gif'),
+            'user_image' => base_url('assets/images/workouts/Handstand push-up.gif'),
             'user_category' => 'Shoulders',
             'user_name' => 'Handstand push-up',
             'user_difficulty' => 'Hard',

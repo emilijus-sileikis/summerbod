@@ -39,7 +39,7 @@
                         <td data-label="Name"><?php echo $user['user_name']?></td>
                         <td data-label="Difficulty"><?php echo $user['user_difficulty']?></td>
                         <td data-label="Description"><?php echo $user['user_descr']?></td>
-                        <td data-label="Remove"><a href="<?php  echo base_url("public/admin/manage_user_workouts/delete/". $user['user_workoutid']);?>" style="color:black; font-size:30px;">&#10060;</button></td>
+                        <td data-label="Remove"><a href="<?php  echo base_url("public/admin/manage_user_workouts/delete/". $user['user_workoutid']);?>" style="color:black; font-size:30px;">&#10060;</a></td>
                     </tr>
             
                 <?php } ?>

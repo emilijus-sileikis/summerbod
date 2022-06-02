@@ -74,6 +74,15 @@ class Profile extends Controller
 		}
 		
     }
+
+	public function delete($id = null)
+    {   
+        $model = new \App\Models\ProfileModel();
+    
+        $data['workout'] = $model->delWorkout($id);
+
+        return redirect()->to( base_url('public/profile') );
+    }
  
 }
 

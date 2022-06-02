@@ -28,6 +28,8 @@
 
       <div class="workout-menu-box">
 
+        <a href="<?php  echo base_url("public/profile/delete/". $workout['user_workoutid']);?>" style="float: right;">&#10060;</a>
+
         <div class="workout-menu-img">
           <?= '<img src=' .$workout["user_image"].' alt="" class="img-responsive img-curve">'?>
         </div>
