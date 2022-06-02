@@ -39,8 +39,8 @@ CI_ENVIRONMENT = production
 
 database.default.hostname = localhost
 database.default.database = summerbod
-database.default.username = admin
-database.default.password = admin
+database.default.username = pblteacher
+database.default.password = pbldefence
 database.default.DBDriver = MySQLi
 database.default.DBPrefix =
 
