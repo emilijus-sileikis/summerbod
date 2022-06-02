@@ -75,9 +75,9 @@ class QuizSeeder extends Seeder
         [
             'question' => 'What is wrong with this exercise form?',
             'image' => base_url('assets/images/workouts/bad1.gif'),
-            'choice_1' => 'Teisingas ats',
-            'choice_2' => 'Legs are extended too little',
-            'choice_3' => 'Legs are extended too much',
+            'choice_1' => 'Shoulders are too high',
+            'choice_2' => 'Legs extended too little',
+            'choice_3' => 'Legs extended too much',
             'choice_4' => 'Exercise is done too slow',
             'answer' => '1'
         ],
@@ -95,7 +95,7 @@ class QuizSeeder extends Seeder
             'image' => base_url('assets/images/workouts/bad3.gif'),
             'choice_1' => 'Bad grip',
             'choice_2' => 'Pulling up too high',
-            'choice_3' => 'Teisingas ats2',
+            'choice_3' => 'Use of inertia',
             'choice_4' => 'Fully extending arms',
             'answer' => '3'
         ],
@@ -105,7 +105,7 @@ class QuizSeeder extends Seeder
             'choice_1' => 'Facing wrong direction',
             'choice_2' => 'Dipping too deep',
             'choice_3' => 'Crossed legs',
-            'choice_4' => 'Teisingas ats3',
+            'choice_4' => 'Looking up',
             'answer' => '4'
         ],
         [
