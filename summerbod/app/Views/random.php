@@ -13,10 +13,7 @@
     
     <div class="challenge-container" id="boxwithworkouts">
 
-        <a href="<?php base_url('public/home'); ?>" id='live'>
-            <button class="regenerate-button" onclick="refresh()">Refresh</button>
-            
-        </a>
+        <button class="regenerate-button" id="resetBtn" onclick="refresh()">Refresh</button> 
 
 		<?php foreach ($randomWorkouts->getResultArray() as $randomWorkout) { ?>
 
@@ -51,14 +48,6 @@
 
     </div>
 </section>
-
-
-<script>
-
-
-</script>
-
-
 
 <script src="<?php echo base_url('assets/js/generate.js'); ?>"></script>
 <!-- Explore section end -->

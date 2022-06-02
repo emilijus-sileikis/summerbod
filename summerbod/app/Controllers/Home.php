@@ -13,6 +13,4 @@ class Home extends BaseController
         $data['randomWorkouts'] = $homeModel->getRandomData();
         return view('home', $data);
     }
-
-
 }
