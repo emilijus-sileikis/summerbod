@@ -38,7 +38,7 @@ echo "Port: $CSSH_PORT"
 
 echo "[webserver]" > hosts
 echo "$CUSER@$CSSH_PRIP ansible_port=$CSSH_PORT" >> hosts
-echo "url: $CSSH_PRIP:$PORT" >> "$SCRIPT_DIR/vars/default.yml"
+echo -e "\nurl: $CSSH_PRIP:$PORT" >> "$SCRIPT_DIR/vars/default.yml"
 sleep 1
 
 sudo cp hosts /etc/ansible/hosts
