@@ -203,15 +203,15 @@ and (max-width: 1119px) {
     }
 
     .tech-menu{
-        padding: 20% auto;
+        text-align: center;
+        padding: auto;
     }
 
     .tech-box {
         width: 71%;
         margin: 1%;
-        padding: 5%;
+        padding: auto;
         margin-bottom: 5%;
-        float: right;
         background-color: lightgray;
         border-radius: 15px;
     }
@@ -250,13 +250,13 @@ and (max-width: 899px) {
     }
 
     .tech-menu{
-        padding: 20% auto;
+        padding: auto;
     }
 
     .tech-box {
         width: 70%;
         margin: 1%;
-        padding: 5%;
+        padding: auto;
         margin-bottom: 5%;
         float: right;
         background-color: lightgray;
@@ -299,13 +299,13 @@ and (max-width: 449px) {
     }
 
     .tech-menu{
-        padding: 20% auto;
+        padding: auto;
     }
 
     .tech-box {
         width: 60%;
         margin: 10%;
-        padding: 5%;
+        padding: auto;
         margin-bottom: 5%;
         float: right;
         background-color: lightgray;
@@ -348,7 +348,7 @@ and (max-width: 409px) {
     }
 
     .tech-menu{
-        padding: 20% auto;
+        padding: auto;
     }
 
     .tech-box {

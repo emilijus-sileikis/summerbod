@@ -24,7 +24,7 @@
 
     <div class="tech-menu">
         <ul>
-            <li class="tech-box solid" style="float: left; margin-left: 31%;">
+            <li class="tech-box solid" style="float: left; margin-left: 30%;">
                 <a href="<?php echo base_url('public/bmi_calc'); ?>">
                     <div class="tech-desc">
                         <p>⠀⠀⠀BMI calculator</p>
