@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash
+set -e 
 
 #####################
 ## one VM creation ##
@@ -37,7 +38,7 @@ echo "Port: $CSSH_PORT"
 
 echo "[webserver]" > hosts
 echo "$CUSER@$CSSH_PRIP ansible_port=$CSSH_PORT" >> hosts
-echo "\n\nurl: $CSSH_PRIP:$PORT" >> wiket/Ansible/vars/default.yml
+echo "\n\nurl: $CSSH_PRIP:$PORT" >> "$SCRIPT_DIR/vars/default.yml"
 sleep 1
 
 sudo cp hosts /etc/ansible/hosts
@@ -48,10 +49,9 @@ sudo cp hosts /etc/ansible/hosts
 cd
 ssh -f -p $CSSH_PORT $CUSER@193.219.91.103 "mkdir -p ~/wiket"
 
-scp -rp -P $CSSH_PORT wiket/* $CUSER@193.219.91.103:~/wiket/
+scp -rp -P $CSSH_PORT "$PROJECT_DIR"/* $CUSER@193.219.91.103:~/wiket/
 
 #######################
 ## Launch Conn Check ##
 #######################
-cd
-ansible-playbook wiket/Ansible/Ansible_main.yml -K
+ansible-playbook "$SCRIPT_DIR/Ansible_main.yml" -K
