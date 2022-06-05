@@ -82,13 +82,17 @@ EMILIJUS SILEIKIS
 16/05/2022 | 3 hours | Redesigning buttons and fixing a tiny bug associated with them (on all workouts).
 17/05/2022 | 5 hours | Making speech, slides, diagrams for the presentation.
 18/05/2022 | 6 hours | Finishing touches on slides, speech. Ansible script additions and a few fixes (like names, permissions and so on).
-
 23/05/2022 | 6 hours | Add to favorites system initial design.
 24/05/2022 | 5 hours | Create exercise form design. User system and Deployment writing for the report.
 25/05/2022 | 5 hours | Create exercise initial functionality.
+26/05/2022 | 6 hours | Finishing touches on favorites and create exercise.
+30/05/2022 | 5 hours | Code cleanup, optimizing, grouping, button names readdition, workouts and techniques are now in lesser amount of views.
+31/05/2022 | 7 hours | Moving out POST requests out of models. Some query optimization and shortening. Added few exercises with our gifs.
+01/06/2022 | 6 hours | Finishing uploading workout gifs. Fixing bmi calculator, quiz and favorites errors and bugs.
+02/06/2022 | 5 hours | Filling in and searching for injury treatments. Fixing errors from validators (css and html).
 
-Total: 279 hours.
-This week: 14 hours.
+Total: 308 hours.
+This week: 29 hours.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 PATRIK VORONOVIC
