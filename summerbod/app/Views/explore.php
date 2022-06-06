@@ -19,7 +19,7 @@
                     <p class="workout-detail">
                         Muscle group: <?php echo $workout["user_category"]; ?><br> <br>
 					    Difficulty: <?php echo $workout["user_difficulty"]; ?><br> <br>
-					    Author: <?php echo $workout["name"]; ?>
+					    Author: <?php echo $workout["author"]; ?>
 				    </p>
 					
                 </div>

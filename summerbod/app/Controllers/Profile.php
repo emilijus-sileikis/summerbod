@@ -61,7 +61,8 @@ class Profile extends Controller
 			 'user_category'  => $this->request->getVar('cat'),
 			 'user_name'  => $this->request->getVar('exName'),
 			 'user_difficulty'  => $this->request->getVar('diff'),
-			 'user_descr'  => $this->request->getVar('descr'),			 
+			 'user_descr'  => $this->request->getVar('descr'),
+			 'author' => session()->get('name'),
 			];
 			 
 			$model = new ProfileModel(); 

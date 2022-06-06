@@ -17,7 +17,8 @@ class UserWorkoutSeeder extends Seeder
             'user_difficulty' => 'Beginner',
             'user_descr' => 'Lie facedown with your forearms on the floor and your hands clasped.
             Extend your legs behind you and rise up onto your toes.
-            Keeping your back straight, tighten your core and hold the position for as long as you can.'
+            Keeping your back straight, tighten your core and hold the position for as long as you can.',
+            'author' => 'Admin'
         ],
         [
             'user_id' => '1',
@@ -27,7 +28,8 @@ class UserWorkoutSeeder extends Seeder
             'user_difficulty' => 'Beginner',
             'user_descr' => 'Stand with your hands on your hips and your feet hip-width apart.
             Step your right leg forward and slowly lower your body until your left (back) knee is close to or touching the floor and bent at least 90 degrees.
-            Return to the starting position and repeat on the other side.'
+            Return to the starting position and repeat on the other side.',
+            'author' => 'Admin'
         ],
 		[
 			'user_id' => '1',
@@ -36,7 +38,8 @@ class UserWorkoutSeeder extends Seeder
             'user_name' => 'Prone walkout',
             'user_difficulty' => 'Intermediate',
             'user_descr' => 'Slowly walk your hands forward, staying on your toes but not moving them forward.
-            Next, gradually walk your hands backward to the starting position, maintaining stability and balance.'
+            Next, gradually walk your hands backward to the starting position, maintaining stability and balance.',
+            'author' => 'Admin'
         ],
 		[
 			'user_id' => '1',
@@ -45,7 +48,8 @@ class UserWorkoutSeeder extends Seeder
             'user_name' => 'Handstand push-up',
             'user_difficulty' => 'Hard',
             'user_descr' => 'Get set in a handstand position against a wall.
-            Bend your elbows at a 90-degree angle, doing an upside-down push-up so your head moves toward the floor and your legs remain against the wall.'
+            Bend your elbows at a 90-degree angle, doing an upside-down push-up so your head moves toward the floor and your legs remain against the wall.',
+            'author' => 'Admin'
         ]
         ];
 
