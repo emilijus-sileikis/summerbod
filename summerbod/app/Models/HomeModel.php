@@ -14,4 +14,13 @@ class HomeModel extends Model
         $this->db->close();
         return $workouts;
     }
+    function getRandomData() {
+
+        $builder = $this->db->table('workouts');
+        $builder->select()->orderBy("id", 'RANDOM');
+        $randomworkouts = $builder->get(12);
+        $this->db->close();
+        return $randomworkouts;
+
+    }
 }

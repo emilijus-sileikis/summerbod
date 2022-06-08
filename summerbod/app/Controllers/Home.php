@@ -10,6 +10,7 @@ class Home extends BaseController
     {
         $homeModel = new \App\Models\HomeModel();
         $data['workouts'] = $homeModel->getData();
+        $data['randomWorkouts'] = $homeModel->getRandomData();
         return view('home', $data);
     }
 }
