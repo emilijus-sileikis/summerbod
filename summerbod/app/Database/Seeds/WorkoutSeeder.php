@@ -119,16 +119,6 @@ class WorkoutSeeder extends Seeder
 			Lower your limbs, and repeat.'
         ],
 		[
-            'image' => base_url('assets/images/workouts/lol.gif'),
-            'category' => 'Lower-back',
-            'name' => 'Deadlift',
-            'difficulty' => 'Hard',
-            'descr' => 'Stand with your mid-foot under the bar and grip the bar with your hands, about a shoulder width apart.
-			Bend your knees, then lift the bar by straightening your back. It is important to keep your back straight.
-			Stand to your full height and hold.
-			Lower the bar to the floor by bending your knees and keeping your back straight.'
-        ],
-		[
             'image' => base_url('assets/images/workouts/Barbell curl.gif'),
             'category' => 'Biceps',
             'name' => 'Barbell Curl',
@@ -137,15 +127,6 @@ class WorkoutSeeder extends Seeder
 			Continue the movement until your biceps are fully contracted and the bar is at shoulder level.
 			Hold the contracted position for a second and squeeze the biceps hard.
 			Slowly bring the weight back down to the starting position.'
-        ],
-		[
-            'image' => base_url('assets/images/workouts/lol.gif'),
-            'category' => 'Biceps',
-            'name' => 'Dumbbell Curl',
-            'difficulty' => 'Beginner',
-            'descr' => 'Stand up straight with a dumbbell in each hand at arms length.
-			Raise one dumbbell and twist your forearm until it is vertical and your palm faces the shoulder.
-			Lower to original position and repeat with opposite arm.'
         ],
 		[
             'image' => base_url('assets/images/workouts/Tricep dips.gif'),
@@ -195,16 +176,6 @@ class WorkoutSeeder extends Seeder
 			Switch sides and repeat.'
         ],
 		[
-            'image' => base_url('assets/images/workouts/lol.gif'),
-            'category' => 'Traps mid-back',
-            'name' => 'Superman Holds',
-            'difficulty' => 'Beginner',
-            'descr' => 'Get on the floor on your belly. Squeeze your glutes to raise your feet and legs and squeeze your shoulder blades to raise your arms off the floor in an extended position.
-			Focus on firing your entire posterior chain to begin the movement—your lower back shouldnt take all the strain.
-			Keep your neck in a neutral position and avoid looking up. Hold the top position for a two count before lowering back to the ground.
-			Repeat.'
-        ],
-		[
             'image' => base_url('assets/images/workouts/Wrist curls.gif'),
             'category' => 'Forearms',
             'name' => 'Wrist Curl',
@@ -241,26 +212,6 @@ class WorkoutSeeder extends Seeder
             'descr' => 'Use a bar attachment. Cable should be set all the way to the bottom.
 			Stand up with the attachment in hand, walk a couple of steps back make sure you are standing upright and not leaning backwards.
 			Retract your shoulder blades and then protract to return to the starting position.'
-        ],
-		[
-            'image' => base_url('assets/images/workouts/lol.gif'),
-            'category' => 'Hamstrings',
-            'name' => 'Stiff Leg Deadlifts',
-            'difficulty' => 'Intermediate',
-            'descr' => 'Stand with a barbell at your shins with your feet shoulder width apart.
-			Bend forward at your hips and keep your knees as fully extended as possible.
-			Grab the barbell and then extend your hips while maintaining a straight back.
-			From the standing position, lower the weight in a controlled manner.
-			You can either lower the weight to the floor or before you touch the floor, depending on your mobility.'
-        ],
-		[
-            'image' => base_url('assets/images/workouts/lol.gif'),
-            'category' => 'Hamstrings',
-            'name' => 'Hamstring Curl',
-            'difficulty' => 'Beginner',
-            'descr' => 'Lay down on the machine, placing your legs beneath the padded lever. Position your legs so that the padded lever is below your calve muscles.
-			Support yourself by grabbing the side handles of the machine, and slowly raise the weight with your legs, toes pointed straight.
-			Pause at the apex of the motion, then slowly return to starting position.'
         ],
         [
             'image' => base_url('assets/images/workouts/Tuck jump.gif'),

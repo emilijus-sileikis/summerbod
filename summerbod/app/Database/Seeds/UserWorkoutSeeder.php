@@ -33,12 +33,14 @@ class UserWorkoutSeeder extends Seeder
         ],
 		[
 			'user_id' => '1',
-            'user_image' => base_url('assets/images/workouts/lol.gif'),
+            'user_image' => base_url('assets/images/workouts/Standing calf raises.gif'),
             'user_category' => 'Calves',
-            'user_name' => 'Prone walkout',
+            'user_name' => 'Standing Calf Raises',
             'user_difficulty' => 'Intermediate',
-            'user_descr' => 'Slowly walk your hands forward, staying on your toes but not moving them forward.
-            Next, gradually walk your hands backward to the starting position, maintaining stability and balance.',
+            'user_descr' => 'Adjust the machine in accordance with your height and place your shoulders underneath the padded lever.
+            The balls of your feet should be supporting your weight on the calve block, your heels extending off of it.
+            Extend your heels upwards while keeping your knees stationary, and pause at the contracted position.
+            Slowly return to the starting position. Repeat.',
             'author' => 'Admin'
         ],
 		[
