@@ -51,11 +51,16 @@
 
     <?php } ?>
 
+    <?php if(empty($workout)) {
+      echo "You do not have any created exercises yet!";
+      echo "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
+    }?>
+
   </div>
 
 </div>
 
-<div class="form-popup" id="myForm">
+<div class="form-popup" id="exForm">
 
   <form method="post" action="<?= base_url('public/profile/add') ?>" enctype="multipart/form-data" class="form-container">
 
