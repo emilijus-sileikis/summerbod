@@ -1,4 +1,12 @@
-#!/bin/sh
+#!/bin/bash
+set -e 
+
+########################
+# Figure out the paths #
+########################
+
+SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]:-$0}"; )" &> /dev/null && pwd 2> /dev/null; )";
+PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
 
 #####################
 ## Starting plugin ##
@@ -18,5 +26,4 @@ ansible-galaxy install robertdebock.phpmyadmin
 ## Launch Create VM ##
 ######################
 
-cd
-./wiket/Ansible/shell/Create_VM.sh
+. "$SCRIPT_DIR/shell/Create_VM.sh"

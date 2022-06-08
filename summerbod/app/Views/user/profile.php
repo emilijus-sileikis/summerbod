@@ -28,6 +28,8 @@
 
       <div class="workout-menu-box">
 
+        <a href="<?php  echo base_url("public/profile/delete/". $workout['user_workoutid']);?>" style="float: right;">&#10060;</a>
+
         <div class="workout-menu-img">
           <?= '<img src=' .$workout["user_image"].' alt="" class="img-responsive img-curve">'?>
         </div>
@@ -60,7 +62,7 @@
     <h2>Add Exercise</h2>
 
     <label for="cat">Category:</label>
-    <select name="cat" required>
+    <select name="cat" id="cat" required>
 	    <option value="">--- Choose muscle group ---</option>
 	    <option value="Traps">Traps</option>
 	    <option value="Traps mid-back">Traps mid-back</option>
@@ -81,13 +83,13 @@
     <br> <br>
 
    <label for="exName">Name:</label>
-		<input type="text" name="exName" class="form-control" placeholder="Enter Exercise Name" required />
+		<input type="text" name="exName" id="exName" class="form-control" placeholder="Enter Exercise Name" required />
 
     <label for="descr">Description:</label>
-		<input type="text" name="descr" class="form-control" placeholder="Enter A Short Description" required />	  
+		<input type="text" name="descr" id="descr" class="form-control" placeholder="Enter A Short Description" required />	  
 
     <label for="diff">Difficulty:</label>
-    <select name="diff" required>
+    <select name="diff" id="diff" required>
 	    <option value="">--- Choose the difficulty ---</option>
 	    <option value="Beginner">Beginner</option>
 	    <option value="Intermediate">Intermediate</option>
@@ -97,7 +99,7 @@
     <br> <br>
 
     <label for="image">Image</label>
-    <input type="file" name="image" class="form-control" id="image" onchange="previewImageFile(this);" accept=".png, .jpg, .jpeg, .gif" required />
+    <input type="file" name="image" id="image" class="form-control" accept=".png, .jpg, .jpeg, .gif" required />
 
     <br> <br>
 

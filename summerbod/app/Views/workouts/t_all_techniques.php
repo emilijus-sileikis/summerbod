@@ -38,37 +38,43 @@
 
     <div class="tech-menu">
 
-    <ul>
-        <li class="tech-box solid">
+        <ul>
+            <li class="tech-box solid">
 
-            <a href="<?php echo base_url('public/Techniques/t_calisthenics'); ?>">
-                <div class="tech-desc">
-                    <p>Calisthenics</p>
-                    <p class="tech-detail">
-                        Explore calisthenics exercises.
-                    </p>
-                </div>
+                <a href="<?php echo base_url('public/Techniques/t_calisthenics'); ?>">
 
-                <div class="clearfix"></div>
-		    </a>
-        </li>
-    </ul>
+                    <div class="tech-desc">
+                        <p>Calisthenics</p>
+                        <p class="tech-detail">
+                            Explore calisthenics exercises.
+                        </p>
+                    </div>
 
-    <ul>
-        <li class="tech-box solid">
+                    <div class="clearfix"></div>
+		        </a>
+            </li>
+        </ul>
 
-            <a href="<?php echo base_url('public/Techniques/t_powerlifting'); ?>">
-                <div class="tech-desc">
-                    <p>Powerlifting</p>
-                    <p class="tech-detail">
-                        Explore powerlifitng exercises.
-                    </p>
-                </div>
+        <ul>
+            <li class="tech-box solid">
 
-                <div class="clearfix"></div>
-		    </a>
-        </li>
-    </ul>
+                <a href="<?php echo base_url('public/Techniques/t_powerlifting'); ?>">
+                    <div class="tech-desc">
+                    
+                        <p>Powerlifting</p>
+                        <p class="tech-detail">
+                            Explore powerlifitng exercises.
+                        </p>
+                    </div>
+
+                    <div class="clearfix"></div>
+		        </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="clearfix"></div>
+
 </div>
 
 <?php echo view('partials/footer'); ?>

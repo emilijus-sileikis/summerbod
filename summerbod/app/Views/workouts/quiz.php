@@ -1,7 +1,9 @@
+<?php echo view('partials/menu_no_bar'); ?>
+
+<link rel="stylesheet" href="<?php echo base_url('assets/css/quiz.css'); ?>">
+
 <?php
 
-    echo view('partials/menu_no_bar');
-   
     $res = $results->getResultArray();
     $links = $slides = $options = $choices = "";
     $num = 0;
@@ -33,12 +35,12 @@
                     <td colspan="2">   
                         <div class="titleblock">Question #'.$num.'</div>
                             <textarea name="txtQuestion'.$row["id"].'" rows="5" placeholder="Enter question #'.$row["id"].' here..." disabled required>'.$row["question"].'</textarea>
-                                <div class="images">
+                            <div class="images">
 
-                                    <img src=' .$row["image"].' alt="" style="max-height: 350px; max-width: 400px;"> 
+                                <img src=' .$row["image"].' alt="" style="max-height: 350px; max-width: 400px;"> 
                                     
-                                </div>
                             </div>
+                        </div>
                     </td>
                 </tr>
 
@@ -55,31 +57,19 @@
         $options = $choices = "";
     }
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Summerbod | Fitness Quiz</title>
-        <link rel="stylesheet" href="<?php echo base_url('assets/css/quiz.css'); ?>">
-    </head>
-    <body>
-        <main>
-            <form method="post" action="<?php echo base_url('public/result'); ?>">
-                <div class="slider">
+            
+    <form method="post" action="<?php echo base_url('public/result'); ?>">
+        
+        <div class="slider">
                     
-                    <div class="links">
-                        <?php echo $links; ?>
-                    </div>
+            <div class="links">
+                <?php echo $links; ?>
+            </div>
                     
-                    <div class="slides">
-                        <?php echo $slides; ?>
-                    </div>
+            <div class="slides">
+                <?php echo $slides; ?>
+            </div>
                     
-                    <button type="submit" name="btnSubmit" class="btnSubmit" id="quizbtnn">Submit</button>
-                    <script src="<?php echo base_url('assets/js/quizbtn.js'); ?>"></script>
-                </div>
-            </form>
-        </main>
-    </body>
-</html>
+            <button type="submit" name="btnSubmit" class="btnSubmit" id="quizbtnn">Submit</button>
+        </div>
+    </form>

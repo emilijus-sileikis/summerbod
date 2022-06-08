@@ -42,6 +42,11 @@ class UserWorkouts extends Migration
                 'type' => 'TEXT',
                 'null' => true,
 			],
+            'author' => [
+                'type' => 'VARCHAR',
+                'constraint' => '20',
+                'null' => false,
+            ],
         ]);
         $this->forge->addPrimaryKey('user_workoutid');
         $this->forge->addForeignKey('user_id', 'users', 'id', 'CASCADE', 'CASCADE');

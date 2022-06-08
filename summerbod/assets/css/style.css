@@ -34,7 +34,9 @@
 }
 
 .img-responsive{
-    width: 100%;
+    width: 96%;
+    height: 96%;
+    object-fit: contain;
 }
 
 .img-curve{

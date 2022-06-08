@@ -48,6 +48,8 @@
 		
 			</div>
 
+			<div class="clearfix"></div>
+
 			<a href="<?= base_url('public/Workouts/w_all_exercises/add').'/'.$warmup['id']; ?>" id="ex-<?php echo $warmup['id']?>" style="font-size: 25px; filter: grayscale(1);">&#128151;</a>
 
 			<?php foreach ($favorites->getResultArray() as $fav) { ?>

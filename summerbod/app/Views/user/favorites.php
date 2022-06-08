@@ -22,6 +22,8 @@
 			
 	        </div>
 
+			<div class="clearfix"></div>
+
 	        <a href="<?= base_url('public/Workouts/w_all_exercises/remove').'/'.$workout['id']; ?>" style="font-size: 25px;">&#128148;</a>
 
 	        <div class="clearfix"></div>

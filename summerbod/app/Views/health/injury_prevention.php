@@ -93,7 +93,7 @@
 
     <a class="tech-text"><?php include('base64/slouching.php'); ?></a>
 
-    <br></br>
+    <br><br>
     <h4 class="tech-text"> "Donald Duck" Posture </h4>
     <p class="tech-text">
         The so called "Donald Duck" posture is when your bottom tends to stick out or when you have a pronounced curve in your lower back.
@@ -103,7 +103,7 @@
 
     <a class="tech-text"><?php include('base64/duck.php'); ?></a>
 
-    <br></br>
+    <br><br>
     <h4 class="tech-text"> Flat back posture </h4>
     <p class="tech-text">
         Flat back means your lower back is straight instead of naturally curved and your pelvis is tucked in, causing you to stoop forward. If you have
@@ -113,7 +113,7 @@
 
     <a class="tech-text"><?php include('base64/flatback.php'); ?></a>
 
-    <br></br>
+    <br><br>
     <h4 class="tech-text"> Leaning on one leg </h4>
     <p class="tech-text">
         This position may feel comfortable, especially if you are standing for a while. But instead of using core muscles to keep you straight, you place exessive pressure on one side
@@ -123,7 +123,7 @@
 
     <a class="tech-text"><?php include('base64/1leg.php'); ?></a>
 
-    <br></br>
+    <br><br>
     <h4 class="tech-text"> "Text neck" </h4>
     <p class="tech-text">
         Hunching over your keyboard or looking in to a phone while sitting or standing is usually a sign that you have a weak upper back. Over time, this posture can contribute to developing a rounded
@@ -132,7 +132,7 @@
 
     <a class="tech-text"><?php include('base64/textback.php'); ?></a>
 
-    <br></br>
+    <br><br>
     <h4 class="tech-text"> Poking your chin </h4>
     <p class="tech-text">
         This posture is also associated with sitting too long in front of a desk or a computer with its screen being too low. Correcting this posture requires your work place adjustments.

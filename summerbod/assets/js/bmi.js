@@ -23,7 +23,6 @@ CLR_BTN.addEventListener('click', () => {
 function clearBMIInfo(){
     document.getElementById('bmi-value').innerHTML = "";
     document.getElementById('bmi-category').innerHTML = "";
-    document.getElementById('bmi-gender').innerHTML = "";
 }
 
 // check input chars
@@ -224,5 +223,4 @@ function printBMIResult(BMIInfo){
 	}
     
     document.getElementById('bmi-category').innerHTML = `${bmiCategory}`;
-    document.getElementById('bmi-gender').innerHTML = BMIInfo.gender;
 }

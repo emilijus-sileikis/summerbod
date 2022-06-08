@@ -42,7 +42,7 @@
                         <td data-label="Op. 3"><?php echo $quiz['choice_3']?></td>
                         <td data-label="Op. 4"><?php echo $quiz['choice_4']?></td>
                         <td data-label="Answer"><?php echo $quiz['answer']?></td>
-                        <td data-label="Remove"><a href="<?php  echo base_url("public/admin/manage_quiz/delete/". $quiz['id']);?>" style="color:black; font-size:30px;">&#10060;</button></td>
+                        <td data-label="Remove"><a href="<?php  echo base_url("public/admin/manage_quiz/delete/". $quiz['id']);?>" style="color:black; font-size:30px;">&#10060;</a></td>
                     </tr>
             
                 <?php } ?>
