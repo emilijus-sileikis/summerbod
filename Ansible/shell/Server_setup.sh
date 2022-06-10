@@ -40,4 +40,7 @@ fi
 # Adjust SSH configuration ownership and permissions
 chmod 0700 "${home_directory}/.ssh"
 chmod 0600 "${home_directory}/.ssh/authorized_keys"
-chown --recursive "${USERNAME}":"${USERNAME}" "${home_directory}/.ssh"
+chown --recursive "${USERNAME}":"${USERNAME}" "${home_directory}/.ssh
+
+# Allow Password verification
+sudo sed -i '/PasswordAuthentication/s/^#//g' /etc/ssh/sshd_config
