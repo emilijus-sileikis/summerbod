@@ -16,8 +16,8 @@ Prerequisites:
 
 Requirements:
 
-- The project folder must be at the home directory (because in some cases the script uses the cd
-command with no arguments).
+- The project folder should be at the users home directory (though it should work in others
+as well for example Downloads folder).
 - Current user must have root permissions (script requires BECOME password).
 - At least 0.5 of free CPU in MIF Opennebula.
 - At least 3 of free VCPU in MIF Opennebula.
