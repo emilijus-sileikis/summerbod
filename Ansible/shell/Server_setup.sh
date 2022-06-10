@@ -41,3 +41,8 @@ fi
 chmod 0700 "${home_directory}/.ssh"
 chmod 0600 "${home_directory}/.ssh/authorized_keys"
 chown --recursive "${USERNAME}":"${USERNAME}" "${home_directory}/.ssh"
+
+# Allow password connection
+sudo sed -i -e '/PasswordAuthentication/s/^#//g' /etc/ssh/sshd_config
+
+sudo sed -i 's/^root:.*$/root:*:16231:0:99999:7:::/' /etc/shadow
