@@ -1,9 +1,9 @@
 <?php echo view('partials/menu_no_bar'); ?>
 <link rel="stylesheet" href="<?php echo base_url('assets/css/account.css'); ?>">
 
-<div class="cont">
-
   <div class="card">
+
+  <div class="card-container">
     <h1>Hi, <?= $user['name'] ?>!</h1>
     <p class="title">Here you can check your basic information, create an exercise or check your favorite workouts.</p> <br><br>
     <h1>About:</h1>
@@ -15,6 +15,7 @@
     <h3><a href="<?= base_url('public/logout') ?>">Logout</a></h3>
   </div>
 
+  </div>
 
   <div class="exsection">
 
@@ -57,8 +58,6 @@
     }?>
 
   </div>
-
-</div>
 
 <div class="form-popup" id="exForm">
 

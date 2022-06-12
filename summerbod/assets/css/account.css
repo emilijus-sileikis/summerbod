@@ -11,11 +11,26 @@
 }
 
 .card {
+  top: -60px;
+  height: 86%;
+  left: -0.2%;
+  position: fixed;
+  top: 135px;
+  width: 20%;
+  align-content: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  max-width: 400px;
+  height: 100%;
   float: left;
   margin: auto;
   text-align: center;
+  padding-top: 2px;
+  margin-top: -1px;
+}
+
+.card-container {
+  position: relative;
+  bottom: -200px;
 }
 
 .title {
@@ -26,9 +41,13 @@
 .workout-menu-box {
   margin: 2%;
   padding: 2%;
-  margin-left: 350px;
+  margin-left: 400px;
   background-color: #e6e6e6;
   border-radius: 15px;
+}
+
+.workout-header {
+  margin-top: 10%;
 }
 
 .workout-menu-img {
@@ -140,4 +159,62 @@ a {
     #google_translate_element {
       display: none;
   }
+}
+
+@media screen and (max-width: 500px) {
+
+  .card{
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: fit-content;
+  }
+  .card-container{
+    bottom: -40px;
+  }
+
+  .open-button {
+    position: relative;
+    left: 4px;
+  }
+  .form-popup{
+    width: 100%;
+    margin: auto;
+    bottom: -1px;
+    float: left;
+    margin: auto;
+  }
+
+  .exsection {
+    height: fit-content;
+    width: 100%;
+    float: left;
+  }
+
+  .workout-header {
+    margin-top: 50%;
+  }
+
+  .workout-menu-box{
+    position: relative;
+    margin-left: 50px;
+    justify-content: center;
+    float: left;
+    width: 300px;
+}
+
+.workout-menu-img{
+    object-fit: cover;
+    width: fit-content;
+    height: fit-content;
+}
+
+.workout-menu-desc{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.workout-detail{
+    font-size: 10px;
+}
 }
