@@ -1,1 +1,0 @@
-kuvalda readme page
