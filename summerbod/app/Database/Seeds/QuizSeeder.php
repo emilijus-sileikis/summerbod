@@ -11,7 +11,7 @@ class QuizSeeder extends Seeder
         $data = [
         [
             'question' => 'What type of exercise uses body weight for resistance in a rhytmic manner?',
-            'image' => 'NULL',
+            'image' => base_url('assets/images/workouts/NULL.png'),
             'choice_1' => 'Calisthenics',
             'choice_2' => 'Powerlifting',
             'choice_3' => 'Yoga',
@@ -20,7 +20,7 @@ class QuizSeeder extends Seeder
         ],
         [
             'question' => 'When should you do your warmups?',
-            'image' => 'NULL',
+            'image' => base_url('assets/images/workouts/NULL.png'),
             'choice_1' => 'After waking up',
             'choice_2' => 'After a workout',
             'choice_3' => 'Before going to bed',
@@ -29,7 +29,7 @@ class QuizSeeder extends Seeder
         ],
         [
             'question' => 'When doing strenght and endurance training, it is best to start with?',
-            'image' => 'NULL',
+            'image' => base_url('assets/images/workouts/NULL.png'),
             'choice_1' => 'Pull ups',
             'choice_2' => 'Light weights',
             'choice_3' => 'Body weight resistance',
@@ -38,7 +38,7 @@ class QuizSeeder extends Seeder
         ],
         [
             'question' => 'Which of these exercises targets triceps?',
-            'image' => 'NULL',
+            'image' => base_url('assets/images/workouts/NULL.png'),
             'choice_1' => 'Hammer Curls',
             'choice_2' => 'Bench Press',
             'choice_3' => 'Diamond Push-ups',
@@ -47,7 +47,7 @@ class QuizSeeder extends Seeder
         ],
 		[
             'question' => 'How much water it is recommended to drink before a workout?',
-            'image' => 'NULL',
+            'image' => base_url('assets/images/workouts/NULL.png'),
             'choice_1' => '600ml-700ml',
             'choice_2' => '800ml-900ml',
             'choice_3' => '100ml-200ml',
@@ -56,7 +56,7 @@ class QuizSeeder extends Seeder
         ],
 		[
             'question' => 'Which one of these is a recommended way to prevent injuries?',
-            'image' => 'NULL',
+            'image' => base_url('assets/images/workouts/NULL.png'),
             'choice_1' => 'Keep pushing yourself',
             'choice_2' => 'Let your body rest',
             'choice_3' => 'Ignore the pain',
@@ -65,7 +65,7 @@ class QuizSeeder extends Seeder
         ],
 		[
             'question' => 'Which of these exercises targets calves?',
-            'image' => 'NULL',
+            'image' => base_url('assets/images/workouts/NULL.png'),
             'choice_1' => 'Prone walkout',
             'choice_2' => 'Reverse fly',
             'choice_3' => 'Plank',
@@ -74,7 +74,7 @@ class QuizSeeder extends Seeder
         ],
         [
             'question' => 'What is wrong with this exercise form?',
-            'image' => base_url('assets/images/workouts/bad1.gif'),
+            'image' => base_url('assets/images/workouts/Bad1.gif'),
             'choice_1' => 'Shoulders are too high',
             'choice_2' => 'Legs extended too little',
             'choice_3' => 'Legs extended too much',
@@ -83,7 +83,7 @@ class QuizSeeder extends Seeder
         ],
         [
             'question' => 'What is wrong with this exercise form?',
-            'image' => base_url('assets/images/workouts/bad2.gif'),
+            'image' => base_url('assets/images/workouts/Bad2.gif'),
             'choice_1' => 'Legs are too close',
             'choice_2' => 'Bad back placement',
             'choice_3' => 'Legs are too wide apart',
@@ -92,7 +92,7 @@ class QuizSeeder extends Seeder
         ],
         [
             'question' => 'What is wrong with this exercise form?',
-            'image' => base_url('assets/images/workouts/bad3.gif'),
+            'image' => base_url('assets/images/workouts/Bad3.gif'),
             'choice_1' => 'Bad grip',
             'choice_2' => 'Pulling up too high',
             'choice_3' => 'Use of inertia',
@@ -101,7 +101,7 @@ class QuizSeeder extends Seeder
         ],
         [
             'question' => 'What is wrong with this exercise form?',
-            'image' => base_url('assets/images/workouts/bad4.gif'),
+            'image' => base_url('assets/images/workouts/Bad4.gif'),
             'choice_1' => 'Facing wrong direction',
             'choice_2' => 'Dipping too deep',
             'choice_3' => 'Crossed legs',
@@ -110,7 +110,7 @@ class QuizSeeder extends Seeder
         ],
         [
             'question' => 'What is wrong with this exercise form?',
-            'image' => base_url('assets/images/workouts/bad5.gif'),
+            'image' => base_url('assets/images/workouts/Bad5.gif'),
             'choice_1' => 'Nothing',
             'choice_2' => 'Bottom too high up',
             'choice_3' => 'Bad arm placement',
