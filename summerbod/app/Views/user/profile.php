@@ -1,7 +1,8 @@
 <?php echo view('partials/menu_no_bar'); ?>
+
 <link rel="stylesheet" href="<?php echo base_url('assets/css/account.css'); ?>">
 
-  <div class="card">
+<div class="card">
 
   <div class="card-container">
     <h1>Hi, <?= $user['name'] ?>!</h1>
@@ -15,49 +16,49 @@
     <h3><a href="<?= base_url('public/logout') ?>">Logout</a></h3>
   </div>
 
+</div>
+
+<div class="exsection">
+
+  <h2 class="workout-header">Your Created Exercises</h2>
+
+  <div id="err" style="color: red; font-size: 15px; list-style-position: inside;">
+    <?= \Config\Services::validation()->listErrors(); ?>
   </div>
 
-  <div class="exsection">
+  <?php foreach ($workouts->getResultArray() as $workout) { ?>
 
-    <h2 class="workout-header">Your Created Exercises</h2>
+    <div class="workout-menu-box">
 
-    <div id="err" style="color: red; font-size: 15px; list-style-position: inside;">
-      <?= \Config\Services::validation()->listErrors(); ?>
-    </div>
+      <a href="<?php  echo base_url("public/profile/delete/". $workout['user_workoutid']);?>" style="float: right;">&#10060;</a>
 
-    <?php foreach ($workouts->getResultArray() as $workout) { ?>
-
-      <div class="workout-menu-box">
-
-        <a href="<?php  echo base_url("public/profile/delete/". $workout['user_workoutid']);?>" style="float: right;">&#10060;</a>
-
-        <div class="workout-menu-img">
-          <?= '<img src=' .$workout["user_image"].' alt="" class="img-responsive img-curve">'?>
-        </div>
-
-        <div class="workout-menu-desc">
-
-          <h3><?php echo $workout["user_name"]; ?></h3>	
-          <p class="workout-detail">
-            Muscle group: <?php echo $workout["user_category"]; ?><br> <br>
-            Difficulty: <?php echo $workout["user_difficulty"]; ?><br> <br>
-            Description: <?php echo $workout["user_descr"]; ?>
-          </p>
-      
-        </div>
-
-        <div class="clearfix"></div>
-
+      <div class="workout-menu-img">
+        <?= '<img src=' .$workout["user_image"].' alt="" class="img-responsive img-curve">'?>
       </div>
 
-    <?php } ?>
+      <div class="workout-menu-desc">
 
-    <?php if(empty($workout)) {
-      echo "You do not have any created exercises yet!";
-      echo "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
-    }?>
+        <h3><?php echo $workout["user_name"]; ?></h3>	
+        <p class="workout-detail">
+          Muscle group: <?php echo $workout["user_category"]; ?><br> <br>
+          Difficulty: <?php echo $workout["user_difficulty"]; ?><br> <br>
+          Description: <?php echo $workout["user_descr"]; ?>
+        </p>
+      
+      </div>
 
-  </div>
+      <div class="clearfix"></div>
+
+    </div>
+
+  <?php } ?>
+
+  <?php if(empty($workout)) {
+    echo "You do not have any created exercises yet!";
+    echo "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
+  }?>
+
+</div>
 
 <div class="form-popup" id="exForm">
 
@@ -86,8 +87,8 @@
 
     <br> <br>
 
-   <label for="exName">Name:</label>
-		<input type="text" name="exName" id="exName" class="form-control" placeholder="Enter Exercise Name" required />
+    <label for="exName">Name:</label>
+	  <input type="text" name="exName" id="exName" class="form-control" placeholder="Enter Exercise Name" required />
 
     <label for="descr">Description:</label>
 		<input type="text" name="descr" id="descr" class="form-control" placeholder="Enter A Short Description" required />	  
@@ -116,4 +117,5 @@
 
 <script src="<?php echo base_url('assets/js/ex_modal.js'); ?>"></script>
 <script> window.setTimeout("document.getElementById('err').style.display='none';", 4000); </script>
+
 <?php echo view('partials/footer'); ?>
