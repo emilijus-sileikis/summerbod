@@ -108,8 +108,8 @@
     <br> <br>
 
 
-		<input type="submit" value="Add" name="btnadd" class="btn" />
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+		<input type="submit" value="Add" name="btnadd" class="form-btn" />
+    <button type="button" class="form-btn cancel" onclick="closeForm()">Close</button>
 
   </form>
 </div>
