@@ -49,6 +49,8 @@
         </a>
         <div class="clearfix"></div>
 
+        <button class="adminbtn" onClick="window.location.reload();">Refresh Page</button>
+
     </div>
 </div>
 

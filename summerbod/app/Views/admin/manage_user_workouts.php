@@ -6,6 +6,8 @@
 
     <h1 style="margin-left: 1%;">All Workouts</h1>
 
+    <a href="<?= base_url('public/admin/dashboard') ?>" class="adminbtn" style="margin-left: 10px;">Dashboard</a>
+
     <div style="margin-left: 1%;">
         <?php echo session("message"); ?>
     </div>

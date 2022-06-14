@@ -38,6 +38,8 @@
 
 		<?php if(empty($workout)) {
   		echo "You do not have any favorite exercises yet!";
+		echo "<br><br>";
+		echo "<a href=' ".base_url('public/profile')." '><p style='color: black; font-weight: bold;'>Go back</p></a>";
   		echo "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
 		}?>
 

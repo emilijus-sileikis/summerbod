@@ -42,10 +42,10 @@
 }
 
 .workout-menu-img {
-  width: 25%;
+  width: 20%;
   float: left;
-  max-width: 800px;
-  max-height: 600px;
+  height: 50%;
+  object-fit: contain;
 }
 
 .workout-menu-desc {
@@ -75,9 +75,10 @@ button {
   font-size: 18px;
 }
 
-a {
-  text-decoration: none;
-  font-size: 22px;
+.card-container p a,
+.card-container h3 a {
+  font-weight: bold;
+  font-size: 20px;
   color: black;
 }
 
