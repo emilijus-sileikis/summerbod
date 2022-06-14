@@ -47,9 +47,9 @@ sudo cp hosts /etc/ansible/hosts
 ## Copy Dir to the remote server ##
 ###################################
 cd
-ssh -f -p $CSSH_PORT $CUSER@193.219.91.103 "mkdir -p ~/wiket"
+ssh -f -p $CSSH_PORT $CUSER@193.219.91.103 "mkdir -p ~/summerbod"
 
-scp -rp -P $CSSH_PORT "$PROJECT_DIR"/* $CUSER@193.219.91.103:~/wiket/
+scp -rp -P $CSSH_PORT "$PROJECT_DIR"/* $CUSER@193.219.91.103:~/summerbod/
 
 #######################
 ## Launch Conn Check ##

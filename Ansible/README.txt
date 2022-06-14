@@ -26,7 +26,7 @@ as well for example Downloads folder).
 
 Information:
 
-- To launch the script use the launch.sh file (./wiket/Ansible/launch.sh).
+- To launch the script use the launch.sh file (./summerbod/Ansible/launch.sh).
 - In the current state of the script, it downloads an Ansible role to your local system (proceed if
 you agree with that).
 - The script is not perfect by any means, sorry if any errors occur :).

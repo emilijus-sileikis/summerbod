@@ -73,7 +73,7 @@
       command: mv /var/www/html/phpmyadmin/ /usr/share/phpmyadmin
 
     - name: Move project files to Apache
-      shell: mv wiket/summerbod/* "/var/www/{{ http_host }}"
+      shell: mv summerbod/summerbod/* "/var/www/{{ http_host }}"
 
     - name: Change permissions for writable folder
       command: chmod 777 -R "/var/www/{{ http_host }}/writable"
@@ -88,19 +88,19 @@
       command: chmod 777 "/var/www/{{ http_host }}/assets/images/workouts"
 
     - name: Put htaccess file for PMA
-      shell: mv wiket/Ansible/files/.htaccess /usr/share/phpmyadmin
+      shell: mv summerbod/Ansible/files/.htaccess /usr/share/phpmyadmin
 
     - name: Put htaccess file for summerbod
-      shell: mv wiket/summerbod/.htaccess "/var/www/{{ http_host }}"
+      shell: mv summerbod/summerbod/.htaccess "/var/www/{{ http_host }}"
 
     - name: Change the password for the user
       command: htpasswd -cb /usr/share/phpmyadmin/.htpasswd "{{ phpmyadmin_user }}" "{{ phpmyadmin_password }}"
 
     - name: Put PMA config files
-      shell: mv wiket/Ansible/files/phpmyadmin.conf /etc/apache2/conf-available
+      shell: mv summerbod/Ansible/files/phpmyadmin.conf /etc/apache2/conf-available
 
     - name: Increase php upload size
-      shell: mv wiket/Ansible/files/php.ini /etc/php/7.4/apache2
+      shell: mv summerbod/Ansible/files/php.ini /etc/php/7.4/apache2
       
     - name: Enable production environment
       shell: cp "/var/www/{{ http_host }}/env" "/var/www/{{ http_host }}/.env"
