@@ -1,3 +1,9 @@
+If the script permissions are wrong:
+
+- For some reason sometimes the files 'lose' their permissions.
+- Cloning the repo directly from git should fix this issue:
+git clone -b stable https://git.mif.vu.lt/emsi7726/summerbod/
+
 Compatibility:
 
 - The script is intendent to work only on Linux enivornments (that support required resources).
