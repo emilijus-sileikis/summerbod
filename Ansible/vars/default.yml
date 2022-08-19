@@ -1,8 +1,8 @@
 ---
-phpmyadmin_user: "pblteacher"
-phpmyadmin_password: "pbldefence"
-mysql_root_password: "pbldefence"
-app_user: "pblteacher"
+phpmyadmin_user: "yourusername"
+phpmyadmin_password: "yourpassword"
+mysql_root_password: "yourpassword"
+app_user: "yourusername"
 http_host: "summerbod"
 http_conf: "summerbod.conf"
 http_port: "80"
