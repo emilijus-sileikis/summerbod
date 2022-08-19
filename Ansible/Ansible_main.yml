@@ -1,0 +1,135 @@
+---
+- hosts: webserver
+  become: yes
+  vars_files:
+    - vars/default.yml
+
+  roles:
+    - { role: robertdebock.phpmyadmin }
+
+  tasks:
+    - name: Server setup
+      script: shell/Server_setup.sh
+
+  #Apache Configuration
+    - name: Install LAMP Packages
+      apt: name={{ item }} update_cache=yes state=latest
+      loop: [ 'apache2', 'default-mysql-server', 'python3-pymysql', 'php', 'php-mysql', 'libapache2-mod-php', 'php-intl', 'php-xml', 'php-curl', 'php-mbstring' ]
+
+    - name: Create document root
+      file:
+        path: "/var/www/{{ http_host }}"
+        state: directory
+        owner: "{{ app_user }}"
+        mode: '0755'
+
+    - name: Set up Apache virtualhost
+      template:
+        src: "files/apache.conf.j2"
+        dest: "/etc/apache2/sites-available/{{ http_conf }}"
+      notify: Reload Apache
+
+    - name: Enable new site
+      shell: /usr/sbin/a2ensite {{ http_conf }}
+      notify: Reload Apache
+
+    - name: Disable default Apache site
+      shell: /usr/sbin/a2dissite 000-default.conf
+      when: disable_default
+      notify: Reload Apache
+
+  # MySQL Configuration
+    - name: Sets the root password
+      mysql_user:
+        name: root
+        password: "{{ mysql_root_password }}"
+        login_unix_socket: /var/run/mysqld/mysqld.sock
+
+    - name: Removes all anonymous user accounts
+      mysql_user:
+        name: ''
+        host_all: yes
+        state: absent
+        login_user: root
+        login_password: "{{ mysql_root_password }}"
+
+    - name: Removes the MySQL test database
+      mysql_db:
+        name: test
+        state: absent
+        login_user: root
+        login_password: "{{ mysql_root_password }}"
+
+    - name: Creates an admin DB user
+      mysql_user:
+        login_user: root
+        login_password: "{{ mysql_root_password }}"
+        name: "{{ phpmyadmin_user }}"
+        password: "{{ phpmyadmin_password }}"
+        priv: '*.*:ALL'
+        state: present
+
+    - name: Move PMA to share dir
+      command: mv /var/www/html/phpmyadmin/ /usr/share/phpmyadmin
+
+    - name: Move project files to Apache
+      shell: mv summerbod/summerbod/* "/var/www/{{ http_host }}"
+
+    - name: Change permissions for writable folder
+      command: chmod 777 -R "/var/www/{{ http_host }}/writable"
+
+    - name: Change permissions for session folder
+      command: chmod 777 -R "/var/www/{{ http_host }}/writable/session"
+  
+    - name: Change permissions for cache folder
+      command: chmod 777 -R "/var/www/{{ http_host }}/writable/cache"
+      
+    - name: Change permissions for images folder
+      command: chmod 777 "/var/www/{{ http_host }}/assets/images/workouts"
+
+    - name: Put htaccess file for PMA
+      shell: mv summerbod/Ansible/files/.htaccess /usr/share/phpmyadmin
+
+    - name: Put htaccess file for summerbod
+      shell: mv summerbod/summerbod/.htaccess "/var/www/{{ http_host }}"
+
+    - name: Change the password for the user
+      command: htpasswd -cb /usr/share/phpmyadmin/.htpasswd "{{ phpmyadmin_user }}" "{{ phpmyadmin_password }}"
+
+    - name: Put PMA config files
+      shell: mv summerbod/Ansible/files/phpmyadmin.conf /etc/apache2/conf-available
+
+    - name: Increase php upload size
+      shell: mv summerbod/Ansible/files/php.ini /etc/php/7.4/apache2
+      
+    - name: Enable production environment
+      shell: cp "/var/www/{{ http_host }}/env" "/var/www/{{ http_host }}/.env"
+
+    - name: Create a new database
+      mysql_db:
+        login_user: "{{ phpmyadmin_user }}"
+        login_password: "{{ phpmyadmin_password }}"
+        name: "{{ http_host }}"
+        state: present
+
+    - name: Change the URL in App.php
+      shell: awk '{ if (NR == 26) printf "    public $baseURL = \x27http://{{ url }}\x27;"; else print $0 }' /var/www/summerbod/app/Config/App.php > App.php; mv -f App.php /var/www/summerbod/app/Config/App.php
+
+    - name: Enable PMA conf
+      command: a2enconf phpmyadmin.conf
+      
+    - name: Create tables
+      script: shell/Migrations.sh
+  
+    - name: Seed the tables
+      script: shell/Seeders.sh
+
+    - name: Enable rewrite
+      command: a2enmod rewrite
+      notify: Reload Apache
+
+  handlers:
+    - name: Reload Apache
+      service:
+        name: apache2
+        state: reloaded

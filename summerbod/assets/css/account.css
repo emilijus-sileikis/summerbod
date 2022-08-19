@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+}
+
+.cont {
+  position: relative;
+  margin-top: 10%;
+  margin-left: 1%;
+}
+
+.card {
+  position: fixed;
+  top: 135px;
+  width: 20%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 100%;
+  text-align: center;
+  padding-top: 2px;
+  margin-top: 1px;
+}
+
+.card-container {
+  position: relative;
+  top: 200px;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.workout-menu-box {
+  margin: 2%;
+  padding: 2%;
+  margin-left: 400px;
+  background-color: #e6e6e6;
+  border-radius: 15px;
+}
+
+.workout-header {
+  margin-top: 10%;
+}
+
+.workout-menu-img {
+  width: 20%;
+  float: left;
+  height: 50%;
+  object-fit: contain;
+}
+
+.workout-menu-desc {
+  word-wrap: break-word;
+  width: 65%;
+  float: left;
+  margin-left: 8%;
+}
+
+.workout-detail {
+  font-size: 15px;
+  margin: 2% 0;
+  color: gray;
+}
+
+.exsection {
+  text-align: center;
+}
+
+button {
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card-container p a,
+.card-container h3 a {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 2px;
+  right: 2px;
+  z-index: 9;
+}
+
+.form-container {
+  border: solid black;
+  border-radius: 15px;
+  width: auto;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .form-btn {
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1065px) {
+    #google_translate_element {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .dropdown-content {
+    font-size: 15px;
+  }
+
+  .card {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .card-container {
+    top: 0px;
+  }
+
+  .open-button {
+    position: relative;
+    left: 4px;
+  }
+
+  .form-popup {
+    width: auto;
+    margin: auto;
+    bottom: 1px;
+  }
+
+  .form-container {
+    height: auto;
+  }
+
+  .exsection {
+    height: fit-content;
+    width: 100%;
+    float: left;
+  }
+
+  .workout-header {
+    margin-top: 50%;
+  }
+
+  .workout-menu-box{
+    position: relative;
+    margin-left: 50px;
+    justify-content: center;
+    float: left;
+    width: 300px;
+}
+
+.workout-menu-img{
+    object-fit: cover;
+    width: fit-content;
+    height: fit-content;
+}
+
+.workout-menu-desc{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.workout-detail{
+    font-size: 10px;
+}
+}

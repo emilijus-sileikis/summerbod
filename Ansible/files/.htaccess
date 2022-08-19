@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Restricted Files"
+AuthUserFile /usr/share/phpmyadmin/.htpasswd
+Require valid-user

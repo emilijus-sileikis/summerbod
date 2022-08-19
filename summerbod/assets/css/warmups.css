@@ -1,0 +1,106 @@
+.header {
+    color: black; 
+    margin-left: 100px;
+    margin-top: 150px;
+}
+
+.warmup-text {
+    margin-left: 150px;
+    padding-bottom: 20px;
+    text-align: justify;
+    text-justify: distribute;
+    text-align-last: left;
+}
+
+.warmup-menu-box {
+    width: 70%;
+    margin: 2%;
+    padding: 2%;
+    margin-left: 200px;
+    float: none;
+    background-color: #e6e6e6;
+    border-radius: 15px;
+}
+
+.warmup-menu-box a {
+    color: black;
+    width: 100%;
+}
+
+.warmup-menu-img {
+    width: 20%;
+    float: left;
+	max-width: 250px;
+	max-height: 500px;
+}
+
+.warmup-menu-desc {
+    word-wrap: break-word;
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.warmup-detail {
+    font-size: 15px;
+    margin: 2% 0;
+    color: gray;
+}
+
+@media only screen and (max-width: 899px) {
+  .header {
+    color: black; 
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    }
+
+    .warmup-menu-box {
+        margin-left: 150px;
+    }
+}
+
+@media only screen and (min-width: 386px)
+and (max-width: 500px) {
+    .header {
+        font-size: 40px;
+      }
+
+    .header3{
+        font-size: 20px;
+        width: auto;
+    }
+
+    .warmup-text {
+        margin-left: 100px;
+        width: auto;
+    }
+
+    .warmup-menu-box {
+        margin-left: 100px;
+    }
+}
+
+@media only screen and (min-width: 280px)
+and (max-width: 385px) {
+    .header {
+        font-size: 30px;
+        margin-left: 80px;
+        width: 100%;
+      }
+
+    .header3{
+        font-size: 20px;
+        margin-left: 80px;
+    }
+
+    .warmup-text {
+        font-size: 15px;
+        margin-left: 80px;
+        width: 90%;
+    }
+
+    .warmup-menu-box {
+        margin-left: 95px;
+    }
+}

@@ -1,0 +1,11 @@
+@import url("homenav.css");
+
+/* CSS for navbar */
+.logo{
+    width: 15%;
+    float: left;
+}
+
+.search{
+    display: none;
+}

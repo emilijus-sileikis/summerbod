@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background: #fff;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 25px;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.slider>.links {
+    position: fixed;
+    float: left;
+    top: 50%;
+    z-index: 9999;
+}
+
+.slider .links>a {
+    background: black;
+    display:grid;
+    padding: 20px 15px;
+    color: #fff;
+    margin-bottom: 2px;
+}
+
+.slider .links>a:focus {
+    background: #000;
+}
+
+.slides {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slides>div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 100%;
+    background: #eee;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.titleblock {
+    text-align: center;
+    padding: 20px;
+    color: #f1f1f1;
+    text-transform: uppercase;
+}
+
+table {
+    border: solid black;
+    width: 70%;
+    height: auto;
+}
+
+table th {
+    vertical-align: top;
+}
+
+table th div {
+    text-transform: uppercase;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+}
+
+table td {
+    white-space: nowrap;
+}
+
+.images {
+    text-align: center;
+}
+
+textarea,
+select,
+input {
+    background: #e1e1e1;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+    resize: none;
+}
+
+input:hover,
+input:focus,
+select:hover,
+select:focus,
+textarea:hover,
+textarea:focus {
+    background: #dbdbdb;
+}
+
+textarea,
+input {
+    margin-bottom: 5px;
+}
+
+.btnWrapper {
+    display: inline-flex;
+}
+
+.btnblock {
+    display: flex;
+}
+
+.txtScore {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.btnQuiz,
+.btnSubmit,
+.btnEnd,
+button {
+    color: #fff;
+    padding: 15px;
+    opacity: 0.9;
+    outline: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    margin: 2px 0 0;
+}
+
+.btnSubmit {
+    width: 200px;
+    position: relative;
+    left: 50%;
+    margin-left: -100px;
+}
+
+.btnQuiz,
+.btnSubmit,
+button:hover {
+    opacity: 1;
+}
+
+.titleblock,
+table th div,
+.btnSubmit,
+.btnQuiz,
+.btnEnd,
+button {
+    background: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.btnWrapper {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.btnHalf {
+    border: solid white;
+    width: 50%;
+}
+
+.wrapper {
+    background: #fff;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    display: block;
+}
+
+.wrapper .option {
+    background: #fff;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid lightgrey;
+    transition: all 0.3s ease;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .option:last-child {
+    margin-bottom: 0;
+}
+
+input[type="radio"] {
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    margin: 0 10px;
+    padding: 0;
+}
+
+.wrapper .option span {
+    display: inline-block;
+    font-size: 18px;
+    color: #808080;
+    width: 100%;
+    white-space: nowrap;
+}

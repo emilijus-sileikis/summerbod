@@ -1,0 +1,99 @@
+/* CSS for workout menu */
+@import url("dumbells.css");
+
+.workout-menu-box{
+    width: 43%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.workout-menu-img{
+    width: 20%;
+    float: left;
+    object-fit: contain;
+}
+
+.workout-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.workout-detail{
+    font-size: 15px;
+    margin: 2% 0;
+    color: gray;
+}
+
+@media only screen and (max-width:1000px){
+
+    .workout-menu-desc{
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+
+@media only screen and (max-width:795px){
+
+    .workout-menu{
+        padding: auto;
+    }
+
+    .workout-menu-box{
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+
+    .workout-menu-img{
+        width: auto;
+        float: left;
+        object-fit: contain;
+    }
+
+    .workout-menu-desc{
+        width: 70%;
+        float: left;
+        margin-left: 8%;
+    }
+    
+    .workout-detail{
+        font-size: 15px;
+        margin: 2% 0;
+        color: gray;
+    }
+}
+
+@media only screen and (max-width:758px){
+
+    .workout-menu-desc{
+        width: 60%;
+        float: left;
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width:555px){
+
+    .workout-menu-desc{
+        width: 40%;
+        float: left;
+        margin-left: 20%;
+    }
+}
+
+
+@media only screen and (max-width:425px){
+
+    .workout-menu-desc{
+        width: 50%;
+        margin-left: 10%;
+    }
+
+    .workout-detail{
+        font-size: 10px;
+    }
+}
