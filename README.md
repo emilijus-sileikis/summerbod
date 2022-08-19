@@ -5,7 +5,7 @@ Website for teaching people about training their body and living a healthier lif
 ### Table of Contents
 
 1. [Description](#description)
-1. [System Requirements (and used tools)](#system-requirements)
+1. [Used Technologies](#used-technologies)
 
 ## Description
 
@@ -15,7 +15,7 @@ and other technical details can be found in the documentaion located in the `'do
 directory. Information about the Ansible deployment script can be found in the `'Ansible'`
 directory.
 
-### System Requirements (and used tools)
+## Used Technologies
 
 1. PHP 7 (or above).
 
