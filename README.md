@@ -11,7 +11,7 @@ Website for teaching people about training their body and living a healthier lif
 
 Our main goal is creation of a functional website which can be easily customized by
 developers as well as easily used by the users. Full information about the project 
-and other technical details can be found in the [**Documentation**](summerbod/doc/Summerbod.pdf) located in the `'doc'` 
+and other technical details can be found in the [**Documentation**](https://github.com/emilijus-sileikis/summerbod/tree/main/doc/Summerbod.pdf) located in the `'doc'` 
 directory. Information about the Ansible deployment script can be found in the `'Ansible'`
 directory.
 
