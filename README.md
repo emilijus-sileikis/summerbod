@@ -5,7 +5,7 @@ Website for teaching people about training their body and living a healthier lif
 ### Table of Contents
 
 1. [Description](#description)
-1. [System Requirements](#system-requirements)
+1. [System Requirements (and used tools)](#system-requirements)
 
 ## Description
 
