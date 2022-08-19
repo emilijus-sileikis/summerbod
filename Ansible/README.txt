@@ -1,13 +1,12 @@
-If the script permissions are wrong:
+Script permissions:
 
-- For some reason sometimes the files 'lose' their permissions.
-- Cloning the repo directly from git should fix this issue:
-git clone -b stable https://git.mif.vu.lt/emsi7726/summerbod/
+- In order for the script to work it needs the right permissions.
+- Use chmod -R 777 on the Ansible folder and everything should be fine.
 
 Compatibility:
 
 - The script is intendent to work only on Linux enivornments (that support required resources).
-- Tested only on Debian 11 so far.
+- Tested only on Debian 8 and 11 so far.
 - Does not work on MAC (does not meet the Prerequisites).
 - Works on Windows Linux Subsystem (Debian 11).
 
